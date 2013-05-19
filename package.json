@@ -1,0 +1,31 @@
+{
+  "name": "brasil",
+  "version": "0.0.0",
+  "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
+  "main": "brasil.js",
+  "scripts": {
+    "test": "node testes.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gammasoft/brasil.git"
+  },
+  "keywords": [
+    "brasil",
+    "ferramentas",
+    "utilitarias",
+    "validacoes",
+    "nfe",
+    "nota",
+    "fiscal",
+    "eletronica",
+    "inscricao",
+    "estadual",
+    "cpf",
+    "cnpj"
+  ],
+  "author": "Renato Gama",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "69a811c3df347504c414b81ebbb8927f382b5650"
+}
