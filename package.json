@@ -27,5 +27,8 @@
   "author": "Renato Gama",
   "license": "BSD",
   "readmeFilename": "README.md",
-  "gitHead": "69a811c3df347504c414b81ebbb8927f382b5650"
+  "gitHead": "69a811c3df347504c414b81ebbb8927f382b5650",
+  "dependencies": {
+    "inscricaoestadual": "0.0.0"
+  }
 }
