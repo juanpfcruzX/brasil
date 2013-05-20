@@ -15,9 +15,9 @@ Escrito por [@renatoargh](http://www.github.com/renatoargh "Renato Gama")
     
 **br.registroNacional(valor)** - Valida se `valor` é um CPF, CNPJ ou nenhum dos dois. 
 
-- String "cpf" se a string for validada como cpf
-- String "cnpj" se a string for validada como cnpj
-- Bolean false se a string não for nenhum dos dois
+- String "cpf" se `valor` for validada como cpf
+- String "cnpj" se `valor` for validada como cnpj
+- Bolean false se `valor` não for nenhum dos dois
     
 **br.cnpj(valor)** - Valida se `valor` é um CNPJ ou não. 
 
