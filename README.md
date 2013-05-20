@@ -13,23 +13,23 @@ Escrito por [@renatoargh](http://www.github.com/renatoargh "Renato Gama")
 
     var br = require("brasil");
     
-**br.registroNacional(valor)** - Valida se `valor` é um CPF, CNPJ ou nenhum dos dois. 
+**br.registroNacional(valor)** - Valida se `valor` (string) é um CPF, CNPJ ou nenhum dos dois. 
 
 - String "cpf" se `valor` for validada como cpf
 - String "cnpj" se `valor` for validada como cnpj
 - Bolean false se `valor` não for nenhum dos dois
     
-**br.cnpj(valor)** - Valida se `valor` é um CNPJ ou não. 
+**br.cnpj(valor)** - Valida se `valor` (string) é um CNPJ ou não. 
 
 - Bolean true se `valor` for um cnpj
 - Bolean false caso contrário
 
-**br.cpf(valor)** - Valida se `valor` é um CPF ou não. 
+**br.cpf(valor)** - Valida se `valor` (string) é um CPF ou não. 
 
 - Bolean true se `valor` for um cpf
 - Bolean false caso contrário
 
-**br.inscricaoEstadual([estado], valor)** - Valida se `valor` é uma inscrição estadual do estado `estado`
+**br.inscricaoEstadual(estado, valor)** - Valida se `valor` (string) é uma inscrição estadual do estado `estado` (string)
 
 - Esta função é um atalho para a biblioteca [ie](https://github.com/gammasoft/ie "Biblioteca de validação de inscrições estaduais para node.js")
  
