@@ -2,6 +2,23 @@ var ie = require("inscricaoestadual");
 
 module.exports.inscricaoEstadual = ie;
 
+module.exports.chaveDeAcesso = chaveDeAcesso;
+function chaveDeAcesso(chaveDeAcesso){
+	if(typeof chaveDeAcesso !== "string") return false;
+	
+	chaveDeAcesso = removerMascara(chaveDeAcesso);
+	
+	if(chaveDeAcesso.length !== 44) return false;
+	
+	var base = chaveDeAcesso.substring(0, 43);
+	var multiplicadores = [2, 3, 4, 5, 6, 7, 8, 9];
+	
+	var primeiroResto = mod11(base, multiplicadores);
+	var primeiroDigito = primeiroResto < 2 ? 0 : 11 - primeiroResto;
+	
+	return chaveDeAcesso === base + primeiroDigito;
+}
+
 module.exports.registroNacional = registroNacional;
 function registroNacional(rn){
 	if(typeof rn !== "string") return false;
@@ -50,7 +67,7 @@ function cpf(cpf){
 };
 
 function removerMascara(texto){
-	return texto.replace(/\./g, "").replace(/\//g, "").replace(/\-/g, "");
+	return texto.replace(/\./g, "").replace(/\//g, "").replace(/\-/g, "").replace(/\s/g, "");
 }
 
 function mod11(valor, multiplicadores){
