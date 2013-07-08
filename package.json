@@ -12,6 +12,9 @@
   },
   "keywords": [
     "brasil",
+    "tabela",
+    "ibge",
+    "estados",
     "ferramentas",
     "utilitarias",
     "validacoes",
@@ -19,15 +22,10 @@
     "nota",
     "fiscal",
     "eletronica",
-    "inscricao",
-    "estadual",
     "cpf",
     "cnpj"
   ],
   "author": "Renato Gama",
   "license": "BSD",
   "readmeFilename": "README.md",
-  "dependencies": {
-    "inscricaoestadual": "0.0.0-5"
-  }
 }
