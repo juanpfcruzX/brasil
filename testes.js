@@ -23,3 +23,6 @@ console.log(br.obterEstado("RJ"));
 console.log(br.obterEstado("Rio de Janeiro"));
 console.log(br.obterEstado("Goiás"));
 console.log(br.obterEstado("Minas Gerais"));
+
+console.log(br.obterEstado("minas gerais"));
+console.log(br.obterEstado(1234));

@@ -8,15 +8,17 @@ module.exports.obterEstado = function(id){
 			};
 		}
 	}
-	if(typeof id === "string"){
+	else if(typeof id === "string"){
 		for(var estado in tabelaIbgeDeEstados){
 			if(tabelaIbgeDeEstados.hasOwnProperty(estado)){
 				estado = tabelaIbgeDeEstados[estado];
-				if(estado.nome === id || estado.abreviacao === id)
+				if(estado.nome.toLowerCase() === id.toLowerCase() || estado.abreviacao.toLowerCase() === id.toLowerCase())
 					return estado;
 			};
 		}
 	}
+	
+	return null;
 };
 
 module.exports.tabelaIbgeDeEstados = tabelaIbgeDeEstados;
