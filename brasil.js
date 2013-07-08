@@ -2,6 +2,18 @@ var ie = require("inscricaoestadual");
 
 module.exports.inscricaoEstadual = ie;
 
+module.exports.formatarChaveDeAcesso = formatarChaveDeAcesso; 
+function formatarChaveDeAcesso(chave){
+	if(chave.length !== 44) return chave;
+	else{
+		return chave.split("").reduceRight(function(elemento, anterior){
+			var temp = anterior + elemento;
+		    if(temp.replace(/\s/g, "").length % 4 === 0) return " " + temp;
+		    else return temp;
+		}).substr(1);
+	}
+}
+
 module.exports.chaveDeAcesso = chaveDeAcesso;
 function chaveDeAcesso(chaveDeAcesso){
 	if(typeof chaveDeAcesso !== "string") return false;
