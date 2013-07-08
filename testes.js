@@ -10,3 +10,4 @@ console.log(brasil.cnpj("00.132.781/0001-78"));
 console.log(brasil.cpf("016.591.491-26"));
 
 console.log(brasil.chaveDeAcesso("52060433009911002506550120000007800267301615"));
+console.log(brasil.chaveDeAcesso("52110210132781000178550010000005480000005486"));

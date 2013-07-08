@@ -9,14 +9,15 @@ function chaveDeAcesso(chaveDeAcesso){
 	chaveDeAcesso = removerMascara(chaveDeAcesso);
 	
 	if(chaveDeAcesso.length !== 44) return false;
+	if(!cnpj(chaveDeAcesso.substr(6, 14))) return false;
 	
 	var base = chaveDeAcesso.substring(0, 43);
 	var multiplicadores = [2, 3, 4, 5, 6, 7, 8, 9];
 	
-	var primeiroResto = mod11(base, multiplicadores);
-	var primeiroDigito = primeiroResto < 2 ? 0 : 11 - primeiroResto;
+	var resto = mod11(base, multiplicadores);
+	var digito = resto < 2 ? 0 : 11 - resto;
 	
-	return chaveDeAcesso === base + primeiroDigito;
+	return chaveDeAcesso === base + digito;
 }
 
 module.exports.registroNacional = registroNacional;
