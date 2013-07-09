@@ -1,5 +1,6 @@
 module.exports.obterEstado = function(id){
-	if(typeof id === "number"){
+	if(typeof id === "number" || !isNaN(parseInt(id, 10))){
+		id = parseInt(id, 10);
 		for(var estado in tabelaIbgeDeEstados){
 			if(tabelaIbgeDeEstados.hasOwnProperty(estado)){
 				estado = tabelaIbgeDeEstados[estado];
