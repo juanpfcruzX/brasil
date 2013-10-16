@@ -1,6 +1,10 @@
 module.exports.regioes = require("./regioes.json"); 
+
 module.exports.municipiosDicionario = require("./municipios-dicionario.json");
 module.exports.municipiosArray = require("./municipios-array.json");
+
+module.exports.cfopsDicionario = require("./cfops-dicionario.json");
+module.exports.cfopsArray = require("./cfops-array.json");
 
 module.exports.obterEstado = function(id){
 	if(typeof id === "number" || !isNaN(parseInt(id, 10))){

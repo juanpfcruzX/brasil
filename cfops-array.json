@@ -1,0 +1,2458 @@
+[
+  {
+    "cfop": "1000",
+    "descricao": "ENTRADAS OU AQUISIÇÕES DE SERVIÇOS DO ESTADO"
+  },
+  {
+    "cfop": "1100",
+    "descricao": "COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS"
+  },
+  {
+    "cfop": "1101",
+    "descricao": "Compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "1102",
+    "descricao": "Compra para comercialização"
+  },
+  {
+    "cfop": "1111",
+    "descricao": "Compra para industrialização de mercadoria recebida anteriormente em consignação industrial"
+  },
+  {
+    "cfop": "1113",
+    "descricao": "Compra para comercialização, de mercadoria recebida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "1116",
+    "descricao": "Compra para industrialização ou produção rural originada de encomenda para recebimento futuro (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "1117",
+    "descricao": "Compra para comercialização originada de encomenda para recebimento futuro"
+  },
+  {
+    "cfop": "1118",
+    "descricao": "Compra de mercadoria para comercialização pelo adquirente originário, entregue pelo vendedor remetente ao destinatário, em venda à ordem."
+  },
+  {
+    "cfop": "1120",
+    "descricao": "Compra para industrialização, em venda à ordem, já recebida do vendedor remetente"
+  },
+  {
+    "cfop": "1121",
+    "descricao": "Compra para comercialização, em venda à ordem, já recebida do vendedor remetente"
+  },
+  {
+    "cfop": "1122",
+    "descricao": "Compra para industrialização em que a mercadoria foi remetida pelo fornecedor ao industrializador sem transitar pelo estabelecimento adquirente"
+  },
+  {
+    "cfop": "1124",
+    "descricao": "Industrialização efetuada por outra empresa"
+  },
+  {
+    "cfop": "1125",
+    "descricao": "Industrialização efetuada por outra empresa quando a mercadoria remetida para utilização no processo de industrialização não transitou pelo estabelecimento adquirente da mercadoria"
+  },
+  {
+    "cfop": "1126",
+    "descricao": "Compra para utilização na prestação de serviço tributado pelo ICMS"
+  },
+  {
+    "cfop": "1128",
+    "descricao": "Compra para utilização na prestação de serviço tributado pelo ISS"
+  },
+  {
+    "cfop": "1150",
+    "descricao": "TRANSFERÊNCIAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "1151",
+    "descricao": "Transferência para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "1152",
+    "descricao": "Transferência para comercialização"
+  },
+  {
+    "cfop": "1153",
+    "descricao": "Transferência de energia elétrica para distribuição"
+  },
+  {
+    "cfop": "1154",
+    "descricao": "Transferência para utilização na prestação de serviço"
+  },
+  {
+    "cfop": "1200",
+    "descricao": "DEVOLUÇÕES DE VENDAS DE PRODUÇÃO DO ESTABELECIMENTO, DE PRODUTOS DE TERCEIROS OU ANULAÇÕES DE VALORES"
+  },
+  {
+    "cfop": "1201",
+    "descricao": "Devolução de venda de produção do estabelecimento"
+  },
+  {
+    "cfop": "1202",
+    "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "1203",
+    "descricao": "Devolução de venda de produção do estabelecimento, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio"
+  },
+  {
+    "cfop": "1204",
+    "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio"
+  },
+  {
+    "cfop": "1205",
+    "descricao": "Anulação de valor relativo à prestação de serviço de comunicação"
+  },
+  {
+    "cfop": "1206",
+    "descricao": "Anulação de valor relativo à prestação de serviço de transporte"
+  },
+  {
+    "cfop": "1207",
+    "descricao": "Anulação de valor relativo à venda de energia elétrica"
+  },
+  {
+    "cfop": "1208",
+    "descricao": "Devolução de produção do estabelecimento, remetida em transferência"
+  },
+  {
+    "cfop": "1209",
+    "descricao": "Devolução de mercadoria adquirida ou recebida de terceiros, remetida em transferência"
+  },
+  {
+    "cfop": "1250",
+    "descricao": "COMPRAS DE ENERGIA ELÉTRICA"
+  },
+  {
+    "cfop": "1251",
+    "descricao": "Compra de energia elétrica para distribuição ou comercialização"
+  },
+  {
+    "cfop": "1252",
+    "descricao": "Compra de energia elétrica por estabelecimento industrial"
+  },
+  {
+    "cfop": "1253",
+    "descricao": "Compra de energia elétrica por estabelecimento comercial"
+  },
+  {
+    "cfop": "1254",
+    "descricao": "Compra de energia elétrica por estabelecimento prestador de serviço de transporte"
+  },
+  {
+    "cfop": "1255",
+    "descricao": "Compra de energia elétrica por estabelecimento prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "1256",
+    "descricao": "Compra de energia elétrica por estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "1257",
+    "descricao": "Compra de energia elétrica para consumo por demanda contratada"
+  },
+  {
+    "cfop": "1300",
+    "descricao": "AQUISIÇÕES DE SERVIÇOS DE COMUNICAÇÃO"
+  },
+  {
+    "cfop": "1301",
+    "descricao": "Aquisição de serviço de comunicação para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "1302",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento industrial"
+  },
+  {
+    "cfop": "1303",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento comercial"
+  },
+  {
+    "cfop": "1304",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento de prestador de serviço de transporte"
+  },
+  {
+    "cfop": "1305",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "1306",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "1350",
+    "descricao": "AQUISIÇÕES DE SERVIÇOS DE TRANSPORTE"
+  },
+  {
+    "cfop": "1351",
+    "descricao": "Aquisição de serviço de transporte para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "1352",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento industrial"
+  },
+  {
+    "cfop": "1353",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento comercial"
+  },
+  {
+    "cfop": "1354",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "1355",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "1356",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "1400",
+    "descricao": "ENTRADAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA"
+  },
+  {
+    "cfop": "1401",
+    "descricao": "Compra para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "1403",
+    "descricao": "Compra para comercialização em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1406",
+    "descricao": "Compra de bem para o ativo imobilizado cuja mercadoria está sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1407",
+    "descricao": "Compra de mercadoria para uso ou consumo cuja mercadoria está sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1408",
+    "descricao": "Transferência para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "1409",
+    "descricao": "Transferência para comercialização em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1410",
+    "descricao": "Devolução de venda de mercadoria, de produção do estabelecimento, sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1411",
+    "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1414",
+    "descricao": "Retorno de mercadoria de produção do estabelecimento, remetida para venda fora do estabelecimento, sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1415",
+    "descricao": "Retorno de mercadoria adquirida ou recebida de terceiros, remetida para venda fora do estabelecimento em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "1450",
+    "descricao": "SISTEMAS DE INTEGRAÇÃO"
+  },
+  {
+    "cfop": "1451",
+    "descricao": "Retorno de animal do estabelecimento produtor"
+  },
+  {
+    "cfop": "1452",
+    "descricao": "Retorno de insumo não utilizado na produção"
+  },
+  {
+    "cfop": "1500",
+    "descricao": "ENTRADAS DE MERCADORIAS REMETIDAS PARA FORMAÇÃO DE LOTE OU COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES (NR Ajuste SINIEF 09/2005) "
+  },
+  {
+    "cfop": "1501",
+    "descricao": "Entrada de mercadoria recebida com fim específico de exportação"
+  },
+  {
+    "cfop": "1503",
+    "descricao": "Entrada decorrente de devolução de produto, de fabricação do estabelecimento, remetido com fim específico de exportação"
+  },
+  {
+    "cfop": "1504",
+    "descricao": "Entrada decorrente de devolução de mercadoria remetida com fim específico de exportação, adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "1505",
+    "descricao": "Entrada decorrente de devolução simbólica de mercadoria remetida para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento."
+  },
+  {
+    "cfop": "1506",
+    "descricao": "Entrada decorrente de devolução simbólica de mercadoria, adquirida ou recebida de terceiros, remetida para formação de lote de exportação."
+  },
+  {
+    "cfop": "1550",
+    "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO"
+  },
+  {
+    "cfop": "1551",
+    "descricao": "Compra de bem para o ativo imobilizado"
+  },
+  {
+    "cfop": "1552",
+    "descricao": "Transferência de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "1553",
+    "descricao": "Devolução de venda de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "1554",
+    "descricao": "Retorno de bem do ativo imobilizado remetido para uso fora do estabelecimento"
+  },
+  {
+    "cfop": "1555",
+    "descricao": "Entrada de bem do ativo imobilizado de terceiro, remetido para uso no estabelecimento"
+  },
+  {
+    "cfop": "1556",
+    "descricao": "Compra de material para uso ou consumo"
+  },
+  {
+    "cfop": "1557",
+    "descricao": "Transferência de material para uso ou consumo"
+  },
+  {
+    "cfop": "1600",
+    "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS"
+  },
+  {
+    "cfop": "1601",
+    "descricao": "Recebimento, por transferência, de crédito de ICMS"
+  },
+  {
+    "cfop": "1602",
+    "descricao": "Recebimento, por transferência, de saldo credor do ICMS, de outro estabelecimento da mesma empresa, para compensação de saldo devedor do imposto."
+  },
+  {
+    "cfop": "1603",
+    "descricao": "Ressarcimento de ICMS retido por substituição tributária"
+  },
+  {
+    "cfop": "1604",
+    "descricao": "Lançamento do crédito relativo à compra de bem para o ativo imobilizado"
+  },
+  {
+    "cfop": "1605",
+    "descricao": "Recebimento, por transferência, de saldo devedor do ICMS de outro estabelecimento da mesma empresa"
+  },
+  {
+    "cfop": "1650",
+    "descricao": "ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES (ACR Ajuste SINIEF 9/2003 - a partir 01.01.2004)"
+  },
+  {
+    "cfop": "1651",
+    "descricao": "Compra de combustível ou lubrificante para industrialização subseqüente"
+  },
+  {
+    "cfop": "1652",
+    "descricao": "Compra de combustível ou lubrificante para comercialização"
+  },
+  {
+    "cfop": "1653",
+    "descricao": "Compra de combustível ou lubrificante por consumidor ou usuário final"
+  },
+  {
+    "cfop": "1658",
+    "descricao": "Transferência de combustível ou lubrificante para industrialização"
+  },
+  {
+    "cfop": "1659",
+    "descricao": "Transferência de combustível ou lubrificante para comercialização"
+  },
+  {
+    "cfop": "1660",
+    "descricao": "Devolução de venda de combustível ou lubrificante destinados à industrialização subseqüente"
+  },
+  {
+    "cfop": "1661",
+    "descricao": "Devolução de venda de combustível ou lubrificante destinados à comercialização"
+  },
+  {
+    "cfop": "1662",
+    "descricao": "Devolução de venda de combustível ou lubrificante destinados a consumidor ou usuário final"
+  },
+  {
+    "cfop": "1663",
+    "descricao": "Entrada de combustível ou lubrificante para armazenagem"
+  },
+  {
+    "cfop": "1664",
+    "descricao": "Retorno de combustível ou lubrificante remetidos para armazenagem"
+  },
+  {
+    "cfop": "1900",
+    "descricao": "OUTRAS ENTRADAS DE MERCADORIAS OU AQUISIÇÕES DE SERVIÇOS"
+  },
+  {
+    "cfop": "1901",
+    "descricao": "Entrada para industrialização por encomenda"
+  },
+  {
+    "cfop": "1902",
+    "descricao": "Retorno de mercadoria remetida para industrialização por encomenda"
+  },
+  {
+    "cfop": "1903",
+    "descricao": "Entrada de mercadoria remetida para industrialização e não aplicada no referido processo"
+  },
+  {
+    "cfop": "1904",
+    "descricao": "Retorno de remessa para venda fora do estabelecimento"
+  },
+  {
+    "cfop": "1905",
+    "descricao": "Entrada de mercadoria recebida para depósito em depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "1906",
+    "descricao": "Retorno de mercadoria remetida para depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "1907",
+    "descricao": "Retorno simbólico de mercadoria remetida para depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "1908",
+    "descricao": "Entrada de bem por conta de contrato de comodato"
+  },
+  {
+    "cfop": "1909",
+    "descricao": "Retorno de bem remetido por conta de contrato de comodato"
+  },
+  {
+    "cfop": "1910",
+    "descricao": "Entrada de bonificação, doação ou brinde"
+  },
+  {
+    "cfop": "1911",
+    "descricao": "Entrada de amostra grátis"
+  },
+  {
+    "cfop": "1912",
+    "descricao": "Entrada de mercadoria ou bem recebido para demonstração"
+  },
+  {
+    "cfop": "1913",
+    "descricao": "Retorno de mercadoria ou bem remetido para demonstração"
+  },
+  {
+    "cfop": "1914",
+    "descricao": "Retorno de mercadoria ou bem remetido para exposição ou feira"
+  },
+  {
+    "cfop": "1915",
+    "descricao": "Entrada de mercadoria ou bem recebido para conserto ou reparo"
+  },
+  {
+    "cfop": "1916",
+    "descricao": "Retorno de mercadoria ou bem remetido para conserto ou reparo"
+  },
+  {
+    "cfop": "1917",
+    "descricao": "Entrada de mercadoria recebida em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "1918",
+    "descricao": "Devolução de mercadoria remetida em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "1919",
+    "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, remetida anteriormente em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "1920",
+    "descricao": "Entrada de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "1921",
+    "descricao": "Retorno de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "1922",
+    "descricao": "Lançamento efetuado a título de simples faturamento decorrente de compra para recebimento futuro"
+  },
+  {
+    "cfop": "1923",
+    "descricao": "Entrada de mercadoria recebida do vendedor remetente, em venda à ordem"
+  },
+  {
+    "cfop": "1924",
+    "descricao": "Entrada para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "1925",
+    "descricao": "Retorno de mercadoria remetida para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "1926",
+    "descricao": "Lançamento efetuado a título de reclassificação de mercadoria decorrente de formação de kit ou de sua desagregação"
+  },
+  {
+    "cfop": "1931",
+    "descricao": "Lançamento efetuado pelo tomador do serviço de transporte, quando a responsabilidade de retenção do imposto for atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não-inscrito na Unidade da Federação onde se tenha iniciado o serviço."
+  },
+  {
+    "cfop": "1932",
+    "descricao": "Aquisição de serviço de transporte iniciado em Unidade da Federação diversa daquela onde esteja inscrito o prestador"
+  },
+  {
+    "cfop": "1933",
+    "descricao": "Aquisição de serviço tributado pelo Imposto sobre Serviços de Qualquer Natureza (Ajuste SINIEF 06/2005) (NR)"
+  },
+  {
+    "cfop": "1949",
+    "descricao": "Outra entrada de mercadoria ou prestação de serviço não especificada"
+  },
+  {
+    "cfop": "2000",
+    "descricao": "ENTRADAS OU AQUISIÇÕES DE SERVIÇOS DE OUTROS ESTADOS"
+  },
+  {
+    "cfop": "2100",
+    "descricao": "COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005 (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "2101",
+    "descricao": "Compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "2102",
+    "descricao": "Compra para comercialização"
+  },
+  {
+    "cfop": "2111",
+    "descricao": "Compra para industrialização de mercadoria recebida anteriormente em consignação industrial"
+  },
+  {
+    "cfop": "2113",
+    "descricao": "Compra para comercialização, de mercadoria recebida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "2116",
+    "descricao": "Compra para industrialização ou produção rural originada de encomenda para recebimento futuro (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "2117",
+    "descricao": "Compra para comercialização originada de encomenda para recebimento futuro"
+  },
+  {
+    "cfop": "2118",
+    "descricao": "Compra de mercadoria para comercialização pelo adquirente originário, entregue pelo vendedor remetente ao destinatário, em venda à ordem"
+  },
+  {
+    "cfop": "2120",
+    "descricao": "Compra para industrialização, em venda à ordem, já recebida do vendedor remetente"
+  },
+  {
+    "cfop": "2121",
+    "descricao": "Compra para comercialização, em venda à ordem, já recebida do vendedor remetente"
+  },
+  {
+    "cfop": "2122",
+    "descricao": "Compra para industrialização em que a mercadoria foi remetida pelo fornecedor ao industrializador sem transitar pelo estabelecimento adquirente"
+  },
+  {
+    "cfop": "2124",
+    "descricao": "Industrialização efetuada por outra empresa"
+  },
+  {
+    "cfop": "2125",
+    "descricao": "Industrialização efetuada por outra empresa quando a mercadoria remetida para utilização no processo de industrialização não transitou pelo estabelecimento adquirente da mercadoria"
+  },
+  {
+    "cfop": "2126",
+    "descricao": "Compra para utilização na prestação de serviço tributado pelo ICMS"
+  },
+  {
+    "cfop": "2128",
+    "descricao": "Compra para utilização na prestação de serviço tributado pelo ISS"
+  },
+  {
+    "cfop": "2150",
+    "descricao": "TRANSFERÊNCIAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "2151",
+    "descricao": "Transferência para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "2152",
+    "descricao": "Transferência para comercialização"
+  },
+  {
+    "cfop": "2153",
+    "descricao": "Transferência de energia elétrica para distribuição"
+  },
+  {
+    "cfop": "2154",
+    "descricao": "Transferência para utilização na prestação de serviço"
+  },
+  {
+    "cfop": "2200",
+    "descricao": "DEVOLUÇÕES DE VENDAS DE PRODUÇÃO DO ESTABELECIMENTO OU DE TERCEIROS OU ANULAÇÕES DE VALORES"
+  },
+  {
+    "cfop": "2201",
+    "descricao": "Devolução de venda de produção do estabelecimento"
+  },
+  {
+    "cfop": "2202",
+    "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "2203",
+    "descricao": "Devolução de venda de produção do estabelecimento destinada à Zona Franca de Manaus ou Áreas de Livre Comércio"
+  },
+  {
+    "cfop": "2204",
+    "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio"
+  },
+  {
+    "cfop": "2205",
+    "descricao": "Anulação de valor relativo à prestação de serviço de comunicação"
+  },
+  {
+    "cfop": "2206",
+    "descricao": "Anulação de valor relativo à prestação de serviço de transporte"
+  },
+  {
+    "cfop": "2207",
+    "descricao": "Anulação de valor relativo à venda de energia elétrica"
+  },
+  {
+    "cfop": "2208",
+    "descricao": "Devolução de produção do estabelecimento, remetida em transferência."
+  },
+  {
+    "cfop": "2209",
+    "descricao": "Devolução de mercadoria adquirida ou recebida de terceiros e remetida em transferência"
+  },
+  {
+    "cfop": "2250",
+    "descricao": "COMPRAS DE ENERGIA ELÉTRICA"
+  },
+  {
+    "cfop": "2251",
+    "descricao": "Compra de energia elétrica para distribuição ou comercialização"
+  },
+  {
+    "cfop": "2252",
+    "descricao": "Compra de energia elétrica por estabelecimento industrial"
+  },
+  {
+    "cfop": "2253",
+    "descricao": "Compra de energia elétrica por estabelecimento comercial"
+  },
+  {
+    "cfop": "2254",
+    "descricao": "Compra de energia elétrica por estabelecimento prestador de serviço de transporte"
+  },
+  {
+    "cfop": "2255",
+    "descricao": "Compra de energia elétrica por estabelecimento prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "2256",
+    "descricao": "Compra de energia elétrica por estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "2257",
+    "descricao": "Compra de energia elétrica para consumo por demanda contratada"
+  },
+  {
+    "cfop": "2300",
+    "descricao": "AQUISIÇÕES DE SERVIÇOS DE COMUNICAÇÃO"
+  },
+  {
+    "cfop": "2301",
+    "descricao": "Aquisição de serviço de comunicação para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "2302",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento industrial"
+  },
+  {
+    "cfop": "2303",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento comercial"
+  },
+  {
+    "cfop": "2304",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento de prestador de serviço de transporte"
+  },
+  {
+    "cfop": "2305",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "2306",
+    "descricao": "Aquisição de serviço de comunicação por estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "2350",
+    "descricao": "AQUISIÇÕES DE SERVIÇOS DE TRANSPORTE"
+  },
+  {
+    "cfop": "2351",
+    "descricao": "Aquisição de serviço de transporte para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "2352",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento industrial"
+  },
+  {
+    "cfop": "2353",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento comercial"
+  },
+  {
+    "cfop": "2354",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "2355",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "2356",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "2400",
+    "descricao": "ENTRADAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA"
+  },
+  {
+    "cfop": "2401",
+    "descricao": "Compra para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "2403",
+    "descricao": "Compra para comercialização em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2406",
+    "descricao": "Compra de bem para o ativo imobilizado cuja mercadoria está sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2407",
+    "descricao": "Compra de mercadoria para uso ou consumo cuja mercadoria está sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2408",
+    "descricao": "Transferência para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "2409",
+    "descricao": "Transferência para comercialização em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2410",
+    "descricao": "Devolução de venda de produção do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2411",
+    "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2414",
+    "descricao": "Retorno de produção do estabelecimento, remetida para venda fora do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2415",
+    "descricao": "Retorno de mercadoria adquirida ou recebida de terceiros, remetida para venda fora do estabelecimento em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "2500",
+    "descricao": "ENTRADAS DE MERCADORIAS REMETIDAS PARA FORMAÇÃO DE LOTE OU COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES (NR Ajuste SINIEF 09/2005)"
+  },
+  {
+    "cfop": "2501",
+    "descricao": "Entrada de mercadoria recebida com fim específico de exportação"
+  },
+  {
+    "cfop": "2503",
+    "descricao": "Entrada decorrente de devolução de produto industrializado pelo estabelecimento, remetido com fim específico de exportação"
+  },
+  {
+    "cfop": "2504",
+    "descricao": "Entrada decorrente de devolução de mercadoria remetida com fim específico de exportação, adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "2505",
+    "descricao": "Entrada decorrente de devolução simbólica de mercadoria remetida para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento."
+  },
+  {
+    "cfop": "2506",
+    "descricao": "Entrada decorrente de devolução simbólica de mercadoria, adquirida ou recebida de terceiros, remetida para formação de lote de exportação."
+  },
+  {
+    "cfop": "2550",
+    "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO"
+  },
+  {
+    "cfop": "2551",
+    "descricao": "Compra de bem para o ativo imobilizado"
+  },
+  {
+    "cfop": "2552",
+    "descricao": "Transferência de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "2553",
+    "descricao": "Devolução de venda de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "2554",
+    "descricao": "Retorno de bem do ativo imobilizado remetido para uso fora do estabelecimento"
+  },
+  {
+    "cfop": "2555",
+    "descricao": "Entrada de bem do ativo imobilizado de terceiro, remetido para uso no estabelecimento"
+  },
+  {
+    "cfop": "2556",
+    "descricao": "Compra de material para uso ou consumo"
+  },
+  {
+    "cfop": "2557",
+    "descricao": "Transferência de material para uso ou consumo"
+  },
+  {
+    "cfop": "2600",
+    "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS"
+  },
+  {
+    "cfop": "2603",
+    "descricao": "Ressarcimento de ICMS retido por substituição tributária"
+  },
+  {
+    "cfop": "2650",
+    "descricao": "ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES (ACR Ajuste SINIEF 9/2003)"
+  },
+  {
+    "cfop": "2651",
+    "descricao": "Compra de combustível ou lubrificante para industrialização subseqüente"
+  },
+  {
+    "cfop": "2652",
+    "descricao": "Compra de combustível ou lubrificante para comercialização"
+  },
+  {
+    "cfop": "2653",
+    "descricao": "Compra de combustível ou lubrificante por consumidor ou usuário final"
+  },
+  {
+    "cfop": "2658",
+    "descricao": "Transferência de combustível ou lubrificante para industrialização"
+  },
+  {
+    "cfop": "2659",
+    "descricao": "Transferência de combustível ou lubrificante para comercialização"
+  },
+  {
+    "cfop": "2660",
+    "descricao": "Devolução de venda de combustível ou lubrificante destinados à industrialização subseqüente"
+  },
+  {
+    "cfop": "2661",
+    "descricao": "Devolução de venda de combustível ou lubrificante destinados à comercialização"
+  },
+  {
+    "cfop": "2662",
+    "descricao": "Devolução de venda de combustível ou lubrificante destinados a consumidor ou usuário final"
+  },
+  {
+    "cfop": "2663",
+    "descricao": "Entrada de combustível ou lubrificante para armazenagem"
+  },
+  {
+    "cfop": "2664",
+    "descricao": "Retorno de combustível ou lubrificante remetidos para armazenagem"
+  },
+  {
+    "cfop": "2900",
+    "descricao": "OUTRAS ENTRADAS DE MERCADORIAS OU AQUISIÇÕES DE SERVIÇOS"
+  },
+  {
+    "cfop": "2901",
+    "descricao": "Entrada para industrialização por encomenda"
+  },
+  {
+    "cfop": "2902",
+    "descricao": "Retorno de mercadoria remetida para industrialização por encomenda"
+  },
+  {
+    "cfop": "2903",
+    "descricao": "Entrada de mercadoria remetida para industrialização e não aplicada no referido processo"
+  },
+  {
+    "cfop": "2904",
+    "descricao": "Retorno de remessa para venda fora do estabelecimento"
+  },
+  {
+    "cfop": "2905",
+    "descricao": "Entrada de mercadoria recebida para depósito em depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "2906",
+    "descricao": "Retorno de mercadoria remetida para depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "2907",
+    "descricao": "Retorno simbólico de mercadoria remetida para depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "2908",
+    "descricao": "Entrada de bem por conta de contrato de comodato"
+  },
+  {
+    "cfop": "2909",
+    "descricao": "Retorno de bem remetido por conta de contrato de comodato"
+  },
+  {
+    "cfop": "2910",
+    "descricao": "Entrada de bonificação, doação ou brinde"
+  },
+  {
+    "cfop": "2911",
+    "descricao": "Entrada de amostra grátis"
+  },
+  {
+    "cfop": "2912",
+    "descricao": "Entrada de mercadoria ou bem recebido para demonstração"
+  },
+  {
+    "cfop": "2913",
+    "descricao": "Retorno de mercadoria ou bem remetido para demonstração"
+  },
+  {
+    "cfop": "2914",
+    "descricao": "Retorno de mercadoria ou bem remetido para exposição ou feira"
+  },
+  {
+    "cfop": "2915",
+    "descricao": "Entrada de mercadoria ou bem recebido para conserto ou reparo"
+  },
+  {
+    "cfop": "2916",
+    "descricao": "Retorno de mercadoria ou bem remetido para conserto ou reparo"
+  },
+  {
+    "cfop": "2917",
+    "descricao": "Entrada de mercadoria recebida em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "2918",
+    "descricao": "Devolução de mercadoria remetida em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "2919",
+    "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, remetida anteriormente em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "2920",
+    "descricao": "Entrada de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "2921",
+    "descricao": "Retorno de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "2922",
+    "descricao": "Lançamento efetuado a título de simples faturamento decorrente de compra para recebimento futuro"
+  },
+  {
+    "cfop": "2923",
+    "descricao": "Entrada de mercadoria recebida do vendedor remetente, em venda à ordem"
+  },
+  {
+    "cfop": "2924",
+    "descricao": "Entrada para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "2925",
+    "descricao": "Retorno de mercadoria remetida para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "2931",
+    "descricao": "Lançamento efetuado pelo tomador do serviço de transporte, quando a responsabilidade de retenção do imposto for atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não-inscrito na Unidade da Federação onde se tenha iniciado o serviço"
+  },
+  {
+    "cfop": "2932",
+    "descricao": "Aquisição de serviço de transporte iniciado em Unidade da Federação diversa daquela onde esteja inscrito o prestador"
+  },
+  {
+    "cfop": "2933",
+    "descricao": "Aquisição de serviço tributado pelo Imposto Sobre Serviços de Qualquer Natureza"
+  },
+  {
+    "cfop": "2949",
+    "descricao": "Outra entrada de mercadoria ou prestação de serviço não especificado"
+  },
+  {
+    "cfop": "3000",
+    "descricao": "ENTRADAS OU AQUISIÇÕES DE SERVIÇOS DO EXTERIOR"
+  },
+  {
+    "cfop": "3100",
+    "descricao": "COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "3101",
+    "descricao": "Compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "3102",
+    "descricao": "Compra para comercialização"
+  },
+  {
+    "cfop": "3126",
+    "descricao": "Compra para utilização na prestação de serviço"
+  },
+  {
+    "cfop": "3128",
+    "descricao": "Compra para utilização na prestação de serviço tributado pelo ISS"
+  },
+  {
+    "cfop": "3127",
+    "descricao": "Compra para industrialização sob o regime de drawback"
+  },
+  {
+    "cfop": "3200",
+    "descricao": "DEVOLUÇÕES DE VENDAS DE PRODUÇÃO PRÓPRIA, DE TERCEIROS OU ANULAÇÕES DE VALORES"
+  },
+  {
+    "cfop": "3201",
+    "descricao": "Devolução de venda de produção do estabelecimento"
+  },
+  {
+    "cfop": "3202",
+    "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "3205",
+    "descricao": "Anulação de valor relativo à prestação de serviço de comunicação"
+  },
+  {
+    "cfop": "3206",
+    "descricao": "Anulação de valor relativo à prestação de serviço de transporte"
+  },
+  {
+    "cfop": "3207",
+    "descricao": "Anulação de valor relativo à venda de energia elétrica"
+  },
+  {
+    "cfop": "3211",
+    "descricao": "Devolução de venda de produção do estabelecimento sob o regime de drawback"
+  },
+  {
+    "cfop": "3250",
+    "descricao": "COMPRAS DE ENERGIA ELÉTRICA"
+  },
+  {
+    "cfop": "3251",
+    "descricao": "Compra de energia elétrica para distribuição ou comercialização"
+  },
+  {
+    "cfop": "3300",
+    "descricao": "AQUISIÇÕES DE SERVIÇOS DE COMUNICAÇÃO"
+  },
+  {
+    "cfop": "3301",
+    "descricao": "Aquisição de serviço de comunicação para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "3350",
+    "descricao": "AQUISIÇÕES DE SERVIÇOS DE TRANSPORTE"
+  },
+  {
+    "cfop": "3351",
+    "descricao": "Aquisição de serviço de transporte para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "3352",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento industrial"
+  },
+  {
+    "cfop": "3353",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento comercial"
+  },
+  {
+    "cfop": "3354",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "3355",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "3356",
+    "descricao": "Aquisição de serviço de transporte por estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "3500",
+    "descricao": "ENTRADAS DE MERCADORIAS REMETIDAS COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES"
+  },
+  {
+    "cfop": "3503",
+    "descricao": "Devolução de mercadoria exportada que tenha sido recebida com fim específico de exportação"
+  },
+  {
+    "cfop": "3550",
+    "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO"
+  },
+  {
+    "cfop": "3551",
+    "descricao": "Compra de bem para o ativo imobilizado"
+  },
+  {
+    "cfop": "3553",
+    "descricao": "Devolução de venda de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "3556",
+    "descricao": "Compra de material para uso ou consumo"
+  },
+  {
+    "cfop": "3650",
+    "descricao": "ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES"
+  },
+  {
+    "cfop": "3651",
+    "descricao": "Compra de combustível ou lubrificante para industrialização subseqüente"
+  },
+  {
+    "cfop": "3652",
+    "descricao": "Compra de combustível ou lubrificante para comercialização"
+  },
+  {
+    "cfop": "3653",
+    "descricao": "Compra de combustível ou lubrificante por consumidor ou usuário final"
+  },
+  {
+    "cfop": "3900",
+    "descricao": "OUTRAS ENTRADAS DE MERCADORIAS OU AQUISIÇÕES DE SERVIÇOS"
+  },
+  {
+    "cfop": "3930",
+    "descricao": "Lançamento efetuado a título de entrada de bem sob amparo de regime especial aduaneiro de admissão temporária"
+  },
+  {
+    "cfop": "3949",
+    "descricao": "Outra entrada de mercadoria ou prestação de serviço não especificado"
+  },
+  {
+    "cfop": "5000",
+    "descricao": "SAÍDAS OU PRESTAÇÕES DE SERVIÇOS PARA O ESTADO"
+  },
+  {
+    "cfop": "5100",
+    "descricao": "VENDAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS"
+  },
+  {
+    "cfop": "5101",
+    "descricao": "Venda de produção do estabelecimento"
+  },
+  {
+    "cfop": "5102",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "5103",
+    "descricao": "Venda de produção do estabelecimento efetuada fora do estabelecimento"
+  },
+  {
+    "cfop": "5104",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, efetuada fora do estabelecimento"
+  },
+  {
+    "cfop": "5105",
+    "descricao": "Venda de produção do estabelecimento que não deva por ele transitar"
+  },
+  {
+    "cfop": "5106",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar"
+  },
+  {
+    "cfop": "5109",
+    "descricao": "Venda de produção do estabelecimento destinada à Zona Franca de Manaus ou Áreas de Livre Comércio"
+  },
+  {
+    "cfop": "5110",
+    "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comercio, de que trata o Anexo do Convênio SINIEF s/n, de 15 de dezembro de 1970, que dispõe sobre o Sistema Nacional Integrado de Informações Econômico-Fiscais"
+  },
+  {
+    "cfop": "5111",
+    "descricao": "Venda de produção do estabelecimento remetida anteriormente em consignação industrial"
+  },
+  {
+    "cfop": "5112",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros remetida anteriormente em consignação industrial"
+  },
+  {
+    "cfop": "5113",
+    "descricao": "Venda de produção do estabelecimento remetida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "5114",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros remetida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "5115",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, recebida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "5116",
+    "descricao": "Venda de produção do estabelecimento originada de encomenda para entrega futura"
+  },
+  {
+    "cfop": "5117",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, originada de encomenda para entrega futura"
+  },
+  {
+    "cfop": "5118",
+    "descricao": "Venda de produção do estabelecimento entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem"
+  },
+  {
+    "cfop": "5119",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem"
+  },
+  {
+    "cfop": "5120",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário pelo vendedor remetente, em venda à ordem"
+  },
+  {
+    "cfop": "5122",
+    "descricao": "Venda de produção do estabelecimento remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "5123",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "5124",
+    "descricao": "Industrialização efetuada para outra empresa"
+  },
+  {
+    "cfop": "5125",
+    "descricao": "Industrialização efetuada para outra empresa quando a mercadoria recebida para utilização no processo de industrialização não transitar pelo estabelecimento adquirente da mercadoria"
+  },
+  {
+    "cfop": "5150",
+    "descricao": "TRANSFERÊNCIAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS"
+  },
+  {
+    "cfop": "5151",
+    "descricao": "Transferência de produção do estabelecimento"
+  },
+  {
+    "cfop": "5152",
+    "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "5153",
+    "descricao": "Transferência de energia elétrica"
+  },
+  {
+    "cfop": "5155",
+    "descricao": "Transferência de produção do estabelecimento, que não deva por ele transitar"
+  },
+  {
+    "cfop": "5156",
+    "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar"
+  },
+  {
+    "cfop": "5200",
+    "descricao": "DEVOLUÇÕES DE COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU ANULAÇÕES DE VALORES (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "5201",
+    "descricao": "Devolução de compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "5202",
+    "descricao": "Devolução de compra para comercialização"
+  },
+  {
+    "cfop": "5205",
+    "descricao": "Anulação de valor relativo a aquisição de serviço de comunicação"
+  },
+  {
+    "cfop": "5206",
+    "descricao": "Anulação de valor relativo a aquisição de serviço de transporte"
+  },
+  {
+    "cfop": "5207",
+    "descricao": "Anulação de valor relativo à compra de energia elétrica"
+  },
+  {
+    "cfop": "5208",
+    "descricao": "Devolução de mercadoria recebida em transferência para industrialização ou produção rural"
+  },
+  {
+    "cfop": "5209",
+    "descricao": "Devolução de mercadoria recebida em transferência para comercialização"
+  },
+  {
+    "cfop": "5210",
+    "descricao": "Devolução de compra para utilização na prestação de serviço"
+  },
+  {
+    "cfop": "5250",
+    "descricao": "VENDAS DE ENERGIA ELÉTRICA"
+  },
+  {
+    "cfop": "5251",
+    "descricao": "Venda de energia elétrica para distribuição ou comercialização"
+  },
+  {
+    "cfop": "5252",
+    "descricao": "Venda de energia elétrica para estabelecimento industrial"
+  },
+  {
+    "cfop": "5253",
+    "descricao": "Venda de energia elétrica para estabelecimento comercial"
+  },
+  {
+    "cfop": "5254",
+    "descricao": "Venda de energia elétrica para estabelecimento prestador de serviço de transporte"
+  },
+  {
+    "cfop": "5255",
+    "descricao": "Venda de energia elétrica para estabelecimento prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "5256",
+    "descricao": "Venda de energia elétrica para estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "5257",
+    "descricao": "Venda de energia elétrica para consumo por demanda contratada"
+  },
+  {
+    "cfop": "5258",
+    "descricao": "Venda de energia elétrica a não contribuinte"
+  },
+  {
+    "cfop": "5300",
+    "descricao": "PRESTAÇÕES DE SERVIÇOS DE COMUNICAÇÃO"
+  },
+  {
+    "cfop": "5301",
+    "descricao": "Prestação de serviço de comunicação para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "5302",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento industrial"
+  },
+  {
+    "cfop": "5303",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento comercial"
+  },
+  {
+    "cfop": "5304",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento de prestador de serviço de transporte"
+  },
+  {
+    "cfop": "5305",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "5306",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "5307",
+    "descricao": "Prestação de serviço de comunicação a não contribuinte"
+  },
+  {
+    "cfop": "5350",
+    "descricao": "PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE"
+  },
+  {
+    "cfop": "5351",
+    "descricao": "Prestação de serviço de transporte para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "5352",
+    "descricao": "Prestação de serviço de transporte a estabelecimento industrial"
+  },
+  {
+    "cfop": "5353",
+    "descricao": "Prestação de serviço de transporte a estabelecimento comercial"
+  },
+  {
+    "cfop": "5354",
+    "descricao": "Prestação de serviço de transporte a estabelecimento de prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "5355",
+    "descricao": "Prestação de serviço de transporte a estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "5356",
+    "descricao": "Prestação de serviço de transporte a estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "5357",
+    "descricao": "Prestação de serviço de transporte a não contribuinte"
+  },
+  {
+    "cfop": "5359",
+    "descricao": "Prestação de serviço de transporte a contribuinte ou a não-contribuinte, quando a mercadoria transportada esteja dispensada de emissão de Nota Fiscal"
+  },
+  {
+    "cfop": "5400",
+    "descricao": "SAÍDAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA"
+  },
+  {
+    "cfop": "5401",
+    "descricao": "Venda de produção do estabelecimento quando o produto esteja sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5402",
+    "descricao": "Venda de produção do estabelecimento de produto sujeito ao regime de substituição tributária, em operação entre contribuintes substitutos do mesmo produto"
+  },
+  {
+    "cfop": "5403",
+    "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, sujeita ao regime de substituição tributária, na condição de contribuinte-substituto"
+  },
+  {
+    "cfop": "5405",
+    "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, sujeita ao regime de substituição tributária, na condição de contribuinte-substituído"
+  },
+  {
+    "cfop": "5408",
+    "descricao": "Transferência de produção do estabelecimento quando o produto estiver sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5409",
+    "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5410",
+    "descricao": "Devolução de compra para industrialização de mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5411",
+    "descricao": "Devolução de compra para comercialização em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5412",
+    "descricao": "Devolução de bem do ativo imobilizado, em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5413",
+    "descricao": "Devolução de mercadoria destinada ao uso ou consumo, em operação com mercadoria sujeita ao regime de substituição tributária."
+  },
+  {
+    "cfop": "5414",
+    "descricao": "Remessa de produção do estabelecimento para venda fora do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5415",
+    "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros para venda fora do estabelecimento, em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "5450",
+    "descricao": "SISTEMAS DE INTEGRAÇÃO"
+  },
+  {
+    "cfop": "5451",
+    "descricao": "Remessa de animal e de insumo para estabelecimento produtor"
+  },
+  {
+    "cfop": "5500",
+    "descricao": "REMESSAS PARA FORMAÇÃO DE LOTE E COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES (NR Ajuste SINIEF 09/2005)"
+  },
+  {
+    "cfop": "5501",
+    "descricao": "Remessa de produção do estabelecimento, com fim específico de exportação"
+  },
+  {
+    "cfop": "5502",
+    "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros, com fim específico de exportação"
+  },
+  {
+    "cfop": "5503",
+    "descricao": "Devolução de mercadoria recebida com fim específico de exportação"
+  },
+  {
+    "cfop": "5504",
+    "descricao": "Remessa de mercadoria para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento."
+  },
+  {
+    "cfop": "5505",
+    "descricao": "Remessa de mercadoria, adquirida ou recebida de terceiros, para formação de lote de exportação."
+  },
+  {
+    "cfop": "5550",
+    "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO"
+  },
+  {
+    "cfop": "5551",
+    "descricao": "Venda de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "5552",
+    "descricao": "Transferência de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "5553",
+    "descricao": "Devolução de compra de bem para o ativo imobilizado"
+  },
+  {
+    "cfop": "5554",
+    "descricao": "Remessa de bem do ativo imobilizado para uso fora do estabelecimento"
+  },
+  {
+    "cfop": "5555",
+    "descricao": "Devolução de bem do ativo imobilizado de terceiro, recebido para uso no estabelecimento"
+  },
+  {
+    "cfop": "5556",
+    "descricao": "Devolução de compra de material de uso ou consumo"
+  },
+  {
+    "cfop": "5557",
+    "descricao": "Transferência de material de uso ou consumo"
+  },
+  {
+    "cfop": "5600",
+    "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS"
+  },
+  {
+    "cfop": "5601",
+    "descricao": "Transferência de crédito de ICMS acumulado"
+  },
+  {
+    "cfop": "5602",
+    "descricao": "Transferência de saldo credor do ICMS, para outro estabelecimento da mesma empresa, destinado à compensação de saldo devedor do ICMS"
+  },
+  {
+    "cfop": "5603",
+    "descricao": "Ressarcimento de ICMS retido por substituição tributária"
+  },
+  {
+    "cfop": "5605",
+    "descricao": "Transferência de saldo devedor do ICMS de outro estabelecimento da mesma empresa"
+  },
+  {
+    "cfop": "5606",
+    "descricao": "Utilização de saldo credor do ICMS para extinção por compensação de débitos fiscais"
+  },
+  {
+    "cfop": "5650",
+    "descricao": "SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES"
+  },
+  {
+    "cfop": "5651",
+    "descricao": "Venda de combustível ou lubrificante de produção do estabelecimento destinados à industrialização subseqüente"
+  },
+  {
+    "cfop": "5652",
+    "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados à comercialização"
+  },
+  {
+    "cfop": "5653",
+    "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados a consumidor ou usuário final"
+  },
+  {
+    "cfop": "5654",
+    "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à industrialização subseqüente"
+  },
+  {
+    "cfop": "5655",
+    "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à comercialização"
+  },
+  {
+    "cfop": "5656",
+    "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados a consumidor ou usuário final"
+  },
+  {
+    "cfop": "5657",
+    "descricao": "Remessa de combustível ou lubrificante, adquiridos ou recebidos de terceiros, para venda fora do estabelecimento"
+  },
+  {
+    "cfop": "5658",
+    "descricao": "Transferência de combustível ou lubrificante de produção do estabelecimento"
+  },
+  {
+    "cfop": "5659",
+    "descricao": "Transferência de combustível ou lubrificante adquiridos ou recebidos de terceiros"
+  },
+  {
+    "cfop": "5660",
+    "descricao": "Devolução de compra de combustível ou lubrificante adquiridos para industrialização subseqüente"
+  },
+  {
+    "cfop": "5661",
+    "descricao": "Devolução de compra de combustível ou lubrificante adquiridos para comercialização"
+  },
+  {
+    "cfop": "5662",
+    "descricao": "Devolução de compra de combustível ou lubrificante adquiridos por consumidor ou usuário final"
+  },
+  {
+    "cfop": "5663",
+    "descricao": "Remessa para armazenagem de combustível ou lubrificante"
+  },
+  {
+    "cfop": "5664",
+    "descricao": "Retorno de combustível ou lubrificante recebidos para armazenagem"
+  },
+  {
+    "cfop": "5665",
+    "descricao": "Retorno simbólico de combustível ou lubrificante recebidos para armazenagem"
+  },
+  {
+    "cfop": "5666",
+    "descricao": "Remessa, por conta e ordem de terceiros, de combustível ou lubrificante recebidos para armazenagem"
+  },
+  {
+    "cfop": "5900",
+    "descricao": "OUTRAS SAÍDAS DE MERCADORIAS OU PRESTAÇÕES DE SERVIÇOS"
+  },
+  {
+    "cfop": "5901",
+    "descricao": "Remessa para industrialização por encomenda"
+  },
+  {
+    "cfop": "5902",
+    "descricao": "Retorno de mercadoria utilizada na industrialização por encomenda"
+  },
+  {
+    "cfop": "5903",
+    "descricao": "Retorno de mercadoria recebida para industrialização e não aplicada no referido processo"
+  },
+  {
+    "cfop": "5904",
+    "descricao": "Remessa para venda fora do estabelecimento"
+  },
+  {
+    "cfop": "5905",
+    "descricao": "Remessa para depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "5906",
+    "descricao": "Retorno de mercadoria depositada em depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "5907",
+    "descricao": "Retorno simbólico de mercadoria depositada em depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "5908",
+    "descricao": "Remessa de bem por conta de contrato de comodato"
+  },
+  {
+    "cfop": "5909",
+    "descricao": "Retorno de bem recebido por conta de contrato de comodato"
+  },
+  {
+    "cfop": "5910",
+    "descricao": "Remessa em bonificação, doação ou brinde"
+  },
+  {
+    "cfop": "5911",
+    "descricao": "Remessa de amostra grátis"
+  },
+  {
+    "cfop": "5912",
+    "descricao": "Remessa de mercadoria ou bem para demonstração"
+  },
+  {
+    "cfop": "5913",
+    "descricao": "Retorno de mercadoria ou bem recebido para demonstração"
+  },
+  {
+    "cfop": "5914",
+    "descricao": "Remessa de mercadoria ou bem para exposição ou feira"
+  },
+  {
+    "cfop": "5915",
+    "descricao": "Remessa de mercadoria ou bem para conserto ou reparo"
+  },
+  {
+    "cfop": "5916",
+    "descricao": "Retorno de mercadoria ou bem recebido para conserto ou reparo"
+  },
+  {
+    "cfop": "5917",
+    "descricao": "Remessa de mercadoria em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "5918",
+    "descricao": "Devolução de mercadoria recebida em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "5919",
+    "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, recebida anteriormente em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "5920",
+    "descricao": "Remessa de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "5921",
+    "descricao": "Devolução de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "5922",
+    "descricao": "Lançamento efetuado a título de simples faturamento decorrente de venda para entrega futura"
+  },
+  {
+    "cfop": "5923",
+    "descricao": "Remessa de mercadoria por conta e ordem de terceiros, em venda à ordem"
+  },
+  {
+    "cfop": "5924",
+    "descricao": "Remessa para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "5925",
+    "descricao": "Retorno de mercadoria recebida para industrialização por conta e ordem do adquirente da mercadoria, quando aquela não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "5926",
+    "descricao": "Lançamento efetuado a título de reclassificação de mercadoria decorrente de formação de kit ou de sua desagregação"
+  },
+  {
+    "cfop": "5927",
+    "descricao": "Lançamento efetuado a título de baixa de estoque decorrente de perda, roubo ou deterioração"
+  },
+  {
+    "cfop": "5928",
+    "descricao": "Lançamento efetuado a título de baixa de estoque decorrente do encerramento da atividade da empresa"
+  },
+  {
+    "cfop": "5929",
+    "descricao": "Lançamento efetuado em decorrência de emissão de documento fiscal relativo a operação ou prestação também registrada em equipamento Emissor de Cupom Fiscal - ECF"
+  },
+  {
+    "cfop": "5931",
+    "descricao": "Lançamento efetuado em decorrência da responsabilidade de retenção do imposto por substituição tributária, atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não inscrito na unidade da Federação onde iniciado o serviço"
+  },
+  {
+    "cfop": "5932",
+    "descricao": "Prestação de serviço de transporte iniciada em unidade da Federação diversa daquela onde inscrito o prestador"
+  },
+  {
+    "cfop": "5933",
+    "descricao": "Prestação de serviço tributado pelo Imposto Sobre Serviços de Qualquer Natureza"
+  },
+  {
+    "cfop": "5949",
+    "descricao": "Outra saída de mercadoria ou prestação de serviço não especificado"
+  },
+  {
+    "cfop": "6000",
+    "descricao": "SAÍDAS OU PRESTAÇÕES DE SERVIÇOS PARA OUTROS ESTADOS"
+  },
+  {
+    "cfop": "6101",
+    "descricao": "Venda de produção do estabelecimento"
+  },
+  {
+    "cfop": "6102",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "6103",
+    "descricao": "Venda de produção do estabelecimento, efetuada fora do estabelecimento"
+  },
+  {
+    "cfop": "6104",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, efetuada fora do estabelecimento"
+  },
+  {
+    "cfop": "6105",
+    "descricao": "Venda de produção do estabelecimento que não deva por ele transitar"
+  },
+  {
+    "cfop": "6106",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar"
+  },
+  {
+    "cfop": "6107",
+    "descricao": "Venda de produção do estabelecimento, destinada a não contribuinte"
+  },
+  {
+    "cfop": "6108",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, destinada a não contribuinte"
+  },
+  {
+    "cfop": "6109",
+    "descricao": "Venda de produção do estabelecimento destinada à Zona Franca de Manaus ou Áreas de Livre Comércio"
+  },
+  {
+    "cfop": "6110",
+    "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio, de que trata o Anexo do Convênio SINIEF s/n, de 15 de dezembro de 1970, que dispõe sobre o Sistema Nacional Integrado de Informações Econômico-Fiscais (Decreto nº 26.955/2004) RETROAGINDO SEUS EFEITOS A 24.06.2004"
+  },
+  {
+    "cfop": "6111",
+    "descricao": "Venda de produção do estabelecimento remetida anteriormente em consignação industrial"
+  },
+  {
+    "cfop": "6112",
+    "descricao": "Venda de mercadoria adquirida ou recebida de Terceiros remetida anteriormente em consignação industrial"
+  },
+  {
+    "cfop": "6113",
+    "descricao": "Venda de produção do estabelecimento remetida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "6114",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros remetida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "6115",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, recebida anteriormente em consignação mercantil"
+  },
+  {
+    "cfop": "6116",
+    "descricao": "Venda de produção do estabelecimento originada de encomenda para entrega futura"
+  },
+  {
+    "cfop": "6117",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, originada de encomenda para entrega futura"
+  },
+  {
+    "cfop": "6118",
+    "descricao": "Venda de produção do estabelecimento entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem"
+  },
+  {
+    "cfop": "6119",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem"
+  },
+  {
+    "cfop": "6120",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário pelo vendedor remetente, em venda à ordem"
+  },
+  {
+    "cfop": "6122",
+    "descricao": "Venda de produção do estabelecimento remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "6123",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "6124",
+    "descricao": "Industrialização efetuada para outra empresa"
+  },
+  {
+    "cfop": "6125",
+    "descricao": "Industrialização efetuada para outra empresa quando a mercadoria recebida para utilização no processo de industrialização não transitar pelo estabelecimento adquirente da mercadoria"
+  },
+  {
+    "cfop": "6150",
+    "descricao": "TRANSFERÊNCIAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS"
+  },
+  {
+    "cfop": "6151",
+    "descricao": "Transferência de produção do estabelecimento"
+  },
+  {
+    "cfop": "6152",
+    "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "6153",
+    "descricao": "Transferência de energia elétrica"
+  },
+  {
+    "cfop": "6155",
+    "descricao": "Transferência de produção do estabelecimento, que não deva por ele transitar"
+  },
+  {
+    "cfop": "6156",
+    "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar"
+  },
+  {
+    "cfop": "6200",
+    "descricao": "DEVOLUÇÕES DE COMPRAS PARA INDUSTRIALIZAÇÃO, COMERCIALIZAÇÃO OU ANULAÇÕES DE VALORES"
+  },
+  {
+    "cfop": "6201",
+    "descricao": "Devolução de compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "6202",
+    "descricao": "Devolução de compra para comercialização"
+  },
+  {
+    "cfop": "6205",
+    "descricao": "Anulação de valor relativo a aquisição de serviço de comunicação"
+  },
+  {
+    "cfop": "6206",
+    "descricao": "Anulação de valor relativo a aquisição de serviço de transporte"
+  },
+  {
+    "cfop": "6207",
+    "descricao": "Anulação de valor relativo à compra de energia elétrica"
+  },
+  {
+    "cfop": "6208",
+    "descricao": "Devolução de mercadoria recebida em transferência para industrialização ou produção rural"
+  },
+  {
+    "cfop": "6209",
+    "descricao": "Devolução de mercadoria recebida em transferência para comercialização"
+  },
+  {
+    "cfop": "6210",
+    "descricao": "Devolução de compra para utilização na prestação de serviço"
+  },
+  {
+    "cfop": "6250",
+    "descricao": "VENDAS DE ENERGIA ELÉTRICA"
+  },
+  {
+    "cfop": "6251",
+    "descricao": "Venda de energia elétrica para distribuição ou comercialização"
+  },
+  {
+    "cfop": "6252",
+    "descricao": "Venda de energia elétrica para estabelecimento industrial"
+  },
+  {
+    "cfop": "6253",
+    "descricao": "Venda de energia elétrica para estabelecimento comercial"
+  },
+  {
+    "cfop": "6254",
+    "descricao": "Venda de energia elétrica para estabelecimento prestador de serviço de transporte"
+  },
+  {
+    "cfop": "6255",
+    "descricao": "Venda de energia elétrica para estabelecimento prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "6256",
+    "descricao": "Venda de energia elétrica para estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "6257",
+    "descricao": "Venda de energia elétrica para consumo por demanda contratada"
+  },
+  {
+    "cfop": "6258",
+    "descricao": "Venda de energia elétrica a não contribuinte"
+  },
+  {
+    "cfop": "6300",
+    "descricao": "PRESTAÇÕES DE SERVIÇOS DE COMUNICAÇÃO"
+  },
+  {
+    "cfop": "6301",
+    "descricao": "Prestação de serviço de comunicação para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "6302",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento industrial"
+  },
+  {
+    "cfop": "6303",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento comercial"
+  },
+  {
+    "cfop": "6304",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento de prestador de serviço de transporte"
+  },
+  {
+    "cfop": "6305",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "6306",
+    "descricao": "Prestação de serviço de comunicação a estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "6307",
+    "descricao": "Prestação de serviço de comunicação a não contribuinte"
+  },
+  {
+    "cfop": "6350",
+    "descricao": "PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE"
+  },
+  {
+    "cfop": "6351",
+    "descricao": "Prestação de serviço de transporte para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "6352",
+    "descricao": "Prestação de serviço de transporte a estabelecimento industrial"
+  },
+  {
+    "cfop": "6353",
+    "descricao": "Prestação de serviço de transporte a estabelecimento comercial"
+  },
+  {
+    "cfop": "6354",
+    "descricao": "Prestação de serviço de transporte a estabelecimento de prestador de serviço de comunicação"
+  },
+  {
+    "cfop": "6355",
+    "descricao": "Prestação de serviço de transporte a estabelecimento de geradora ou de distribuidora de energia elétrica"
+  },
+  {
+    "cfop": "6356",
+    "descricao": "Prestação de serviço de transporte a estabelecimento de produtor rural"
+  },
+  {
+    "cfop": "6357",
+    "descricao": "Prestação de serviço de transporte a não contribuinte"
+  },
+  {
+    "cfop": "6359",
+    "descricao": "Prestação de serviço de transporte a contribuinte ou a não-contribuinte, quando a mercadoria transportada esteja dispensada de emissão de Nota Fiscal"
+  },
+  {
+    "cfop": "6400",
+    "descricao": "SAÍDAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA"
+  },
+  {
+    "cfop": "6401",
+    "descricao": "Venda de produção do estabelecimento quando o produto estiver sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6402",
+    "descricao": "Venda de produção do estabelecimento de produto sujeito ao regime de substituição tributária, em operação entre contribuintes substitutos do mesmo produto"
+  },
+  {
+    "cfop": "6403",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros em operação com mercadoria sujeita ao regime de substituição tributária, na condição de contribuinte substituto"
+  },
+  {
+    "cfop": "6404",
+    "descricao": "Venda de mercadoria sujeita ao regime de substituição tributária, cujo imposto já tenha sido retido anteriormente"
+  },
+  {
+    "cfop": "6408",
+    "descricao": "Transferência de produção do estabelecimento quando o produto estiver sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6409",
+    "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros, sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6410",
+    "descricao": "Devolução de compra para industrialização ou ptrodução rural quando a mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6411",
+    "descricao": "Devolução de compra para comercialização em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6412",
+    "descricao": "Devolução de bem do ativo imobilizado, em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6413",
+    "descricao": "Devolução de mercadoria destinada ao uso ou consumo, em operação com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6414",
+    "descricao": "Remessa de produção do estabelecimento para venda fora do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6415",
+    "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros para venda fora do estabelecimento, quando a referida ração com mercadoria sujeita ao regime de substituição tributária"
+  },
+  {
+    "cfop": "6500",
+    "descricao": "REMESSAS COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES"
+  },
+  {
+    "cfop": "6501",
+    "descricao": "Remessa de produção do estabelecimento, com fim específico de exportação"
+  },
+  {
+    "cfop": "6502",
+    "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros, com fim específico de exportação"
+  },
+  {
+    "cfop": "6503",
+    "descricao": "Devolução de mercadoria recebida com fim específico de exportação"
+  },
+  {
+    "cfop": "6504",
+    "descricao": "Remessa de mercadoria para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento."
+  },
+  {
+    "cfop": "6505",
+    "descricao": "Remessa de mercadoria, adquirida ou recebida de terceiros, para formação de lote de exportação."
+  },
+  {
+    "cfop": "6550",
+    "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO"
+  },
+  {
+    "cfop": "6551",
+    "descricao": "Venda de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "6552",
+    "descricao": "Transferência de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "6553",
+    "descricao": "Devolução de compra de bem para o ativo imobilizado"
+  },
+  {
+    "cfop": "6554",
+    "descricao": "Remessa de bem do ativo imobilizado para uso fora do estabelecimento"
+  },
+  {
+    "cfop": "6555",
+    "descricao": "Devolução de bem do ativo imobilizado de terceiro, recebido para uso no estabelecimento"
+  },
+  {
+    "cfop": "6556",
+    "descricao": "Devolução de compra de material de uso ou consumo"
+  },
+  {
+    "cfop": "6557",
+    "descricao": "Transferência de material de uso ou consumo"
+  },
+  {
+    "cfop": "6600",
+    "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS"
+  },
+  {
+    "cfop": "6603",
+    "descricao": "Ressarcimento de ICMS retido por substituição tributária"
+  },
+  {
+    "cfop": "6650",
+    "descricao": "SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTE"
+  },
+  {
+    "cfop": "6651",
+    "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados à industrialização subseqüente"
+  },
+  {
+    "cfop": "6652",
+    "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados à comercialização"
+  },
+  {
+    "cfop": "6653",
+    "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados a consumidor ou usuário final"
+  },
+  {
+    "cfop": "6654",
+    "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à industrialização subseqüente"
+  },
+  {
+    "cfop": "6655",
+    "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à comercialização"
+  },
+  {
+    "cfop": "6656",
+    "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados a consumidor ou usuário final"
+  },
+  {
+    "cfop": "6657",
+    "descricao": "Remessa de combustível ou lubrificante, adquiridos ou recebidos de terceiros, para venda fora do estabelecimento"
+  },
+  {
+    "cfop": "6658",
+    "descricao": "Transferência de combustível ou lubrificante de produção do estabelecimento"
+  },
+  {
+    "cfop": "6659",
+    "descricao": "Transferência de combustível ou lubrificante adquiridos ou recebidos de terceiros"
+  },
+  {
+    "cfop": "6660",
+    "descricao": "Devolução de compra de combustível ou lubrificante adquiridos para industrialização subseqüente"
+  },
+  {
+    "cfop": "6661",
+    "descricao": "Devolução de compra de combustível ou lubrificante adquiridos para comercialização"
+  },
+  {
+    "cfop": "6662",
+    "descricao": "Devolução de compra de combustível ou lubrificante adquiridos por consumidor ou usuário final"
+  },
+  {
+    "cfop": "6663",
+    "descricao": "Remessa para armazenagem de combustível ou lubrificante"
+  },
+  {
+    "cfop": "6664",
+    "descricao": "Retorno de combustível ou lubrificante recebidos para armazenagem"
+  },
+  {
+    "cfop": "6665",
+    "descricao": "Retorno simbólico de combustível ou lubrificante recebidos para armazenagem"
+  },
+  {
+    "cfop": "6666",
+    "descricao": "Remessa, por conta e ordem de terceiros, de combustível ou lubrificante recebidos para armazenagem"
+  },
+  {
+    "cfop": "6900",
+    "descricao": "OUTRAS SAÍDAS DE MERCADORIAS OU PRESTAÇÕES DE SERVIÇOS"
+  },
+  {
+    "cfop": "6901",
+    "descricao": "Remessa para industrialização por encomenda"
+  },
+  {
+    "cfop": "6902",
+    "descricao": "Retorno de mercadoria utilizada na industrialização por encomenda"
+  },
+  {
+    "cfop": "6903",
+    "descricao": "Retorno de mercadoria recebida para industrialização e não aplicada no referido processo"
+  },
+  {
+    "cfop": "6904",
+    "descricao": "Remessa para venda fora do estabelecimento"
+  },
+  {
+    "cfop": "6905",
+    "descricao": "Remessa para depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "6906",
+    "descricao": "Retorno de mercadoria depositada em depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "6907",
+    "descricao": "Retorno simbólico de mercadoria depositada em depósito fechado ou armazém geral"
+  },
+  {
+    "cfop": "6908",
+    "descricao": "Remessa de bem por conta de contrato de comodato"
+  },
+  {
+    "cfop": "6909",
+    "descricao": "Retorno de bem recebido por conta de contrato de comodato"
+  },
+  {
+    "cfop": "6910",
+    "descricao": "Remessa em bonificação, doação ou brinde"
+  },
+  {
+    "cfop": "6911",
+    "descricao": "Remessa de amostra grátis"
+  },
+  {
+    "cfop": "6912",
+    "descricao": "Remessa de mercadoria ou bem para demonstração"
+  },
+  {
+    "cfop": "6913",
+    "descricao": "Retorno de mercadoria ou bem recebido para demonstração"
+  },
+  {
+    "cfop": "6914",
+    "descricao": "Remessa de mercadoria ou bem para exposição ou feira"
+  },
+  {
+    "cfop": "6915",
+    "descricao": "Remessa de mercadoria ou bem para conserto ou reparo"
+  },
+  {
+    "cfop": "6916",
+    "descricao": "Retorno de mercadoria ou bem recebido para conserto ou reparo"
+  },
+  {
+    "cfop": "6917",
+    "descricao": "Remessa de mercadoria em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "6918",
+    "descricao": "Devolução de mercadoria recebida em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "6919",
+    "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, recebida anteriormente em consignação mercantil ou industrial"
+  },
+  {
+    "cfop": "6920",
+    "descricao": "Remessa de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "6921",
+    "descricao": "Devolução de vasilhame ou sacaria"
+  },
+  {
+    "cfop": "6922",
+    "descricao": "Lançamento efetuado a título de simples faturamento decorrente de venda para entrega futura"
+  },
+  {
+    "cfop": "6923",
+    "descricao": "Remessa de mercadoria por conta e ordem de terceiros, em venda à ordem"
+  },
+  {
+    "cfop": "6924",
+    "descricao": "Remessa para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "6925",
+    "descricao": "Retorno de mercadoria recebida para industrialização por conta e ordem do adquirente da mercadoria, quando aquela não transitar pelo estabelecimento do adquirente"
+  },
+  {
+    "cfop": "6929",
+    "descricao": "Lançamento efetuado em decorrência de emissão de documento fiscal relativo a operação ou prestação também registrada em equipamento Emissor de Cupom Fiscal - ECF"
+  },
+  {
+    "cfop": "6931",
+    "descricao": "Lançamento efetuado em decorrência da responsabilidade de retenção do imposto por substituição tributária, atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não inscrito na unidade da Federação onde iniciado o serviço"
+  },
+  {
+    "cfop": "6932",
+    "descricao": "Prestação de serviço de transporte iniciada em unidade da Federação diversa daquela onde inscrito o prestador"
+  },
+  {
+    "cfop": "6933",
+    "descricao": "Prestação de serviço tributado pelo Imposto Sobre Serviços de Qualquer Natureza"
+  },
+  {
+    "cfop": "6949",
+    "descricao": "Outra saída de mercadoria ou prestação de serviço não especificado"
+  },
+  {
+    "cfop": "7000",
+    "descricao": "SAÍDAS OU PRESTAÇÕES DE SERVIÇOS PARA O EXTERIOR"
+  },
+  {
+    "cfop": "7100",
+    "descricao": "VENDAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS"
+  },
+  {
+    "cfop": "7101",
+    "descricao": "Venda de produção do estabelecimento"
+  },
+  {
+    "cfop": "7102",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros"
+  },
+  {
+    "cfop": "7105",
+    "descricao": "Venda de produção do estabelecimento, que não deva por ele transitar"
+  },
+  {
+    "cfop": "7106",
+    "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar"
+  },
+  {
+    "cfop": "7127",
+    "descricao": "Venda de produção do estabelecimento sob o regime de drawback"
+  },
+  {
+    "cfop": "7200",
+    "descricao": "DEVOLUÇÕES DE COMPRAS PARA INDUSTRIALIZAÇÃO, COMERCIALIZAÇÃO OU ANULAÇÕES DE VALORES"
+  },
+  {
+    "cfop": "7201",
+    "descricao": "Devolução de compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)"
+  },
+  {
+    "cfop": "7202",
+    "descricao": "Devolução de compra para comercialização"
+  },
+  {
+    "cfop": "7205",
+    "descricao": "Anulação de valor relativo à aquisição de serviço de comunicação"
+  },
+  {
+    "cfop": "7206",
+    "descricao": "Anulação de valor relativo a aquisição de serviço de transporte"
+  },
+  {
+    "cfop": "7207",
+    "descricao": "Anulação de valor relativo à compra de energia elétrica"
+  },
+  {
+    "cfop": "7210",
+    "descricao": "Devolução de compra para utilização na prestação de serviço"
+  },
+  {
+    "cfop": "7211",
+    "descricao": "Devolução de compras para industrialização sob o regime de drawback"
+  },
+  {
+    "cfop": "7250",
+    "descricao": "VENDAS DE ENERGIA ELÉTRICA"
+  },
+  {
+    "cfop": "7251",
+    "descricao": "Venda de energia elétrica para o exterior"
+  },
+  {
+    "cfop": "7301",
+    "descricao": "Prestação de serviço de comunicação para execução de serviço da mesma natureza"
+  },
+  {
+    "cfop": "7300",
+    "descricao": "PRESTAÇÕES DE SERVIÇOS DE COMUNICAÇÃO"
+  },
+  {
+    "cfop": "7358",
+    "descricao": "Prestação de serviço de transporte"
+  },
+  {
+    "cfop": "7500",
+    "descricao": "EXPORTAÇÃO DE MERCADORIAS RECEBIDAS COM FIM ESPECÍFICO DE EXPORTAÇÃO"
+  },
+  {
+    "cfop": "7501",
+    "descricao": "Exportação de mercadorias recebidas com fim específico de exportação"
+  },
+  {
+    "cfop": "7550",
+    "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO"
+  },
+  {
+    "cfop": "7551",
+    "descricao": "Venda de bem do ativo imobilizado"
+  },
+  {
+    "cfop": "7553",
+    "descricao": "Devolução de compra de bem para o ativo imobilizado"
+  },
+  {
+    "cfop": "7556",
+    "descricao": "Devolução de compra de material de uso ou consumo"
+  },
+  {
+    "cfop": "7650",
+    "descricao": "SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES"
+  },
+  {
+    "cfop": "7651",
+    "descricao": "Venda de combustível ou lubrificante de produção do estabelecimento"
+  },
+  {
+    "cfop": "7654",
+    "descricao": "Venda de combustível ou lubrificante adquiridos ou recebidos de terceiros"
+  },
+  {
+    "cfop": "7900",
+    "descricao": "OUTRAS SAIDAS DE MERCADORIA OU PRESTAÇÕES DE SERVIÇOS"
+  },
+  {
+    "cfop": "7930",
+    "descricao": "Lançamento efetuado a título de devolução de bem cuja entrada tenha ocorrido sob amparo de regime especial aduaneiro de admissão temporária"
+  },
+  {
+    "cfop": "7949",
+    "descricao": "Outra saída de mercadoria ou prestação de serviço não especificado"
+  }
+]
