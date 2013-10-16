@@ -1,3 +1,7 @@
+module.exports.regioes = require("./regioes.json"); 
+module.exports.municipiosDicionario = require("./municipios-dicionario.json");
+module.exports.municipiosArray = require("./municipios-array.json");
+
 module.exports.obterEstado = function(id){
 	if(typeof id === "number" || !isNaN(parseInt(id, 10))){
 		id = parseInt(id, 10);
@@ -144,3 +148,7 @@ function mod11(valor, multiplicadores){
 		return (multiplicadores[i++] * parseInt(atual)) + anterior; 
 	}, 0) % 11;
 }
+
+
+
+
