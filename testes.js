@@ -71,7 +71,16 @@ console.log(br.cfopsDicionario["5101"]);
 
 
 
-
+console.log(br.gerarChaveDeAcesso({
+	uf: "DF",
+	dataDeEmissao: new Date(),
+	cnpj: "00132781000178",
+	modelo: "55",
+	serie: 1,
+	numero: 19820,
+	tipoDeEmissao: 1,
+	numeroAleatorio: 123
+}));
 
 
 

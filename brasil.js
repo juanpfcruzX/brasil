@@ -6,7 +6,8 @@ module.exports.municipiosArray = require("./municipios-array.json");
 module.exports.cfopsDicionario = require("./cfops-dicionario.json");
 module.exports.cfopsArray = require("./cfops-array.json");
 
-module.exports.obterEstado = function(id){
+module.exports.obterEstado = obterEstado;
+function obterEstado(id){
 	if(typeof id === "number" || !isNaN(parseInt(id, 10))){
 		id = parseInt(id, 10);
 		for(var estado in tabelaIbgeDeEstados){
@@ -73,8 +74,73 @@ function formatarChaveDeAcesso(chave){
 	}
 }
 
-module.exports.chaveDeAcesso = chaveDeAcesso;
-function chaveDeAcesso(chaveDeAcesso){
+module.exports.gerarChaveDeAcesso = function(dados){
+	var chaveDeAcesso =
+		obterEstado(dados.uf).codigo.toString() + 
+		obterDataAAMM(dados.dataDeEmissao) +
+		dados.cnpj +
+		dados.modelo +
+		pad(dados.serie.toString(), 3, "0") + 
+		pad(dados.numero.toString(), 9, "0") + 
+		dados.tipoDeEmissao + 
+		pad(dados.numeroAleatorio.toString(), 8, "0");
+	
+	chaveDeAcesso = chaveDeAcesso + calcularDv(chaveDeAcesso);
+	
+	return validarChaveDeAcesso(chaveDeAcesso) ? chaveDeAcesso : null;
+	
+	function obterDataAAMM(data){
+		return data.getYear().toString().substr(1, 2) + ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"][data.getMonth()];
+	}
+	
+	function calcularDv(chaveDeAcesso){
+		if(chaveDeAcesso.length !== 43) return false;
+		
+		var resto = mod11(chaveDeAcesso, [2, 3, 4, 5, 6, 7, 8, 9]);
+		var digito = resto < 2 ? 0 : 11 - resto;
+		
+		return digito;
+	};	
+	
+	function pad(str, length, padStr, type) {
+		str = str == null ? '' : String(str);
+		length = ~~length;
+
+		var padlen  = 0;
+
+		if (!padStr)
+			padStr = ' ';
+		else if (padStr.length > 1)
+			padStr = padStr.charAt(0);
+
+		switch(type) {
+			case 'right':
+				padlen = length - str.length;
+				return str + strRepeat(padStr, padlen);
+			case 'both':
+				padlen = length - str.length;
+				return strRepeat(padStr, Math.ceil(padlen/2)) + str
+	                  + strRepeat(padStr, Math.floor(padlen/2));
+			default: // 'left'
+				padlen = length - str.length;
+				return strRepeat(padStr, padlen) + str;
+		}
+		
+		function strRepeat(str, qty){
+			if (qty < 1) return '';
+			var result = '';
+			while (qty > 0) {
+				if (qty & 1) result += str;
+					qty >>= 1, str += str;
+				}
+			
+			return result;
+		};
+	}
+};
+
+module.exports.chaveDeAcesso = validarChaveDeAcesso;
+function validarChaveDeAcesso(chaveDeAcesso){
 	if(typeof chaveDeAcesso !== "string") return false;
 	
 	chaveDeAcesso = removerMascara(chaveDeAcesso);
