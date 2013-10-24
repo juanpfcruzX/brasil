@@ -4,7 +4,7 @@
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
-    "test": "node testes.js"
+    "test": "clear; nodeunit ./tests/*Test.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
   ],
   "author": "Renato Gama",
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "gammautils": "0.0.17"
+  }
 }
