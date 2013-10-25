@@ -1,5 +1,5 @@
 var
-	nfe = require("./nfeUtils"),
+	nfe = require("./nfeUtils.js"),
 	mUtils = require("gammautils").math;
 
 module.exports.eRegistroNacional = eRegistroNacional;
@@ -50,9 +50,6 @@ function eCpf(cpf){
 	
 	return cpf === base + primeiroDigito + segundoDigito;
 };
-
-//identificar porque neste ponto nfe.validarChaveDeAcesso chega undefined
-//module.exports.eChaveDeAcessoDeNfe = nfe.validarChaveDeAcesso;
 
 var regexDePlacaValida = /^[a-zA-Z]{3}-?[0-9]{4}$/;
 module.exports.ePlaca = function(placa){

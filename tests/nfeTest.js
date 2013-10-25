@@ -1,4 +1,4 @@
-var nfe = require("../nfeUtils");
+var nfe = require("../brasil").nfe;
 
 module.exports = {
 	gerarChaveDeAcesso: {

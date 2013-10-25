@@ -55,3 +55,12 @@ function placa(texto){
 	
 	return texto.substr(0, 3).toUpperCase() + "-" + texto.substr(3, 4); 
 }
+
+module.exports.cep = cep;
+function cep(texto){
+	if(!validacoes.eCep(texto)) return texto;
+	
+	texto = texto.trim().replace(/-/g, "").replace(/\./g, "");
+	
+	return texto.substr(0, 2) + "." + texto.substr(2, 3) + "-" + texto.substr(5, 3); 
+}

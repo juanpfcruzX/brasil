@@ -1,4 +1,4 @@
-var formatacoes = require("../formatacoesUtils");
+var formatacoes = require("../brasil").formatacoes;
 
 module.exports = {
 	cnpj: {
@@ -75,8 +75,25 @@ module.exports = {
 		},
 		
 		"Verifica que retorna a mesma coisa quando texto não é placa": function(test){
-			test.equal(formatacoes.telefone("abcd-2366"), "abcd-2366");
-			test.equal(formatacoes.telefone("foo"), "foo");
+			test.equal(formatacoes.placa("abcd-2366"), "abcd-2366");
+			test.equal(formatacoes.placa("foo"), "foo");
+			
+			test.done();
+		}
+	},
+	
+	cep: {
+		"Verifica que máscara é aplicada corretamente": function(test){
+			test.equal(formatacoes.cep("71530070"), "71.530-070");
+			test.equal(formatacoes.cep("71.530070"), "71.530-070");
+			test.equal(formatacoes.cep("71530-070"), "71.530-070");
+			
+			test.done();
+		},
+		
+		"Verifica que retorna a mesma coisa quando texto não é cep": function(test){
+			test.equal(formatacoes.cep("715300700"), "715300700");
+			test.equal(formatacoes.cep("foo"), "foo");
 			
 			test.done();
 		}

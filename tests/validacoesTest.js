@@ -1,14 +1,6 @@
-var nfe = require("../nfeUtils");
-var validacoes = require("../validacoesUtils");
+var validacoes = require("../brasil").validacoes;
 
 module.exports = {
-//	eChaveDeAcessoDeNfe: {
-//		"Verifica que função de validação de chave de nfe é a apenas um atalho para a mesma exposta em nfeUtils": function(test){
-//			test.equal(validacoes.eChaveDeAcessoDeNfe.toString() === nfe.validarChaveDeAcesso.toString());
-//			test.done();
-//		}
-//	},	
-	
 	ePlaca: {
 		"Valida-se placas válidas com ou sem máscara": function(test){
 			test.ok(validacoes.ePlaca("abc1234"));

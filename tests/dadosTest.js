@@ -1,4 +1,4 @@
-var dados = require("../dadosUtils");
+var dados = require("../brasil").dados;
 
 var existsSync = (process.version.indexOf("v0.6") !== -1 ? require("path").existsSync : existsSync = require("fs").existsSync);
 
