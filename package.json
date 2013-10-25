@@ -1,6 +1,6 @@
 {
   "name": "brasil",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
