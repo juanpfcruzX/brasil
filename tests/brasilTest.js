@@ -2,10 +2,7 @@ var
 	fs = require("fs"),
 	utils = require("../brasil");
 
-var existsSync = 
-	process.version.indexOf("v0.6") !== 1 ? 
-			require("path").existsSync :
-			require("fs").existsSync;
+var existsSync = (process.version.indexOf("v0.6") !== -1 ? require("path").existsSync : existsSync = fs.existsSync);
 
 module.exports = {
 	"Verifica que todos os submodulos estão disponíveis": function(test){

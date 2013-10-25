@@ -1,10 +1,10 @@
 {
   "name": "brasil",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
-    "test": "clear; nodeunit ./tests/*Test.js"
+    "test": "nodeunit ./tests/*Test.js"
   },
   "repository": {
     "type": "git",

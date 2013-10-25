@@ -86,6 +86,7 @@ module.exports = {
 			test.equal(validacoes.eRegistroNacional("16511762645"), "cpf");
 			test.equal(validacoes.eRegistroNacional("434.803.222-04"), "cpf");
 			test.equal(validacoes.eRegistroNacional("82647731330"), "cpf");
+			test.equal(validacoes.eRegistroNacional(" 711.477.475-39 "), "cpf");
 			test.equal(validacoes.eRegistroNacional("711.477.475-39"), "cpf");
 			
 			test.done();
@@ -94,6 +95,7 @@ module.exports = {
 		"Verifica que é possível validar cnpjs": function(test){
 			test.equal(validacoes.eRegistroNacional("16.555.517/0001-87"), "cnpj");
 			test.equal(validacoes.eRegistroNacional("14638632000190"), "cnpj");
+			test.equal(validacoes.eRegistroNacional(" 88.142.322/0001-16 "), "cnpj");
 			test.equal(validacoes.eRegistroNacional("88.142.322/0001-16"), "cnpj");
 			test.equal(validacoes.eRegistroNacional("28716876000158"), "cnpj");
 			test.equal(validacoes.eRegistroNacional("13.381.462/0001-48"), "cnpj");
@@ -116,6 +118,7 @@ module.exports = {
 		"Verifica que é possível validar cnpjs": function(test){
 			test.ok(validacoes.eCnpj("16.555.517/0001-87"));
 			test.ok(validacoes.eCnpj("14638632000190"));
+			test.ok(validacoes.eCnpj(" 88.142.322/0001-16  "));
 			test.ok(validacoes.eCnpj("88.142.322/0001-16"));
 			test.ok(validacoes.eCnpj("28716876000158"));
 			test.ok(validacoes.eCnpj("13.381.462/0001-48"));
@@ -136,6 +139,7 @@ module.exports = {
 	
 	eCpf: {
 		"Verifica que é possível validar cpfs": function(test){
+			test.ok(validacoes.eCpf("  227.175.903-07   "));
 			test.ok(validacoes.eCpf("227.175.903-07"));
 			test.ok(validacoes.eCpf("16511762645"));
 			test.ok(validacoes.eCpf("434.803.222-04"));

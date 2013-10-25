@@ -1,6 +1,53 @@
 var dados = require("../dadosUtils");
 
+var existsSync = (process.version.indexOf("v0.6") !== -1 ? require("path").existsSync : existsSync = require("fs").existsSync);
+
 module.exports = {
+	regioes: {
+		"Verifica que uma string com o caminho é fornecido ao invés de um objeto": function(test){
+			test.equal(typeof dados.regioes, "string");
+			test.ok(existsSync(dados.regioes));
+			
+			test.done();
+		}
+	},
+	
+	municipiosDicionario: {
+		"Verifica que uma string com o caminho é fornecido ao invés de um objeto": function(test){
+			test.equal(typeof dados.municipiosDicionario, "string");
+			test.ok(existsSync(dados.municipiosDicionario));
+			
+			test.done();
+		}
+	},
+	
+	municipiosArray: {
+		"Verifica que uma string com o caminho é fornecido ao invés de um objeto": function(test){
+			test.equal(typeof dados.municipiosArray, "string");
+			test.ok(existsSync(dados.municipiosArray));
+			
+			test.done();
+		}
+	},
+	
+	cfopsDicionario: {
+		"Verifica que uma string com o caminho é fornecido ao invés de um objeto": function(test){
+			test.equal(typeof dados.cfopsDicionario, "string");
+			test.ok(existsSync(dados.cfopsDicionario));
+			
+			test.done();
+		}
+	},
+	
+	cfopsArray: {
+		"Verifica que uma string com o caminho é fornecido ao invés de um objeto": function(test){
+			test.equal(typeof dados.cfopsArray, "string");
+			test.ok(existsSync(dados.cfopsArray));
+			
+			test.done();
+		}
+	},
+		
 	tabelaIbgeDeEstados: {
 		"Verifica que existem 27 estados": function(test){
 			test.equal(dados.tabelaIbgeDeEstados.length, 27);

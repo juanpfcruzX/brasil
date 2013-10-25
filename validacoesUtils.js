@@ -71,5 +71,5 @@ module.exports.eTelefone = function(telefone){
 };
 
 function removerMascara(texto){
-	return texto.replace(/\W/g, "").replace(/\./g, "").replace(/\//g, "").replace(/\-/g, "").replace(/\s/g, "");
+	return texto.replace(/\W/g, "").replace(/\./g, "").replace(/\//g, "").replace(/\-/g, "").replace(/\s/g, "").trim();
 }

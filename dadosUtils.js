@@ -1,8 +1,10 @@
-//module.exports.regioes = require("./dados/regioes.json"); 
-//module.exports.municipiosDicionario = require("./dados/municipios-dicionario.json");
-//module.exports.municipiosArray = require("./dados/municipios-array.json");
-//module.exports.cfopsDicionario = require("./dados/cfops-dicionario.json");
-//module.exports.cfopsArray = require("./dados/cfops-array.json");
+var path = require("path");
+
+module.exports.regioes = path.join(__dirname, "./dados/regioes.json");
+module.exports.municipiosDicionario = path.join(__dirname, "./dados/municipios-dicionario.json");
+module.exports.municipiosArray = path.join(__dirname, "./dados/municipios-array.json");
+module.exports.cfopsDicionario = path.join(__dirname, "./dados/cfops-dicionario.json");
+module.exports.cfopsArray = path.join(__dirname, "./dados/cfops-array.json");
 
 var tabelaIbgeDeEstados = [
                        	{ codigo: 11, regiao: "Norte", nome: "Rondônia", abreviacao: "RO" },
