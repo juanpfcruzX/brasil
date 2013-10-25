@@ -1,7 +1,22 @@
 var 
 	validacoes = require("./validacoesUtils"),
 	dados = require("./dadosUtils"),
+	sUtils = require("gammautils").string,
 	mUtils = require("gammautils").math;
+
+module.exports.formatarSerie = formatarSerie;
+function formatarSerie(serie){
+	return sUtils.pad(serie, 3, "0");
+}
+
+module.exports.formatarNumero = formatarNumero;
+function formatarNumero(numero){
+	return sUtils.pad(numero, 9, "0").split("").reduce(function(ultimo, atual, indice){
+		if(indice % 3 === 0) return ultimo + "." + atual;
+		
+		return ultimo + atual;
+	});
+}
 
 module.exports.formatarChaveDeAcesso = formatarChaveDeAcesso; 
 function formatarChaveDeAcesso(chave){
@@ -22,11 +37,11 @@ function gerarChaveDeAcesso(info){
 		dados.obterEstado(info.uf).codigo.toString() + 
 		obterDataAAMM(info.dataDeEmissao) +
 		info.cnpj +
-		pad(info.modelo, 2, "0") +
-		pad(info.serie.toString(), 3, "0") + 
-		pad(info.numero.toString(), 9, "0") + 
+		sUtils.pad(info.modelo, 2, "0") +
+		sUtils.pad(info.serie.toString(), 3, "0") + 
+		sUtils.pad(info.numero.toString(), 9, "0") + 
 		info.tipoDeEmissao + 
-		pad(info.numeroAleatorio.toString(), 8, "0");
+		sUtils.pad(info.numeroAleatorio.toString(), 8, "0");
 	
 	chaveDeAcesso = chaveDeAcesso + calcularDigitoVerificador(chaveDeAcesso);
 	
@@ -34,42 +49,6 @@ function gerarChaveDeAcesso(info){
 	
 	function obterDataAAMM(data){
 		return data.getYear().toString().substr(1, 2) + ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"][data.getMonth()];
-	}
-	
-	function pad(str, length, padStr, type) {
-		str = str == null ? '' : String(str);
-		length = ~~length;
-
-		var padlen  = 0;
-
-		if (!padStr)
-			padStr = ' ';
-		else if (padStr.length > 1)
-			padStr = padStr.charAt(0);
-
-		switch(type) {
-			case 'right':
-				padlen = length - str.length;
-				return str + strRepeat(padStr, padlen);
-			case 'both':
-				padlen = length - str.length;
-				return strRepeat(padStr, Math.ceil(padlen/2)) + str
-	                  + strRepeat(padStr, Math.floor(padlen/2));
-			default: // 'left'
-				padlen = length - str.length;
-				return strRepeat(padStr, padlen) + str;
-		}
-		
-		function strRepeat(str, qty){
-			if (qty < 1) return '';
-			var result = '';
-			while (qty > 0) {
-				if (qty & 1) result += str;
-					qty >>= 1, str += str;
-				}
-			
-			return result;
-		};
 	}
 };
 

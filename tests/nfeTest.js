@@ -51,6 +51,30 @@ module.exports = {
 		}
 	},	
 		
+	formatarNumero: {
+		"Verifica formatação do número da Nfe": function(test){
+			test.equal(nfe.formatarNumero(15380), "000.015.380");
+			test.equal(nfe.formatarNumero(215380), "000.215.380");
+			test.equal(nfe.formatarNumero(1215380), "001.215.380");
+			test.equal(nfe.formatarNumero(0), "000.000.000");
+			test.equal(nfe.formatarNumero(1), "000.000.001");
+			
+			test.done();
+		}
+	},
+	
+	formatarSerie: {
+		"Verifica formatação da série da Nfe": function(test){
+			test.equal(nfe.formatarSerie(1), "001");
+			test.equal(nfe.formatarSerie(100), "100");
+			test.equal(nfe.formatarSerie(105), "105");
+			test.equal(nfe.formatarSerie(50), "050");
+			test.equal(nfe.formatarSerie(2), "002");
+			
+			test.done();
+		}
+	},
+	
 	formatarChaveDeAcesso: {
 		"Verifica formatação da chave de acesso": function(test){
 			test.equal(nfe.formatarChaveDeAcesso("52131000132781000178551000000153401000153408"), "5213 1000 1327 8100 0178 5510 0000 0153 4010 0015 3408");

@@ -1,6 +1,6 @@
 {
   "name": "brasil",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "gammautils": "0.0.17"
+    "gammautils": "0.0.18"
   },
   "devDependencies": {
     "nodeunit": "~0.8.1"
