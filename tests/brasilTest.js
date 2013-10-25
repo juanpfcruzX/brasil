@@ -1,5 +1,11 @@
-var fs = require("fs");
-var utils = require("../brasil");
+var 
+	fs = require("fs"),
+	utils = require("../brasil");
+
+var existsSync = 
+	process.version.indexOf("v0.6") !== 1 ? 
+			require("path").existsSync :
+			require("fs").existsSync;
 
 module.exports = {
 	"Verifica que todos os submodulos estão disponíveis": function(test){
@@ -20,7 +26,7 @@ module.exports = {
 			var match = file.match(/(.*)Utils.js/);
 			
 			if(match){
-				var exists = fs.existsSync(__dirname + "/" + match[1] + "Test.js");
+				var exists = existsSync(__dirname + "/" + match[1] + "Test.js");
 				//console.log(match[1] + " / " + exists);
 				test.ok(exists);
 			}
@@ -35,7 +41,7 @@ module.exports = {
 			
 			if(match){
 				var testFilePath = __dirname + "/" + match[1] + "Test.js";
-				var exists = fs.existsSync(testFilePath);
+				var exists = existsSync(testFilePath);
 				if(exists){
 					var submoduleTest = require(testFilePath);
 					var submodule = require(__dirname + "/../" + file);
