@@ -30,5 +30,8 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "gammautils": "0.0.17"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.1"
   }
 }
