@@ -3,6 +3,37 @@ var dados = require('../brasil').dados;
 var existsSync = (process.version.indexOf('v0.6') !== -1 ? require('path').existsSync : existsSync = require('fs').existsSync);
 
 module.exports = {
+    naturezasJuridicas: {
+        'Verifica que existe o número correto de naturezas jurídicas': function(test){
+            test.equal(dados.naturezasJuridicas.length, 66);
+            
+            test.done();
+        },
+        
+        'Verifica que todas as naturezas jurídicas são dos únicos 5 tipos possíveis': function(test) {
+            var tiposDeNaturezaJuridica = ['Administração Pública', 
+                                           'Entidades Empresariais', 
+                                           'Entidades Sem Fins Lucrativos', 
+                                           'Pessoas Físicas',
+                                           'Instituições Extraterritoriais'];
+            
+            dados.naturezasJuridicas.forEach(function(naturezaJuridica) {
+                test.notEqual(tiposDeNaturezaJuridica.indexOf(naturezaJuridica.tipo), -1);
+            });
+            
+            test.done();
+        },
+        
+        'Verifica que o código de todas as naturezas jurídicas seguem o mesmo padrão': function(test) {
+            var padraoDoCodigo = /^\d\d\d\-\d$/;
+            
+            dados.naturezasJuridicas.forEach(function(naturezaJuridica) {
+                test.ok(padraoDoCodigo.test(naturezaJuridica.codigo));
+            });
+            
+            test.done();
+        }
+    },
     regioes: {
         'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
             test.equal(typeof dados.regioes, 'string');
