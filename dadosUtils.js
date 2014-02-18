@@ -119,38 +119,38 @@ var tabelaIbgeDeEstados = [
 ];
 
 module.exports.obterEstadosPorRegiao = function(regiao){
-	var estados = [];
-	tabelaIbgeDeEstados.forEach(function(estado){
-		if(estado.regiao.toLowerCase() === regiao.toLowerCase()) 
-			estados.push(estado);
-	});
-	
-	return estados;
+    var estados = [];
+    tabelaIbgeDeEstados.forEach(function(estado){
+        if(estado.regiao.toLowerCase() === regiao.toLowerCase()) 
+            estados.push(estado);
+    });
+    
+    return estados;
 };
 
 module.exports.obterEstado = obterEstado;
 function obterEstado(id){
-	if(typeof id === 'number' || !isNaN(parseInt(id, 10))){
-		id = parseInt(id, 10);
-		for(var estado in tabelaIbgeDeEstados){
-			if(tabelaIbgeDeEstados.hasOwnProperty(estado)){
-				estado = tabelaIbgeDeEstados[estado];
-				if(estado.codigo === id)
-					return estado;
-			};
-		}
-	}
-	else if(typeof id === 'string'){
-		for(var estado in tabelaIbgeDeEstados){
-			if(tabelaIbgeDeEstados.hasOwnProperty(estado)){
-				estado = tabelaIbgeDeEstados[estado];
-				if(estado.nome.toLowerCase() === id.toLowerCase() || estado.abreviacao.toLowerCase() === id.toLowerCase())
-					return estado;
-			};
-		}
-	}
-	
-	return null;
+    if(typeof id === 'number' || !isNaN(parseInt(id, 10))){
+        id = parseInt(id, 10);
+        for(var estado in tabelaIbgeDeEstados){
+            if(tabelaIbgeDeEstados.hasOwnProperty(estado)){
+                estado = tabelaIbgeDeEstados[estado];
+                if(estado.codigo === id)
+                    return estado;
+            };
+        }
+    }
+    else if(typeof id === 'string'){
+        for(var estado in tabelaIbgeDeEstados){
+            if(tabelaIbgeDeEstados.hasOwnProperty(estado)){
+                estado = tabelaIbgeDeEstados[estado];
+                if(estado.nome.toLowerCase() === id.toLowerCase() || estado.abreviacao.toLowerCase() === id.toLowerCase())
+                    return estado;
+            };
+        }
+    }
+    
+    return null;
 };
 
 module.exports.naturezasJuridicas = naturezasJuridicas;
