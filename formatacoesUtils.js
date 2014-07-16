@@ -1,7 +1,16 @@
 var validacoes = require("./validacoesUtils");
 
+module.exports.removerMascara = removerMascara;
+function removerMascara(texto) {
+	return texto
+		.trim()
+		.replace(/\./g, '')
+		.replace(/\//g, '')
+		.replace(/-/g, '')
+}
+
 module.exports.cnpj = cnpj;
-function cnpj(texto){
+function cnpj(texto) {
 	if(!validacoes.eCnpj(texto)) return texto;
 	if(texto.trim().length > 14) return texto;
 	
@@ -15,7 +24,7 @@ function cnpj(texto){
 };
 
 module.exports.cpf = cpf;
-function cpf(texto){
+function cpf(texto) {
 	if(!validacoes.eCpf(texto)) return texto;
 	if(texto.trim().length > 11) return texto;
 	
@@ -28,7 +37,7 @@ function cpf(texto){
 };
 
 module.exports.registroNacional = registroNacional;
-function registroNacional(texto){
+function registroNacional(texto) {
 	var tipo = validacoes.eRegistroNacional(texto);
 	
 	if(!tipo) return texto;
@@ -37,7 +46,7 @@ function registroNacional(texto){
 };
 
 module.exports.telefone = telefone;
-function telefone(texto){
+function telefone(texto) {
 	if(!validacoes.eTelefone(texto)) return texto;
 	
 	texto = texto.trim().replace(/\(/g, "").replace(/\)/g, "").replace(/\s/g, "").replace(/-/g, "");
@@ -48,7 +57,7 @@ function telefone(texto){
 }
 
 module.exports.placa = placa;
-function placa(texto){
+function placa(texto) {
 	if(!validacoes.ePlaca(texto)) return texto;
 	
 	texto = texto.trim().replace(/-/g, "");
@@ -57,7 +66,7 @@ function placa(texto){
 }
 
 module.exports.cep = cep;
-function cep(texto){
+function cep(texto) {
 	if(!validacoes.eCep(texto)) return texto;
 	
 	texto = texto.trim().replace(/-/g, "").replace(/\./g, "");
