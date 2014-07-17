@@ -4,9 +4,12 @@ module.exports.removerMascara = removerMascara;
 function removerMascara(texto) {
 	return texto
 		.trim()
+		.replace(/\(/g, '')
+		.replace(/\)/g, '')
 		.replace(/\./g, '')
 		.replace(/\//g, '')
 		.replace(/-/g, '')
+		.replace(/\s/g, '')
 }
 
 module.exports.cnpj = cnpj;
