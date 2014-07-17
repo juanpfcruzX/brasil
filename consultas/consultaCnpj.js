@@ -1,7 +1,7 @@
 var http = require('http'),
     request = require('request'),
     iconv = require('iconv-lite'),
-    removerMascara = require('./formatacoesUtils').removerMascara,
+    removerMascara = require('../formatacoesUtils').removerMascara,
     
     hostReceitaFederal = 'www.receita.fazenda.gov.br';
 
@@ -25,6 +25,7 @@ function executarParseDoHtml(body) {
     }
 
     var regexes = {
+        naoEncontrado: /No existe no Cadastro de Pessoas Jurdicas o nmero de CNPJ informado/g,
         cnpj: /[0-9]{2}\.[0-9]{3}\.[0-9]{3}\/[0-9]{4}\-[0-9]{2}/g,
         tipo: /MATRIZ|FILIAL/g,
         datas: /[0-9]{2}\/[0-9]{2}\/[0-9]{4}/g,
@@ -32,6 +33,10 @@ function executarParseDoHtml(body) {
         atividadeEconomicaSecundaria: /[\s]*<b>[\s]*([0-9]{2}\.[0-9]{2}-[0-9]{1}-[0-9]{2})\s-\s(.*)<\/b>/g,
         apenasAsteriscos: /^[\*]+$/g
     };
+
+    if(regexes.naoEncontrado.test(body)) {
+        return null;
+    }
 
     var datas = body.match(regexes.datas),
         atividadeEconomicaPrincipal = extrair('C.DIGO E DESCRI..O DA ATIVIDADE ECON.MICA PRINCIPAL').split(' - '),
@@ -135,7 +140,11 @@ function obterDados(cnpj, captcha, callback) {
             return callback(err);
         }
 
-        callback(null, executarParseDoHtml(body));
+        try {
+            callback(null, executarParseDoHtml(body));
+        } catch(err) {
+            callback(err);
+        }
     });
 }
 
@@ -209,7 +218,7 @@ function obterCaptcha(callback) {
     obterUrlDoCaptcha();
 }
 
-module.exports.cnpj = {
+module.exports = {
     obterCaptcha: obterCaptcha,
     obterDados: obterDados
 };
