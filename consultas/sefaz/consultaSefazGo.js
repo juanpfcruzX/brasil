@@ -23,6 +23,8 @@ function executarParseDoHtml(html) {
 
     var atividadeEconomica = extrair('Atividade Econ.mica:').split(' - ');
 
+    //equalizar interface com o SEFAZ/DF
+    //a ideia é que todas as consultas ao sefaz retornem a mesma interface
 	return {
 		nomeEmpresarial: extrair('Nome Empresarial:'),
 		cnpj: removerMascara(extrair('CNPJ:')),
