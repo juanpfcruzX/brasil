@@ -4,6 +4,10 @@ var request = require('request'),
 
 function executarParseDoHtml(html) {
 
+	if(/Não foi encontrado/.test(html)) {
+		return null;
+	}
+
 	function quebrarLinha(atributo) {
 		var texto = '<td><b>' + atributo + '</b></td>';
 		html = html.replace(texto, '\n' + texto);
@@ -19,23 +23,53 @@ function executarParseDoHtml(html) {
 	quebrarLinha('Atividade Secundária');
 
 	function obterAtividade(tipo) {
-		var r = new RegExp('<td><b>Atividade ' + tipo + '</b></td>[\\s]*<td colspan="3">[\\s]*<div align="justify">[\\s]*[^]*?[\\s]*</div></td></tr>\\s', 'ig'),
+
+		function popularAtividade(codigo, descricao) {
+			if(typeof codigo !== 'string') {
+				codigo = '';
+			}
+
+			if(typeof descricao !== 'string') {
+				descricao = '';
+			}
+
+			return {
+				codigo: codigo.trim(),
+				descricao: descricao.trim()
+			};
+		}
+
+		var r = new RegExp('<td><b>Atividade ' + tipo + '</b></td>[\\s]*<td colspan="3">[\\s]*<div align="justify">[\\s]*[^]*?[\\s]*</div></td></tr>', 'ig'),
 			matches = r.exec(html);
           
         if(tipo === 'Principal ') {
-	        console.log(matches[0]);
-	        console.log();
-
-	        return {
-	        	codigo: '',
-	        	descricao: ''
-	        };
+	        if(matches && matches.length && matches.length >= 1) {
+				matches = new RegExp('<td><b>Atividade Principal </b></td>[\\s]*<td colspan="3">[\\s]*<div align="justify"><b>[\\s]*(.*) - </b>[\\s]*(.*)</div>', 'ig').exec(matches[0]);
+				if(matches.length > 2) {
+					return popularAtividade(matches[1], matches[2]);
+				} else {
+					return popularAtividade();
+				}
+	        } else {
+		        return popularAtividade();
+	        }
         } else {
-        	console.log('------------');
-        	console.log(matches[0]);
-			console.log();
+        	if(matches && matches.length && matches.length >= 1) {
+        		var atividade,
+        			r = new RegExp('<b>(.*)</b>- (.*)', 'ig'),
+					resultado = [];
+					string = matches[0].replace(/<br>/g, '\n');
 
-        	return [{}];
+				while(atividade = r.exec(string)) {
+					if(atividade.length > 2) {
+						resultado.push(popularAtividade(atividade[1], atividade[2].replace('</div></td></tr>', '')));
+					}
+				}
+
+				return resultado;
+        	} else {
+        		return [];
+        	}
         }
 	}
 
@@ -67,7 +101,7 @@ function executarParseDoHtml(html) {
     		estadual: removerMascara(extrair('CF/DF')),
     	},
     	nome: {
-    		empresarial: extrair('Raz.o Social'),
+    		empresarial: extrair('Razão Social'),
     		fantasia: extrair('Nome Fantasia')
     	},
     	regimeDeApuracao: extrair('Regime de Apura&ccedil;&atilde;o'),
@@ -125,7 +159,7 @@ function obterDados(registroNacional, callback) {
 	            return callback(err);
 	        }
 
-	        body = iconv.decode(body, 'iso-8859-1');
+	        body = iconv.decode(body, 'utf8');
 
 	        try {
 	            callback(null, executarParseDoHtml(body));
@@ -135,6 +169,14 @@ function obterDados(registroNacional, callback) {
 	    });
 	});
 }
+
+obterDados(process.argv[2], function(err, dados) {
+	if(err) {
+		throw err;
+	}
+
+	console.log(JSON.stringify(dados, null, 4));
+});
 
 module.exports = {
 	dados: obterDados
