@@ -76,47 +76,45 @@ var naturezasJuridicas = [
     { tipo: 'Instituições Extraterritoriais', codigo: '503-7', descricao: 'Outras Instituições Extraterritoriais', representante: ['Representante da Instituição Extraterritorial'], qualificacao: ['62'] }
 ];
 
-var siglasDosEstados = [
-    'RO', 'AC', 'AM',
-    'RR', 'PA', 'AP',
-    'TO', 'MA', 'PI', 
-    'CE', 'RN', 'PB',
-    'PE', 'AL', 'SE',
-    'BA', 'MG', 'ES',
-    'RJ', 'SP', 'PR',
-    'SC', 'RS', 'MS',
-    'MT', 'GO', 'DF'
-];
+var siglasDosEstados =
+    ['AC', 'AL', 'AM',
+    'AP', 'BA', 'CE',
+    'DF', 'ES', 'GO',
+    'MA', 'MG', 'MS',
+    'MT', 'PA', 'PB',
+    'PE', 'PI', 'PR',
+    'RJ', 'RN', 'RO',
+    'RR', 'RS', 'SC',
+    'SE', 'SP', 'TO' ];
 
 var tabelaIbgeDeEstados = [
-    { codigo: 11, regiao: 'Norte', nome: 'Rondônia', abreviacao: 'RO' },
-    { codigo: 12, regiao: 'Norte', nome: 'Acre', abreviacao: 'AC' },
-    { codigo: 13, regiao: 'Norte', nome: 'Amazonas', abreviacao: 'AM' },
-    { codigo: 14, regiao: 'Norte', nome: 'Roraima', abreviacao: 'RR' },
-    { codigo: 15, regiao: 'Norte', nome: 'Pará', abreviacao: 'PA' },
-    { codigo: 16, regiao: 'Norte', nome: 'Amapá', abreviacao: 'AP' },
-    { codigo: 17, regiao: 'Norte', nome: 'Tocantins', abreviacao: 'TO' },
-    { codigo: 21, regiao: 'Nordeste', nome: 'Maranhão', abreviacao: 'MA' },
-    { codigo: 22, regiao: 'Nordeste', nome: 'Piauí', abreviacao: 'PI' },
-    { codigo: 23, regiao: 'Nordeste', nome: 'Ceará', abreviacao: 'CE' },
-    { codigo: 24, regiao: 'Nordeste', nome: 'Rio Grande do Norte', abreviacao: 'RN' },
-    { codigo: 25, regiao: 'Nordeste', nome: 'Paraíba', abreviacao: 'PB' },
-    { codigo: 26, regiao: 'Nordeste', nome: 'Pernambuco', abreviacao: 'PE' },
+    { codigo: 12,  regiao: 'Norte', nome: 'Acre', abreviacao: 'AC' },
     { codigo: 27, regiao: 'Nordeste', nome: 'Alagoas', abreviacao: 'AL' },
-    { codigo: 28, regiao: 'Nordeste', nome: 'Sergipe', abreviacao: 'SE' },
+    { codigo: 16, regiao: 'Norte', nome: 'Amapá', abreviacao: 'AP' },
+    { codigo: 13, regiao: 'Norte', nome: 'Amazonas', abreviacao: 'AM' },
     { codigo: 29, regiao: 'Nordeste', nome: 'Bahia', abreviacao: 'BA' },
-    { codigo: 31, regiao: 'Sudeste', nome: 'Minas Gerais', abreviacao: 'MG' },
+    { codigo: 23, regiao: 'Nordeste', nome: 'Ceará', abreviacao: 'CE' },
+    { codigo: 53, regiao: 'Centro-Oeste', nome: 'Distrito Federal', abreviacao: 'DF' },
     { codigo: 32, regiao: 'Sudeste', nome: 'Espírito Santo', abreviacao: 'ES' },
-    { codigo: 33, regiao: 'Sudeste', nome: 'Rio de Janeiro', abreviacao: 'RJ' },
-    { codigo: 35, regiao: 'Sudeste', nome: 'São Paulo', abreviacao: 'SP' },
-    { codigo: 41, regiao: 'Sul', nome: 'Paraná', abreviacao: 'PR' },
-    { codigo: 42, regiao: 'Sul', nome: 'Santa Catarina', abreviacao: 'SC' },
-    { codigo: 43, regiao: 'Sul', nome: 'Rio Grande do Sul', abreviacao: 'RS' },
-    { codigo: 50, regiao: 'Centro-Oeste', nome: 'Mato Grosso do Sul', abreviacao: 'MS' },
-    { codigo: 51, regiao: 'Centro-Oeste', nome: 'Mato Grosso', abreviacao: 'MT' },
     { codigo: 52, regiao: 'Centro-Oeste', nome: 'Goiás', abreviacao: 'GO' },
-    { codigo: 53, regiao: 'Centro-Oeste', nome: 'Distrito Federal', abreviacao: 'DF' }
-];
+    { codigo: 21, regiao: 'Nordeste', nome: 'Maranhão', abreviacao: 'MA' },
+    { codigo: 51, regiao: 'Centro-Oeste', nome: 'Mato Grosso', abreviacao: 'MT' },
+    { codigo: 50, regiao: 'Centro-Oeste', nome: 'Mato Grosso do Sul', abreviacao: 'MS' },
+    { codigo: 31, regiao: 'Sudeste', nome: 'Minas Gerais', abreviacao: 'MG' },
+    { codigo: 41, regiao: 'Sul', nome: 'Paraná', abreviacao: 'PR' },
+    { codigo: 25, regiao: 'Nordeste', nome: 'Paraíba', abreviacao: 'PB' },
+    { codigo: 15, regiao: 'Norte', nome: 'Pará', abreviacao: 'PA' },
+    { codigo: 26, regiao: 'Nordeste', nome: 'Pernambuco', abreviacao: 'PE' },
+    { codigo: 22, regiao: 'Nordeste', nome: 'Piauí', abreviacao: 'PI' },
+    { codigo: 24, regiao: 'Nordeste', nome: 'Rio Grande do Norte', abreviacao: 'RN' },
+    { codigo: 43, regiao: 'Sul', nome: 'Rio Grande do Sul', abreviacao: 'RS' },
+    { codigo: 33, regiao: 'Sudeste', nome: 'Rio de Janeiro', abreviacao: 'RJ' },
+    { codigo: 11, regiao: 'Norte', nome: 'Rondônia', abreviacao: 'RO' },
+    { codigo: 14, regiao: 'Norte', nome: 'Roraima', abreviacao: 'RR' },
+    { codigo: 42, regiao: 'Sul', nome: 'Santa Catarina', abreviacao: 'SC' },
+    { codigo: 28, regiao: 'Nordeste', nome: 'Sergipe', abreviacao: 'SE' },
+    { codigo: 35, regiao: 'Sudeste', nome: 'São Paulo', abreviacao: 'SP' },
+    { codigo: 17, regiao: 'Norte', nome: 'Tocantins', abreviacao: 'TO' } ];
 
 module.exports.obterEstadosPorRegiao = function(regiao){
     var estados = [];
