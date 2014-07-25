@@ -3,13 +3,29 @@ var
 	mUtils = require("gammautils").math;
 
 module.exports.eRegistroNacional = eRegistroNacional;
-function eRegistroNacional(rn){
-	if(typeof rn !== "string") return false;
+function eRegistroNacional(rn, tipo){
+	if(typeof rn !== "string") {
+		return false;
+	}
 	
 	rn = removerMascara(rn);
 	
-	if(rn.length === 14 && eCnpj(rn)) return "cnpj";
-	if(rn.length === 11 && eCpf(rn)) return "cpf";
+	if(typeof tipo === 'undefined') {
+		if(rn.length === 14 && eCnpj(rn)) {
+			return "cnpj";
+		}
+
+		if(rn.length === 11 && eCpf(rn)) {
+			return "cpf";
+		}
+	} else if(['cpf', 'cnpj'].indexOf(tipo.toLowerCase()) > -1) {
+		//criar "primeiraMaiuscula" no gammautils (linha abaixo)
+		var fn = module.exports['e' + tipo[0].toUpperCase() + tipo.substr(1)]; 
+
+		if(fn(rn)) { 
+			return tipo;
+		}
+	}
 	
 	return false;
 };

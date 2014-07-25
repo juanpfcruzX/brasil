@@ -48,7 +48,11 @@ module.exports = {
 					for(var property in submodule){
 						if(submodule.hasOwnProperty(property)){
 							var temTeste = property in submoduleTest; 
-							//console.log("	" + property + " > " + temTeste);
+
+							if(!temTeste) {
+								console.error(" > Missing tests for: " + match[1] + ':' + property);
+							}
+
 							test.ok(temTeste);
 						}
 					}
