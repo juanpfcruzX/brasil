@@ -25,7 +25,7 @@
     "cpf",
     "cnpj"
   ],
-  "author": "Renato Gama",
+  "author": "Gammasoft Desenvolvimento de Software Ltda <contato@gammasoft.com.br>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
@@ -35,5 +35,14 @@
   },
   "devDependencies": {
     "nodeunit": "~0.8.1"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Renato Gama",
+      "email": "renatoargh@gmail.com",
+      "url": "https://github.com/renatoargh",
+      "contributions": 44,
+      "hireable": true
+    }
+  ]
 }
