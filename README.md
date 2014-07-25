@@ -1,7 +1,7 @@
 Brasil
 ======
 
-[![Build Status](https://travis-ci.org/gammasoft/brasil.png?branch=master)](https://travis-ci.org/gammasoft/brasil)
+[![Build Status](https://drone.io/github.com/gammasoft/brasil/status.png)](https://drone.io/github.com/gammasoft/brasil/latest)
 
 Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
