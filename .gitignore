@@ -19,3 +19,7 @@ node_modules
 npm-debug.log
 env.js
 brasil.browser.js
+
+consultas/proximasImplementações.txt
+
+.package.json

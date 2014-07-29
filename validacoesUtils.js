@@ -30,7 +30,6 @@ function eRegistroNacional(rn, tipo){
 	return false;
 };
 
-module.exports.eCnpj = eCnpj; 
 function eCnpj(cnpj){
 	if(typeof cnpj !== "string") return false;
 	cnpj = removerMascara(cnpj);
@@ -46,8 +45,44 @@ function eCnpj(cnpj){
 	
 	return cnpj === base + primeiroDigito + segundoDigito;
 };
+module.exports.eCnpj = eCnpj; 
 
-module.exports.eCpf = eCpf;
+var regexParaMatrizEFilial = /^[0-9]{8}([0-9]{4})[0-9]{2}$/;
+
+function eMatriz(cnpj) {
+	//retorna null caso não seja passado um cnpj
+	//retorna true caso seja uma matriz
+	//retorna false caso não seja uma matriz
+	
+	if(!eCnpj(cnpj)) {
+		return null;
+	}
+
+	var matches = regexParaMatrizEFilial.exec(removerMascara(cnpj));
+
+	return (matches !== null && matches.length === 2 && matches[1] === '0001');
+}
+module.exports.eMatriz = eMatriz;
+
+function eFilial(cnpj) {
+	//retorna null caso não seja passado um cnpj
+	//retorna o número da filial caso seja passado um cnpj válido
+	//retorna false caso não seja uma filial
+
+	if(!eCnpj(cnpj)) {
+		return null;
+	}
+
+	var matches = regexParaMatrizEFilial.exec(removerMascara(cnpj));
+
+	if(matches !== null && matches.length === 2 && matches[1] !== '0001') {
+		return parseInt(matches[1], 10);
+	} else {
+		return false;
+	}
+}
+module.exports.eFilial = eFilial;
+
 function eCpf(cpf){
 	if(typeof cpf !== "string") return false;
 	cpf = removerMascara(cpf);
@@ -66,6 +101,7 @@ function eCpf(cpf){
 	
 	return cpf === base + primeiroDigito + segundoDigito;
 };
+module.exports.eCpf = eCpf;
 
 var regexDePlacaValida = /^[a-zA-Z]{3}-?[0-9]{4}$/;
 module.exports.ePlaca = function(placa){

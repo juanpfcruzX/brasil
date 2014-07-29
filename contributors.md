@@ -1,3 +1,3 @@
 ## Contributors
-##### [Generated](https://github.com/jakeleboeuf/contributor) on Fri Jul 25 2014 11:49:51 GMT-0300 (BRT)
+##### [Generated](https://github.com/jakeleboeuf/contributor) on Tue Jul 29 2014 14:14:56 GMT-0300 (BRT)
 - [Renato Gama](https://github.com/renatoargh)

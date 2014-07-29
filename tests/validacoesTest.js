@@ -161,7 +161,51 @@ module.exports = {
 			test.done();
 		}
 	},
+
+	eMatriz: {
+		"Verifica que é possivel identificar uma matriz pelo CNPJ": function(test) {
+
+			test.ok(validacoes.eMatriz('00.132.781/0001-78'));
+			test.ok(validacoes.eMatriz('00.000.000/0001-91'));
+			test.ok(validacoes.eMatriz('19950366000150'));
+			
+			test.equal(validacoes.eMatriz('00123123000209'), false);
+			test.equal(validacoes.eMatriz('00123432000513'), false);
+			test.equal(validacoes.eMatriz('12123432009982'), false);
+
+			test.done();
+		},
+
+		"Verifica que retorna nulo caso não seja passado um CNPJ": function(test) {
+			test.equal(validacoes.eMatriz('123456'), null);
+			test.equal(validacoes.eMatriz('testando'), null);
+
+			test.done();
+		}
+	},
 	
+	eFilial: {
+		"Verifica que é possível identificar uma filial pelo CNPJ, e que o seu número é retornado": function(test) {
+
+			test.equal(validacoes.eFilial('00.132.781/0001-78'), false);
+			test.equal(validacoes.eFilial('00.000.000/0001-91'), false);
+			test.equal(validacoes.eFilial('19950366000150'), false);
+			
+			test.equal(validacoes.eFilial('00123123000209'), 2);
+			test.equal(validacoes.eFilial('00123432000513'), 5);
+			test.equal(validacoes.eFilial('12123432009982'), 99);
+
+			test.done();
+		},
+
+		"Verifica que retorna nulo caso não seja passado um CNPJ": function(test) {
+			test.equal(validacoes.eFilial('123456'), null);
+			test.equal(validacoes.eFilial('testando'), null);
+
+			test.done();
+		}
+	},
+
 	eCpf: {
 		"Verifica que é possível validar cpfs": function(test) {
 			test.ok(validacoes.eCpf("  227.175.903-07   "));

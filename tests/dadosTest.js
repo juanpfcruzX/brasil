@@ -22,20 +22,10 @@ module.exports = {
             });
             
             test.done();
-        },
-        
-        'Verifica que o código de todas as naturezas jurídicas seguem o mesmo padrão': function(test) {
-            var padraoDoCodigo = /^\d\d\d\-\d$/;
-            
-            dados.naturezasJuridicas.forEach(function(naturezaJuridica) {
-                test.ok(padraoDoCodigo.test(naturezaJuridica.codigo));
-            });
-            
-            test.done();
         }
     },
     regioes: {
-        'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
+        'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test) {
             test.equal(typeof dados.regioes, 'string');
             test.ok(existsSync(dados.regioes));
             
@@ -43,6 +33,57 @@ module.exports = {
         }
     },
     
+    bancosArray: {
+        //FONTE: http://www.febraban.org.br/bancos.asp
+        //DATA: 29/07/2014
+
+        'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test) {
+            test.equal(typeof dados.bancosArray, 'string');
+            test.ok(existsSync(dados.bancosArray));
+            
+            test.done();
+        },
+
+        'Verifica que o número correto de bancos é retornado': function(test) {
+            var bancos = require(dados.bancosArray);
+
+            test.equal(bancos.length, 216);
+            test.done();
+        }
+    },
+
+    obterBancoPorCodigo: {
+        'Verifica que encontra corretamente o banco solicitado': function(test) {
+            test.equal(dados.obterBancoPorCodigo('001').nome, 'Banco do Brasil S.A.');
+            test.equal(dados.obterBancoPorCodigo('341').nome, 'Itaú Unibanco S.A.');
+            test.equal(dados.obterBancoPorCodigo('237').nome, 'Banco Bradesco S.A.');
+
+            test.done();
+        },
+
+        'Verifica que retorna nulo caso passe um código inexistente': function(test) {
+            test.equal(dados.obterBancoPorCodigo('XXX'), null);
+
+            test.done();
+        },
+
+        'Verifica que retorna nulo caso passe string vazia': function(test) {
+            test.equal(dados.obterBancoPorCodigo(''), null);
+
+            test.done();
+        }
+    },
+
+    obterBancosPorNome: {
+        'Verifica que se obtem os bancos desejados passando apenas uma parte do nome': function(test) {
+            test.equal(dados.obterBancosPorNome('   brasil  ').length, 47);
+            test.equal(dados.obterBancosPorNome('bradésç   ').length, 4);
+            test.equal(dados.obterBancosPorNome('itau').length, 7);
+
+            test.done();
+        }
+    },
+
     municipiosDicionario: {
         'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
             test.equal(typeof dados.municipiosDicionario, 'string');
@@ -177,6 +218,13 @@ module.exports = {
             test.deepEqual(dados.obterEstado(52), { codigo: 52, regiao: 'Centro-Oeste', nome: 'Goiás', abreviacao: 'GO' });
             test.deepEqual(dados.obterEstado(53), { codigo: 53, regiao: 'Centro-Oeste', nome: 'Distrito Federal', abreviacao: 'DF' });
             
+            test.done();
+        },
+
+        'Verifica que pode-se obter o estado pelo código do município': function(test) {
+
+            test.deepEqual(dados.obterEstado('3552205'), { codigo: 35, regiao: 'Sudeste', nome: 'São Paulo', abreviacao: 'SP' });
+
             test.done();
         },
         
