@@ -1,3 +1,7 @@
-## Contributors
-##### [Generated](https://github.com/jakeleboeuf/contributor) on Tue Jul 29 2014 14:14:56 GMT-0300 (BRT)
-- [Renato Gama](https://github.com/renatoargh)
+# brasil
+#### Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros
+---
+[Gammasoft Desenvolvimento de Software Ltda](mailto:contato@gammasoft.com.br)  
+
+##### Contributors (01/08/2014 11:58:19-03:00)
+- [Renato Gama](https://github.com/renatoargh) - 47 contributions

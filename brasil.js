@@ -5,5 +5,6 @@ module.exports = {
     validacoes: require('./validacoesUtils'),
     dados: require('./dadosUtils'),
     formatacoes: require('./formatacoesUtils'),
-    consultas: require('./consultasUtils')
+    consultas: require('./consultasUtils'),
+    bancos: require('./bancosUtils')
 };
