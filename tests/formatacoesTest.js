@@ -27,6 +27,13 @@ module.exports = {
 		'Remove espaços em branco no começo e no final': function(test) {
 			test.equal(formatacoes.removerMascara('    71.420-070  \t'), '71420070');
 			test.done();
+		},
+
+		'Se for passado algo que não é uma string então o mesmo é retornado': function(test) {
+			test.equal(formatacoes.removerMascara(null), null);
+			test.equal(formatacoes.removerMascara({}.devolvaUndefined), undefined);
+			test.equal(formatacoes.removerMascara(123), 123);
+			test.done();
 		}
 	},
 

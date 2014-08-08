@@ -1,5 +1,10 @@
-var nfe = require("./nfeUtils.js"),
-	mUtils = require("gammautils").math;
+var nfe = require("./nfeUtils"),
+	dados = require('./dadosUtils'),
+	formatacoes = require('./formatacoesUtils'),
+	removerMascara = formatacoes.removerMascara,
+	utils = require("gammautils"),
+	mUtils = utils.math,
+	isUndefined = utils.object.isUndefined;
 
 function eRegistroNacional(rn, tipo){
 	if(typeof rn !== "string") {
@@ -113,11 +118,34 @@ module.exports.eCep = function(cep){
 	return regexDeCepValido.test(cep);
 };
 
-var regexpDeTelefoneValido = /^\(?[1-9]{1}[0-9]{1}\)?\s?[1-9]{1}[0-9]{3,4}-?[0-9]{4}$/;
-module.exports.eTelefone = function(telefone){
-	return regexpDeTelefoneValido.test(telefone);
+var regexpDeTelefoneValido = /^\(?([0-9]{1}[0-9]{1})*\)?\s?[1-9]{1}[0-9]{3,4}-?[0-9]{4}$/;
+module.exports.eTelefone = function(telefone, validarDDD){
+	var match = regexpDeTelefoneValido.exec(telefone);
+
+	if(isUndefined(validarDDD)) {
+		validarDDD = true;
+	}
+
+	if(match) {
+		var ddd = match[1];
+
+		if(validarDDD && ddd) {
+			return eDDD(ddd);
+		}
+
+		return true;
+	} else {
+		return false;
+	}
 };
 
-function removerMascara(texto){
-	return texto.replace(/\W/g, "").replace(/\./g, "").replace(/\//g, "").replace(/\-/g, "").replace(/\s/g, "").trim();
+function eDDD(ddd) {
+	ddd = parseInt(ddd, 10);
+
+	if(isNaN(ddd)) {
+		return false;
+	}
+
+	return typeof dados.codigosDDDDicionario[ddd] !== 'undefined';
 }
+module.exports.eDDD = eDDD;
