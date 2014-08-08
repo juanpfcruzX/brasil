@@ -21,7 +21,7 @@ Se você se interessou por este projeto você também pode se interessar por est
 
 ### Contribuidores
 
-- [Renato Gama]
+- [Renato Gama](http://www.github.com/renatoargh)
 
 [Lista detalhada aqui...](contributors.md)
 
