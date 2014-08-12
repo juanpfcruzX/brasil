@@ -1,7 +1,7 @@
 Brasil
 ======
 
-[![Build Status](https://drone.io/github.com/gammasoft/brasil/status.png)](https://drone.io/github.com/gammasoft/brasil/latest)
+[![Build Status](https://drone.io/github.com/gammasoft/brasil/status.png)](https://drone.io/github.com/gammasoft/brasil/latest) [![Última versão no npm](https://badge.fury.io/js/brasil.png)](http://npmjs.org/package/brasil)
 
 Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
