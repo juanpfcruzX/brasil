@@ -1,6 +1,6 @@
 {
   "name": "brasil",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
@@ -33,7 +33,10 @@
     "sefaz",
     "receita federal",
     "pessoa juridica",
-    "pessoa fisica"
+    "pessoa fisica",
+    "cfop",
+    "ncm",
+    "DDD"
   ],
   "author": "Gammasoft Desenvolvimento de Software Ltda <contato@gammasoft.com.br>",
   "license": "MIT",
@@ -51,7 +54,7 @@
       "name": "Renato Gama",
       "email": "renatoargh@gmail.com",
       "url": "https://github.com/renatoargh",
-      "contributions": 50,
+      "contributions": 53,
       "hireable": true
     }
   ]

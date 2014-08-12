@@ -7,6 +7,8 @@ module.exports.municipiosDicionario = path.join(__dirname, './dados/municipios-d
 module.exports.municipiosArray = path.join(__dirname, './dados/municipios-array.json');
 module.exports.cfopsDicionario = path.join(__dirname, './dados/cfops-dicionario.json');
 module.exports.cfopsArray = path.join(__dirname, './dados/cfops-array.json');
+module.exports.ncmsArray = path.join(__dirname, './dados/ncms-array.json');
+module.exports.ncmsDicionario = path.join(__dirname, './dados/ncms-dicionario.json');
 module.exports.bancosArray = bancosArray;
 
 var codigosDDD = [

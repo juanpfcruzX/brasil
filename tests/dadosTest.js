@@ -3,8 +3,55 @@ var dados = require('../brasil').dados;
 var existsSync = (process.version.indexOf('v0.6') !== -1 ? require('path').existsSync : existsSync = require('fs').existsSync);
 
 module.exports = {
+
+    ncmsArray: {
+        // Atenção: Os seguintes NCMS são os únicos que não possuem 8 digitos
+        //
+        // 4810
+        // 48101
+        // 481013
+        // 4810138
+        // 030289
+        // v09096290
+
+        'Verifica que é fornecido o caminho ao invés do objeto': function(test) {
+            test.equal(typeof dados.ncmsArray, 'string')
+            test.done();
+        },
+
+        'Verifica a quantidade de ncms': function(test) {
+            var ncms = require(dados.ncmsArray);
+
+            test.equal(ncms.length, 12028);
+            test.done();
+        },
+    },
+
+    ncmsDicionario: {
+        // Atenção: Os seguintes NCMS são os únicos que não possuem 8 digitos
+        //
+        // 4810
+        // 48101
+        // 481013
+        // 4810138
+        // 030289
+        // v09096290
+
+        'Verifica que é fornecido o caminho ao invés do objeto': function(test) {
+            test.equal(typeof dados.ncmsDicionario, 'string')
+            test.done();
+        },
+
+        'Verifica a quantidade de ncms': function(test) {
+            var ncms = require(dados.ncmsDicionario);
+
+            test.equal(Object.keys(ncms).length, 12025); //3 código estão repetidos nesta listagem
+            test.done();
+        },
+    },
+
     codigosDDD: {
-        'existem 67 DDDs e eles são do tipo número': function(test) {
+        'Existem 67 DDDs e eles são do tipo número': function(test) {
 
             dados.codigosDDD.forEach(function(ddd) {
                 test.ok(typeof ddd === 'number');
