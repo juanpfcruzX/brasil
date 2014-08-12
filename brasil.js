@@ -1,10 +1,10 @@
 //browserify brasil.js -s brasil | uglifyjs > brasil.browser.js
 
 module.exports = {
-    nfe: require('./nfeUtils'),
-    validacoes: require('./validacoesUtils'),
-    dados: require('./dadosUtils'),
-    formatacoes: require('./formatacoesUtils'),
-    consultas: require('./consultasUtils'),
-    bancos: require('./bancosUtils')
+    nfe: require('./lib/nfeUtils'),
+    validacoes: require('./lib/validacoesUtils'),
+    dados: require('./lib/dadosUtils'),
+    formatacoes: require('./lib/formatacoesUtils'),
+    consultas: require('./lib/consultasUtils'),
+    bancos: require('./lib/bancosUtils')
 };

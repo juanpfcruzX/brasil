@@ -1,12 +1,13 @@
 var
 	fs = require("fs"),
+	path = require('path'),
 	utils = require("../brasil");
 
 var existsSync = (process.version.indexOf("v0.6") !== -1 ? require("path").existsSync : existsSync = fs.existsSync);
 
 module.exports = {
 	"Verifica que todos os submodulos estão disponíveis": function(test){
-		fs.readdirSync(__dirname + "/..").forEach(function(file){
+		fs.readdirSync(path.join(__dirname, "/../lib")).forEach(function(file){
 			var match = file.match(/(.*)Utils.js/);
 
 			if(match){
@@ -19,7 +20,7 @@ module.exports = {
 	},
 
 	"Verifica que para cada submodulo existe um arquivo de teste": function(test){
-		fs.readdirSync(__dirname + "/..").forEach(function(file){
+		fs.readdirSync(path.join(__dirname, "/../lib")).forEach(function(file){
 			var match = file.match(/(.*)Utils.js/);
 
 			if(match){
@@ -33,7 +34,7 @@ module.exports = {
 	},
 
 	"Verifica que para cada propriedade exposta por um submodulo existe um conjunto de testes": function(test){
-		fs.readdirSync(__dirname + "/..").forEach(function(file){
+		fs.readdirSync(path.join(__dirname, "/../lib")).forEach(function(file){
 			var match = file.match(/(.*)Utils.js/);
 
 			if(match){
@@ -41,7 +42,7 @@ module.exports = {
 				var exists = existsSync(testFilePath);
 				if(exists){
 					var submoduleTest = require(testFilePath);
-					var submodule = require(__dirname + "/../" + file);
+					var submodule = require(__dirname + "/../lib/" + file);
 
 					//console.log(match[1] + " / " + file);
 

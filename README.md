@@ -7,7 +7,7 @@ Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
 ### Instalação
 
-`npm install brasil`
+`npm install brasil --save`
 
 ### Utilização
 
@@ -25,11 +25,7 @@ Se você se interessou por este projeto você também pode se interessar por est
 
 [Lista detalhada aqui...](contributors.md)
 
-Contribua para este projeto! Atualmente precisamos de:
-
-- Validações para contas e agências dos principais bancos
-
-Após fazer suas alterações rode `npm test` e envie um pull request.
+Caso queira contribuir; faça suas alterações, rode `npm test` e envie um pull request.
 
 ### Licença
 
