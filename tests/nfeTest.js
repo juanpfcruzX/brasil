@@ -137,10 +137,60 @@ module.exports = {
 		}
 	},
 
-	obterServicos: {
+	reduzirBaseDeCalculo: {
+		'Verifica que calculo de reducao esta correto': function(test) {
+			test.equal(nfe.reduzirBaseDeCalculo(100, 0.03, 0.17), 17.64705882352941);
+			test.done();
+		},
+	},
+
+	issqn: {
 		'Verifica que quantidade de servicos esta correta': function(test) {
-			test.equal(nfe.obterServicos('array').length, 193);
-			test.equal(Object.keys(nfe.obterServicos('hash')).length, 193);
+			test.equal(nfe.issqn.listaDeServicos('array').length, 193);
+			test.equal(Object.keys(nfe.issqn.listaDeServicos('hash')).length, 193);
+			test.done();
+		},
+
+		'Verifica que quantidade de tipos de tributação está correta': function(test) {
+			test.equal(nfe.issqn.tiposDeTributacao.length, 4);
+			test.done();
+		}
+	},
+
+	icms: {
+		'Verifica que retorna quantidade correta de STs para SIMPLES': function(test) {
+			test.equal(nfe.icms.obterSituacoesTributarias('simples').length, 10);
+			test.done();
+		},
+
+		'Verifica que retorna quantidade correta de STs para regime NORMAL': function(test) {
+			test.equal(nfe.icms.obterSituacoesTributarias('normal').length, 11);
+			test.done();
+		},
+
+		'Verifica que retorna quantidade correta de STs para ambos os regimes': function(test) {
+			test.equal(nfe.icms.obterSituacoesTributarias().length, 21);
+			test.done();
+		},
+	},
+
+	pis: {
+		'Verifica que retorna quantidade correta de STs': function(test) {
+			test.equal(nfe.pis.obterSituacoesTributarias().length, 33);
+			test.done();
+		},
+	},
+
+	ipi: {
+		'Verifica que retorna quantidade correta de STs': function(test) {
+			test.equal(nfe.ipi.obterSituacoesTributarias().length, 14);
+			test.done();
+		},
+	},
+
+	cofins: {
+		'Verifica que retorna quantidade correta de STs': function(test) {
+			test.equal(nfe.cofins.obterSituacoesTributarias().length, 33);
 			test.done();
 		},
 	}
