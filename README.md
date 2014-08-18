@@ -25,7 +25,9 @@ Se você se interessou por este projeto você também pode se interessar por est
 
 [Lista detalhada aqui...](contributors.md)
 
-Caso queira contribuir; faça suas alterações, rode `npm test` e envie um pull request.
+### Contribuições
+
+Faça suas alterações, rode `npm test` e envie um pull request.
 
 ### Licença
 
