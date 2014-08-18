@@ -15,7 +15,7 @@ Por enquanto verifique as [releases](https://github.com/gammasoft/brasil/release
 
 ### Changelog
 
-O changelog encontra-se na página de [releases](https://github.com/gammasoft/brasil/releases). Cada release acompanha um descrição do que foi alterado em relação a última versão.
+O changelog encontra-se na página de [releases](https://github.com/gammasoft/brasil/releases). Cada release acompanha uma descrição do que foi alterado em relação a última versão.
 
 ### Projetos relacionados
 
