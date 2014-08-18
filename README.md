@@ -13,6 +13,10 @@ Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
 Por enquanto verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [testes](tests) para instruções sobre utilização
 
+### Changelog
+
+O changelog encontra-se na página de [releases](https://github.com/gammasoft/brasil/releases). Cada release acompanha um descrição do que foi alterado em relação a última versão.
+
 ### Projetos relacionados
 
 Se você se interessou por este projeto você também pode se interessar por estes aqui:
