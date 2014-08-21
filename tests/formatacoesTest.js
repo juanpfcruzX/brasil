@@ -3,6 +3,15 @@ var formatacoes = require('../brasil').formatacoes;
 module.exports = {
 
 	removerMascara: {
+		'Remove mascara de dinheiro': function(test) {
+			test.equal(formatacoes.removerMascara('R$ 12,23'), '12,23');
+			test.done();
+		},
+		'Remove mascaras de porcentagem': function(test) {
+			test.equal(formatacoes.removerMascara('10%'), '10');
+			test.equal(formatacoes.removerMascara('8,34 %'), '8,34');
+			test.done();
+		},
 		'Remove mascaras de Cnpj': function(test) {
 			test.equal(formatacoes.removerMascara('18.028.400/0001-70'), '18028400000170');
 			test.done();

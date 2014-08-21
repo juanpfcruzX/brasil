@@ -1,6 +1,35 @@
 var validacoes = require("../brasil").validacoes;
 
 module.exports = {
+	eEan: {
+		'É capaz de validar EAN-8': function(test) {
+			test.ok(validacoes.eEan('23734524'));
+			test.ok(validacoes.eEan('91459381'));
+			test.ok(validacoes.eEan('62999878'));
+			test.done();
+		},
+
+		'É capaz de validar EAN-12': function(test) {
+			test.ok(validacoes.eEan('569265982372'));
+			test.ok(validacoes.eEan('666376876870'));
+			test.ok(validacoes.eEan('887776655449'));
+			test.done();
+		},
+
+		'É capaz de validar EAN-13': function(test) {
+			test.ok(validacoes.eEan('7898419154154'));
+			test.ok(validacoes.eEan('7897424082124'));
+			test.ok(validacoes.eEan('7891058020316'));
+			test.done();
+		},
+
+		'É capaz de validar EAN-14': function(test) {
+			test.ok(validacoes.eEan('41412342345348'));
+			test.ok(validacoes.eEan('55443423232328'));
+			test.ok(validacoes.eEan('88887722635653'));
+			test.done();
+		},
+	},
 	ePlaca: {
 		"Valida-se placas válidas com ou sem máscara": function(test){
 			test.ok(validacoes.ePlaca("abc1234"));

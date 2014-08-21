@@ -171,7 +171,7 @@ module.exports = {
 		'Verifica que retorna quantidade correta de STs para ambos os regimes': function(test) {
 			test.equal(nfe.icms.obterSituacoesTributarias().length, 21);
 			test.done();
-		},
+		}
 	},
 
 	pis: {
@@ -191,6 +191,13 @@ module.exports = {
 	cofins: {
 		'Verifica que retorna quantidade correta de STs': function(test) {
 			test.equal(nfe.cofins.obterSituacoesTributarias().length, 33);
+			test.done();
+		},
+	},
+
+	obterOrigens: {
+		'Verifique que retorna quantidade correta de origens': function(test) {
+			test.equal(nfe.obterOrigens().length, 9);
 			test.done();
 		},
 	}
