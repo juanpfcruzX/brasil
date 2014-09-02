@@ -4,6 +4,34 @@ var existsSync = (process.version.indexOf('v0.6') !== -1 ? require('path').exist
 
 module.exports = {
 
+    cnaesArray: {
+        'Verifica o numero correto de CNAES e que todos tem 7 digitos': function(test) {
+            var cnaes = require(dados.cnaesArray),
+                quantidade = 0;
+
+            cnaes.forEach(function(cnae) {
+                quantidade++;
+                test.equal(cnae.codigo.length, 7);
+            });
+
+            test.equal(1318, quantidade);
+            test.done();
+        },
+    },
+
+    cnaesHash: {
+        'Verifica o numero correto de CNAEs e que todos tem 7 digitos': function(test) {
+            var cnaes = Object.keys(require(dados.cnaesHash));
+
+            cnaes.forEach(function(cnae) {
+                test.equal(cnae.length, 7);
+            });
+
+            test.equal(1318, cnaes.length);
+            test.done();
+        },
+    },
+
     ncmsArray: {
         // Atenção: Os seguintes NCMS são os únicos que não possuem 8 digitos
         //

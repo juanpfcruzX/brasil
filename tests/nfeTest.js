@@ -1,6 +1,16 @@
 var nfe = require("../brasil").nfe;
 
 module.exports = {
+
+	obterProdutosEspecificos: {
+		'Verifica que retorna corretamente os produtos especificos': function(test) {
+			var produtosEspecificos = nfe.obterProdutosEspecificos();
+
+			test.equal(produtosEspecificos.length, 4);
+			test.done();
+		},
+	},
+
 	gerarChaveDeAcesso: {
 		"Verifica geração de chave de acesso": function(test){
 			var chave = nfe.gerarChaveDeAcesso({
