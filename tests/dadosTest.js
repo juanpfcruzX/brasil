@@ -4,6 +4,14 @@ var existsSync = (process.version.indexOf('v0.6') !== -1 ? require('path').exist
 
 module.exports = {
 
+    siglas: {
+        'Verifica que retorna um object e tem o numero correto de siglas': function(test) {
+            var siglas = dados.siglas;
+            test.equals(Object.keys(siglas).length, 14);
+            test.done();
+        },
+    },
+
     cnaesArray: {
         'Verifica o numero correto de CNAES e que todos tem 7 digitos': function(test) {
             var cnaes = require(dados.cnaesArray),
