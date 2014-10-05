@@ -11,7 +11,7 @@ Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
 ### Utilização
 
-Se você deseja saber como utilizar a função de consultas a receita federal, verifique este repositório de exemplo: [brasil-exemplo](https://github.com/gammasoft/brasil-exemplo).
+Se você deseja saber como utilizar a função de consultas a receita federal, verifique este repositório de exemplo: [brasil-exemplo](https://github.com/gammasoft/brasil-exemplo) ou verifique a [página de demonstrações](http://brasil.gammasoft.com.br/).
 
 Para as demais funcionalidades verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [testes](tests) para instruções sobre utilização
 
