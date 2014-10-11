@@ -309,4 +309,24 @@ module.exports = {
 			test.done();
 		}
 	}
+
+	ePisPasep: {
+		"Verifica que é possível validar PIS/PASEPs": function(test){
+			test.ok(validacoes.ePisPasep("  125.6932.537-8   "));
+			test.ok(validacoes.ePisPasep("125.6932.537-8"));
+			test.ok(validacoes.ePisPasep("12561040048"));
+			test.ok(validacoes.ePisPasep("125.8576.637-5"));
+			test.ok(validacoes.ePisPasep("12521311083"));
+			test.ok(validacoes.ePisPasep("125.4158.627-4"));
+			test.done();
+		},
+
+		"Retorna false para PIS/PASEP inválido": function(test){
+			test.ok(!validacoes.ePisPasep("PIS is not a valid PIS"));
+			test.ok(!validacoes.ePisPasep("125.0407.095-1"));
+			test.ok(!validacoes.ePisPasep("125.7720.536-X"));
+			test.ok(!validacoes.ePisPasep("125.3587.244-99"));
+			test.ok(!validacoes.ePisPasep(" "));
+		}
+	}
 };
