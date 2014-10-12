@@ -28,6 +28,7 @@ Se você se interessou por este projeto você também pode se interessar por est
 ### Contribuidores
 
 - [Renato Gama](http://www.github.com/renatoargh)
+- [Danilo Sampaio](https://github.com/danilosampaio)
 
 [Lista detalhada aqui...](contributors.md)
 

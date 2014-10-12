@@ -308,7 +308,7 @@ module.exports = {
 
 			test.done();
 		}
-	}
+	},
 
 	ePisPasep: {
 		"Verifica que é possível validar PIS/PASEPs": function(test){
@@ -318,6 +318,8 @@ module.exports = {
 			test.ok(validacoes.ePisPasep("125.8576.637-5"));
 			test.ok(validacoes.ePisPasep("12521311083"));
 			test.ok(validacoes.ePisPasep("125.4158.627-4"));
+			test.ok(validacoes.ePisPasep("131.42928.27-7"));
+
 			test.done();
 		},
 
@@ -327,6 +329,8 @@ module.exports = {
 			test.ok(!validacoes.ePisPasep("125.7720.536-X"));
 			test.ok(!validacoes.ePisPasep("125.3587.244-99"));
 			test.ok(!validacoes.ePisPasep(" "));
+
+			test.done();
 		}
 	}
 };
