@@ -46,6 +46,14 @@ module.exports = {
 		}
 	},
 
+	pisPasep: {
+		'Verifica que a máscara é aplicada corretamente': function(test) {
+			test.equal(formatacoes.pisPasep('12541586274'), '125.4158.627-4');
+			test.equal(formatacoes.pisPasep('\t   12541586274  '), '125.4158.627-4');
+			test.done();
+		}
+	},
+
 	cnpj: {
 		'Verifica que a máscara é aplicada corretamente': function(test) {
 

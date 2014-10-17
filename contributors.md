@@ -3,6 +3,8 @@
 ---
 [Gammasoft Desenvolvimento de Software Ltda](mailto:contato@gammasoft.com.br)  
 
-##### Contributors (05/10/2014 17:22:56-03:00)
+##### Contributors (12/10/2014 15:48:43-03:00)
 - ![Renato Gama](http://www.gravatar.com/avatar/e5c3912f727b5788f229e2be8e8d65e2?s=40&d=identicon)  
-  [Renato Gama](https://github.com/renatoargh) - 70 contributions
+  [Renato Gama](https://github.com/renatoargh) - 73 contributions
+- ![Danilo Sampaio](http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=identicon)  
+  [Danilo Sampaio](https://github.com/danilosampaio) - 2 contributions
