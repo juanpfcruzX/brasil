@@ -413,5 +413,426 @@ module.exports = {
 
             test.done();
         }
+    },
+
+    obterFeriados: {        
+        'Verifica que os feriados nacionais e estaduais são retornados corretamente': function(test){
+            test.deepEqual(dados.obterFeriados(),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('AC'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "23/01", descricao: "Dia do evangélico" }, 
+                        { data: "08/03", descricao: "Alusivo ao Dia Internacional da Mulher" },
+                        { data: "15/06", descricao: "Aniversário do estado" },
+                        { data: "05/09", descricao: "Dia da Amazônia" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('AL'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "24/06", descricao: "São João" },
+                        { data: "29/06", descricao: "São Pedro" },
+                        { data: "16/09", descricao: "Emancipação política" },
+                        { data: "20/11", descricao: "Morte de Zumbi dos Palmares" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('AP'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "19/03", descricao: "Dia de São José, santo padroeiro do Estado do Amapá" },
+                        { data: "13/09", descricao: "Criação do Território Federal (Data Magna do estado)" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('AM'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "05/09", descricao: "Elevação do Amazonas à categoria de província" },
+                        { data: "20/11", descricao: "Dia da Consciência Negra" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('BA'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "02/07", descricao: "Independência da Bahia (Data magna do estado)" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('CE'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "25/03", descricao: "Data magna do estado (data da abolição da escravidão no Ceará)" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('DF'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "21/04", descricao: "Fundação de Brasília" },
+                        { data: "30/11", descricao: "Dia do evangélico" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('MA'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "28/06", descricao: "Adesão do Maranhão à independência do Brasil" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('MT'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "20/11", descricao: "Dia da Consciência Negra" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('MS'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "11/10", descricao: "Criação do estado" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('MG'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "21/04", descricao: "Data magna do estado" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('PA'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "15/08", descricao: "Adesão do Grão-Pará à independência do Brasil (data magna)" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('PB'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "26/07", descricao: "Homenagem à memória do ex-presidente João Pessoa" },
+                        { data: "05/08", descricao: "Fundação do Estado em 1585" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('PR'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "19/12", descricao: "Emancipação política (emancipação do Paraná)" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('PE'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('PI'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "19/10", descricao: "Dia do Piauí" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('RJ'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "23/04", descricao: "Dia de São Jorge" },
+                        { data: "20/11", descricao: "Dia da Consciência Negra" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('RN'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "03/10", descricao: "Mártires de Cunhaú e Uruaçu" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('RS'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "20/09", descricao: "Proclamação da República Rio-Grandense" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('RO'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "04/01", descricao: "Criação do estado (data magna)" },
+                        { data: "18/06", descricao: "Dia do evangélico" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('RR'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "05/10", descricao: "Criação do estado" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('SC'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('SP'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "09/07", descricao: "Revolução Constitucionalista de 1932 (Data magna do estado)" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('SE'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "08/07", descricao: "Autonomia política de Sergipe" }
+                    ]);
+
+            test.deepEqual(dados.obterFeriados('TO'),
+                    [
+                        { data: "01/01", descricao: "Confraternização Universal" },
+                        { data: "21/04", descricao: "Tiradentes" },
+                        { data: "01/05", descricao: "Dia do Trabalho" },
+                        { data: "07/09", descricao: "Independência do Brasil" },
+                        { data: "12/10", descricao: "Nossa Senhora Aparecida" },
+                        { data: "02/11", descricao: "Finados" },
+                        { data: "15/11", descricao: "Proclamação da República" },
+                        { data: "25/12", descricao: "Natal" },
+                        { data: "05/10", descricao: "Criação do estado" },
+                        { data: "18/03", descricao: "Autonomia do Estado (criação da Comarca do Norte)" },
+                        { data: "08/09", descricao: "Padroeira do Estado (Nossa Senhora da Natividade)" }
+                    ]);
+
+            test.done();
+        }
+    },
+
+    eFeriado: {
+        "Verifica que é feriado": function(test) {
+            
+            test.ok(dados.eFeriado("01/01"));
+            test.ok(dados.eFeriado(new Date(2014,0,1)));
+            test.ok(dados.eFeriado("07/09"));
+            test.ok(dados.eFeriado(new Date(2014,8,7)));
+            test.ok(dados.eFeriado("01/01", "AC"));
+            test.ok(dados.eFeriado("23/01", "AC"));
+            test.ok(dados.eFeriado("26/06", "AL"));
+            test.ok(dados.eFeriado("19/03", "AP"));
+            test.ok(dados.eFeriado("05/09", "AM"));
+            test.ok(dados.eFeriado("02/07", "BA"));
+            test.ok(dados.eFeriado("25/03", "CE"));
+            test.ok(dados.eFeriado("21/04", "DF"));
+            test.ok(dados.eFeriado("28/06", "MA"));
+            test.ok(dados.eFeriado("22/11", "MT"));
+            test.ok(dados.eFeriado("11/10", "MS"));
+            test.ok(dados.eFeriado("21/04", "MG"));
+            test.ok(dados.eFeriado("15/08", "PA"));
+            test.ok(dados.eFeriado("26/07", "PB"));
+            test.ok(dados.eFeriado("19/02", "PR"));
+            test.ok(dados.eFeriado("19/10", "PI"));
+            test.ok(dados.eFeriado("23/04", "RJ"));
+            test.ok(dados.eFeriado("03/10", "RN"));
+            test.ok(dados.eFeriado("20/09", "RS"));
+            test.ok(dados.eFeriado("04/01", "RO"));
+            test.ok(dados.eFeriado("05/10", "RR"));
+            test.ok(dados.eFeriado("09/07", "SP"));
+            test.ok(dados.eFeriado("08/07", "SE"));
+            test.ok(dados.eFeriado("05/10", "TO"));
+
+            test.done();
+        },
+
+        "Retorna false para para data que não é feriado": function(test){
+
+            test.ok(!dados.eFeriado("22/01", "AC"));
+            test.ok(!dados.eFeriado("27/06", "AL"));
+            test.ok(!dados.eFeriado("20/03", "AP"));
+            test.ok(!dados.eFeriado("06/09", "AM"));
+            test.ok(!dados.eFeriado("03/07", "BA"));
+            test.ok(!dados.eFeriado("26/03", "CE"));
+            test.ok(!dados.eFeriado("22/04", "DF"));
+            test.ok(!dados.eFeriado("27/06", "MA"));
+            test.ok(!dados.eFeriado("23/11", "MT"));
+            test.ok(!dados.eFeriado("12/10", "MS"));
+            test.ok(!dados.eFeriado("22/04", "MG"));
+            test.ok(!dados.eFeriado("16/08", "PA"));
+            test.ok(!dados.eFeriado("27/07", "PB"));
+            test.ok(!dados.eFeriado("20/02", "PR"));
+            test.ok(!dados.eFeriado("20/10", "PI"));
+            test.ok(!dados.eFeriado("24/04", "RJ"));
+            test.ok(!dados.eFeriado("04/10", "RN"));
+            test.ok(!dados.eFeriado("21/09", "RS"));
+            test.ok(!dados.eFeriado("05/01", "RO"));
+            test.ok(!dados.eFeriado("06/10", "RR"));
+            test.ok(!dados.eFeriado("10/07", "SP"));
+            test.ok(!dados.eFeriado("09/07", "SE"));
+            test.ok(!dados.eFeriado("06/10", "TO"));
+
+
+            test.done();
+        }
     }
 };
