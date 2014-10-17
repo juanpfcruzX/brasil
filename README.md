@@ -15,6 +15,20 @@ Se você deseja saber como utilizar a função de consultas a receita federal, v
 
 Para as demais funcionalidades verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [testes](tests) para instruções sobre utilização
 
+### Roadmap
+
+Se você precisa de alguma funcionalidade que o módulo não contempla por favor [abra um issue](https://github.com/gammasoft/brasil/issues/new) para solicitar que ela seja inclusa no roadmap.
+
+ - Consultas a todas as SEFAZ estaduais
+ - Integração com os web services da NFe
+ - Assinatura digital do XML da NFe
+ - Geração de DANFE em PDF
+ - Validação de agência e conta bancária dos principais bancos
+ - Validação de título de eleitor
+ - Implementar os geradores (de cpf, cnpj, pis/pasep, titulo de eleitor, inscricao estadual, etc)
+ - Tornar a versão para o browser mais leve (atualmente está praticamente inutilizavel)
+ - Criar site com documentação detalhada do módulo, que será gerada automaticamente a cada commit
+
 ### Changelog
 
 O changelog encontra-se na página de [releases](https://github.com/gammasoft/brasil/releases). Cada release acompanha uma descrição do que foi alterado em relação a última versão.
@@ -36,7 +50,7 @@ Se você se interessou por este projeto você também pode se interessar por est
 
 Faça suas alterações, rode `npm test` e envie um pull request.
 
-### Licença
+### [Licença MIT](http://gammasoft.mit-license.org/)
 
 The MIT License (MIT)
 
