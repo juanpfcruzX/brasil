@@ -310,6 +310,13 @@ module.exports = {
 		}
 	},
 
+	eNit: {
+		'Verifica que é apenas um alias para .ePisPasep': function(test) {
+			test.equal(validacoes.ePisPasep.toString(), validacoes.eNit.toString());
+			test.done();
+		}
+	},
+
 	ePisPasep: {
 		"Verifica que é possível validar PIS/PASEPs": function(test){
 			test.ok(validacoes.ePisPasep("  125.6932.537-8   "));

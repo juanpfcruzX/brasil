@@ -46,6 +46,13 @@ module.exports = {
 		}
 	},
 
+	nit: {
+		'Verifica que é apenas um alias para .pisPasep': function(test) {
+			test.equal(formatacoes.pisPasep.toString(), formatacoes.nit.toString());
+			test.done();
+		}
+	},
+
 	pisPasep: {
 		'Verifica que a máscara é aplicada corretamente': function(test) {
 			test.equal(formatacoes.pisPasep('12541586274'), '125.4158.627-4');
