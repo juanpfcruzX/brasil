@@ -5,15 +5,19 @@ Brasil
 
 Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
+### Documentação
+
+Veja a documentação completa em: http://www.gammasoft.com.br/brasil/
+
+Verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [testes](tests) para mais instruções de utilização.
+
 ### Instalação
 
 `npm install brasil --save`
 
-### Utilização
+### Demo
 
-Se você deseja saber como utilizar a função de consultas a receita federal, verifique este repositório de exemplo: [brasil-exemplo](https://github.com/gammasoft/brasil-exemplo) ou verifique a [página de demonstrações](http://brasil.gammasoft.com.br/).
-
-Para as demais funcionalidades verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [testes](tests) para instruções sobre utilização
+Pesquisando um CNPJ na Receita Federal: [demo online](http://brasil.gammasoft.com.br/) ou [veja o código fonte](https://github.com/gammasoft/brasil-exemplo).
 
 ### Roadmap
 
