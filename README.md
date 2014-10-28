@@ -7,7 +7,7 @@ Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
 ### Documentação
 
-Veja a documentação completa em: http://www.gammasoft.com.br/brasil/
+Veja a documentação completa em: http://opensource.gammasoft.com.br/brasil/
 
 Verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [testes](tests) para mais instruções de utilização.
 
