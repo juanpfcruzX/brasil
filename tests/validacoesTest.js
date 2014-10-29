@@ -1,6 +1,37 @@
 var validacoes = require("../brasil").validacoes;
 
 module.exports = {
+
+	eTituloDeEleitor: {
+		'É capaz de validar titulos de eleitor': function(test) {
+			test.ok(validacoes.eTituloDeEleitor('106644440302'));
+			test.ok(validacoes.eTituloDeEleitor('0196 3894 2097'));
+			test.ok(validacoes.eTituloDeEleitor('1265934718-72'));
+			test.ok(validacoes.eTituloDeEleitor('0043568709/06'));
+			test.ok(validacoes.eTituloDeEleitor('2733 9734 0264'));
+			test.ok(validacoes.eTituloDeEleitor('  \t 7.232.3\t06.121-78   '));
+
+			test.done();
+		},
+
+		'Retorna o estado de origem do titulo eleitoral caso ele seja válido': function(test) {
+			test.equal(validacoes.eTituloDeEleitor('1066 4444 0302'), 'RJ');
+			test.equal(validacoes.eTituloDeEleitor('0196 3894 2097'), 'DF');
+			test.equal(validacoes.eTituloDeEleitor('1265 9347 1872'), 'MT');
+			test.equal(validacoes.eTituloDeEleitor('0043 5687 0906'), 'SC');
+			test.equal(validacoes.eTituloDeEleitor('2733 9734 0264'), 'MG');
+			test.equal(validacoes.eTituloDeEleitor('7232 3061 2178'), 'SE');
+
+			test.done();
+		},
+
+		'Retorna ZZ caso seja um titulo de eleitor emitido no exterior': function(test) {
+			test.equal(validacoes.eTituloDeEleitor('123412342801'), 'ZZ');
+
+			test.done();
+		},
+	},
+
 	eEan: {
 		'É capaz de validar EAN-8': function(test) {
 			test.ok(validacoes.eEan('23734524'));
