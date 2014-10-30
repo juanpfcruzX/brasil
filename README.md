@@ -32,6 +32,7 @@ Se você precisa de alguma funcionalidade que o módulo não contempla por favor
  - Implementar os geradores (de cpf, cnpj, pis/pasep, titulo de eleitor, inscricao estadual, etc)
  - Tornar a versão para o browser mais leve (atualmente está praticamente inutilizavel)
  - Criar site com documentação detalhada do módulo, que será gerada automaticamente a cada commit
+ - Cliente para web service de calculo de frete dos correios
 
 ### Changelog
 
