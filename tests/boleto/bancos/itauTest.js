@@ -11,31 +11,29 @@ var boleto = require('../../../lib/boletoUtils.js'),
 
 module.exports = {
 	setUp: function(done) {
+		var datas = Datas.novasDatas();
+		datas.comDocumento(20, 3, 2013);
+		datas.comProcessamento(20, 3, 2013);
+		datas.comVencimento(1, 4, 2013);
 
-		var datas = Datas.novasDatas()
-							.comDocumento(20, 3, 2013)
-							.comProcessamento(20, 3, 2013)
-							.comVencimento(1, 4, 2013),
+		pagador = Pagador.novoPagador();
+		pagador.comNome('Paulo Silveira');
 
-			pagador = Pagador.novoPagador()
-								.comNome('Paulo Silveira'),
+		beneficiario = Beneficiario.novoBeneficiario();
+		beneficiario.comNome('Rodrigo Turini');
+		beneficiario.comAgencia('167');
+		beneficiario.comCarteira('157');
+		beneficiario.comCodigo('45145');
+		beneficiario.comNossoNumero('21897666');
+		beneficiario.comDigitoNossoNumero('6');
 
-			beneficiario = Beneficiario.novoBeneficiario()
-										.comNome('Rodrigo Turini')
-										.comAgencia('167')
-										.comCarteira('157')
-										.comCodigo('45145')
-										.comNossoNumero('21897666')
-										.comDigitoNossoNumero('6');
-
-			boleto = Boleto.novoBoleto()
-								.comDatas(datas)
-								.comBeneficiario(beneficiario)
-								.comBanco(new Itau())
-								.comPagador(pagador)
-								.comValorBoleto(2680.16)
-								.comNumeroDoDocumento(575)
-
+		boleto = Boleto.novoBoleto();
+		boleto.comDatas(datas);
+		boleto.comBeneficiario(beneficiario);
+		boleto.comBanco(new Itau());
+		boleto.comPagador(pagador);
+		boleto.comValorBoleto(2680.16);
+		boleto.comNumeroDoDocumento(575);
 
 		done();
 	},
