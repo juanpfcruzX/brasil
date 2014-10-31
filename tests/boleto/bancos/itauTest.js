@@ -67,8 +67,10 @@ module.exports = {
 		test.done();
 	},
 
-	'Verifica linha digitável': function(test) {
+	'Verifica geração do código de barras': function(test) {
+		var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto);
 
+		test.equal('34196565500002680161572189766660167451459000', codigoDeBarras);
 		test.done();
 	},
 }

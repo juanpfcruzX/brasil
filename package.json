@@ -42,7 +42,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "gammautils": "0.0.58",
+    "gammautils": "0.0.62",
     "iconv-lite": "^0.4.3",
     "pdfkit": "^0.7.0",
     "request": "^2.37.0"
