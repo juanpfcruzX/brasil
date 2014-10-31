@@ -4,7 +4,7 @@
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
-    "test": "nodeunit ./tests/*Test.js"
+    "test": "nodeunit ./tests/*Test.js && nodeunit ./tests/boleto/bancos/*Test.js"
   },
   "repository": {
     "type": "git",
