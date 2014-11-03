@@ -228,6 +228,59 @@ module.exports = {
         	});
 
         	test.done();
+        },
+
+        'Não deve ser possivel definir um novo boleto com valor superior a R$ 99.999.999,99': function(test) {
+            test.throws(function() {
+                var boleto = Boleto.novoBoleto().comValorBoleto(100000000.00);
+            });
+
+            test.done();
+        },
+
+        'Deve retornar formatação em formato legivel': function(test) {
+            var boleto;
+
+            boleto = Boleto.novoBoleto().comValorBoleto(0);
+            test.equal('R$ 0,00', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(1);
+            test.equal('R$ 1,00', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(1.2);
+            test.equal('R$ 1,20', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(1.23);
+            test.equal('R$ 1,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(1.235);
+            test.equal('R$ 1,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(10.23);
+            test.equal('R$ 10,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(100.23);
+            test.equal('R$ 100,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(1000.23);
+            test.equal('R$ 1.000,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(10002.23);
+            test.equal('R$ 10.002,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(210002.23);
+            test.equal('R$ 210.002,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(3210002.23);
+            test.equal('R$ 3.210.002,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(13210002.23);
+            test.equal('R$ 13.210.002,23', boleto.getValorFormatadoBRL());
+
+            boleto = Boleto.novoBoleto().comValorBoleto(99999999.99);
+            test.equal('R$ 99.999.999,99', boleto.getValorFormatadoBRL());
+
+            test.done();
         }
     }
 };

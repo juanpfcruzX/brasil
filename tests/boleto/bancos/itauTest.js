@@ -1,6 +1,9 @@
-var boleto = require('../../../lib/boletoUtils.js'),
+var path = require('path'),
+	fs = require('fs'),
+	boleto = require('../../../lib/boletoUtils.js'),
 	Itau = require('../../../lib/boleto/bancos/itau.js'),
 	geradorDeLinhaDigitavel = require('../../../lib/boleto/geradorDeLinhaDigitavel.js'),
+	GeradorDeBoleto = require('../../../lib/boleto/geradorDeBoleto.js'),
 
 	Datas = boleto.Datas,
 	Beneficiario = boleto.Beneficiario,
@@ -19,10 +22,10 @@ module.exports = {
 		datas.comVencimento(1, 4, 2013);
 
 		pagador = Pagador.novoPagador();
-		pagador.comNome('Paulo Silveira');
+		pagador.comNome('Fulano de Tal da Silva');
 
 		beneficiario = Beneficiario.novoBeneficiario();
-		beneficiario.comNome('Rodrigo Turini');
+		beneficiario.comNome('Gammasoft Desenvolvimento de Software Ltda');
 		beneficiario.comAgencia('167');
 		beneficiario.comCarteira('157');
 		beneficiario.comCodigo('45145');
@@ -247,4 +250,21 @@ module.exports = {
 		test.equal('34196565500002680161572189766660167451459000', codigoDeBarras);
 		test.done();
 	},
+
+	'Verifica criação de pdf': function(test) { //Mover para teste adequado
+
+		var geradorDeBoleto = new GeradorDeBoleto(boleto);
+
+		geradorDeBoleto.gerarPDF(function boletosGerados(err, readStream) {
+			var caminhoDoArquivo = path.join(__dirname, '/boleto.pdf');
+				writeStream = fs.createWriteStream(caminhoDoArquivo);
+
+			readStream.pipe(writeStream);
+			readStream.on('end', function() {
+				test.ok(fs.existsSync(caminhoDoArquivo));
+				test.ifError(err);
+				test.done();
+			});
+		});
+	}
 }
