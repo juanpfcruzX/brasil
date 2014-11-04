@@ -1,6 +1,6 @@
 {
   "name": "brasil",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
@@ -52,17 +52,17 @@
   },
   "contributors": [
     {
-      "name": "Renato Gama",
-      "email": "renatoargh@gmail.com",
-      "url": "https://github.com/renatoargh",
-      "contributions": 83,
-      "hireable": false
-    },
-    {
       "name": "Danilo Sampaio",
       "email": "",
       "url": "https://github.com/danilosampaio",
       "contributions": 8,
+      "hireable": false
+    },
+    {
+      "name": "Renato Gama",
+      "email": "renatoargh@gmail.com",
+      "url": "https://github.com/renatoargh",
+      "contributions": 96,
       "hireable": false
     }
   ]

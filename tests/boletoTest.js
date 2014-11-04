@@ -1,9 +1,42 @@
 var boleto = require('../brasil').boleto,
-	Endereco = boleto.Endereco,
+    bancos = boleto.bancos,
+    Endereco = boleto.Endereco,
+	Gerador = boleto.Gerador,
 	Boleto = boleto.Boleto,
 	Datas = boleto.Datas;
 
 module.exports = {
+    bancos: {
+        'Todos os bancos estão disponíveis': function(test) {
+            test.ok(new bancos.Itau());
+            test.equals(1, Object.keys(bancos).length);
+            test.done();
+        },
+    },
+
+    Gerador: {
+        'Verifica que é possível instanciar o gerador': function(test) {
+            test.ok(new Gerador());
+            test.done();
+        },
+
+        'Verifica que o gerador apresenta as funções esperadas': function(test) {
+            var gerador = new Gerador();
+
+            test.equal(typeof gerador.gerarPDF, 'function');
+            test.equal(typeof gerador.gerarHTML, 'function');
+            test.done();
+        },
+
+        'Verifica que a geração de HTML lança uma exceção': function(test) {
+            test.throws(function() {
+                new Gerador().gerarHTML();
+            });
+
+            test.done();
+        }
+    },
+
 	Pagador: {
 
 	},
