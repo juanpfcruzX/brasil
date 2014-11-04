@@ -6,6 +6,7 @@ var path = require('path'),
 	GeradorDeBoleto = require('../../../lib/boleto/geradorDeBoleto.js'),
 
 	Datas = boleto.Datas,
+	Endereco = boleto.Endereco,
 	Beneficiario = boleto.Beneficiario,
 	Pagador = boleto.Pagador,
 	Boleto = boleto.Boleto,
@@ -23,9 +24,11 @@ module.exports = {
 
 		pagador = Pagador.novoPagador();
 		pagador.comNome('Fulano de Tal da Silva');
+		pagador.comRegistroNacional('00132781000178');
 
 		beneficiario = Beneficiario.novoBeneficiario();
 		beneficiario.comNome('Gammasoft Desenvolvimento de Software Ltda');
+		beneficiario.comRegistroNacional('19950366000150');
 		beneficiario.comAgencia('167');
 		beneficiario.comCarteira('157');
 		beneficiario.comCodigo('45145');
@@ -244,6 +247,21 @@ module.exports = {
 		test.done();
 	},
 
+	'Verifica nome correto do banco': function(test) {
+		test.equals(banco.getNome(), 'Banco Itaú S/A');
+		test.done();
+	},
+
+	'Verifica a numeração correta do banco': function(test) {
+		test.equal(banco.getNumeroFormatadoComDigito(), '341-7');
+		test.done();
+	},
+
+	'Verifica deve imprimir o nome do banco no boleto': function(test) {
+		test.ok(banco.getImprimirNome());
+		test.done();
+	},
+
 	'Verifica geração do código de barras': function(test) {
 		var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto);
 
@@ -253,16 +271,65 @@ module.exports = {
 
 	'Verifica criação de pdf': function(test) { //Mover para teste adequado
 
-		var geradorDeBoleto = new GeradorDeBoleto(boleto);
+		var datas2 = Datas.novasDatas();
+		datas2.comDocumento(19, 9, 2014);
+		datas2.comProcessamento(19, 9, 2014);
+		datas2.comVencimento(26, 9, 2014);
 
-		geradorDeBoleto.gerarPDF(function boletosGerados(err, readStream) {
+		var beneficiario2 = Beneficiario.novoBeneficiario();
+		beneficiario2.comCarteira('157');
+		beneficiario2.comAgencia('654');
+		beneficiario2.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
+		beneficiario2.comNossoNumero('07967777')
+		beneficiario2.comDigitoNossoNumero('4');
+
+		var pagador2 = Pagador.novoPagador();
+		pagador2.comNome('Asnésio da Silva');
+
+	    var boleto2 = Boleto.novoBoleto();
+	    boleto2.comEspecieDocumento('FS');
+	    boleto2.comDatas(datas2);
+	    boleto2.comBeneficiario(beneficiario2);
+	    boleto2.comBanco(banco);
+	    boleto2.comPagador(pagador2);
+	    boleto2.comValorBoleto(230.76);
+	    boleto2.comNumeroDoDocumento('5');
+		boleto2.comBanco(banco);
+
+		var enderecoDoPagador = Endereco.novoEndereco();
+		enderecoDoPagador.comLogradouro('Avenida dos Testes Unitários');
+		enderecoDoPagador.comBairro('Barra da Tijuca');
+		enderecoDoPagador.comCep('72000000');
+		enderecoDoPagador.comCidade('Rio de Janeiro');
+		enderecoDoPagador.comUf('RJ');
+
+		pagador.comEndereco(enderecoDoPagador);
+
+		boleto.comLocaisDePagamento([
+			'Pagável em qualquer banco ou casa lotérica até o vencimento',
+			'Após o vencimento pagável apenas em agências Itaú'
+		]);
+
+		boleto.comInstrucoes([
+			'Conceder desconto de R$ 10,00 até o vencimento',
+			'Multa de R$ 2,34 após o vencimento',
+			'Mora de R$ 0,76 ao dia após o vencimento',
+			'Protestar após 10 dias de vencido',
+			'Agradecemos a preferência, volte sempre!'
+		]);
+
+		var geradorDeBoleto = new GeradorDeBoleto([boleto]);
+
+		geradorDeBoleto.gerarPDF(function boletosGerados(err, pdf) {
+			test.ifError(err);
+
 			var caminhoDoArquivo = path.join(__dirname, '/boleto.pdf');
-				writeStream = fs.createWriteStream(caminhoDoArquivo);
+			writeStream = fs.createWriteStream(caminhoDoArquivo);
 
-			readStream.pipe(writeStream);
-			readStream.on('end', function() {
+			pdf.pipe(writeStream);
+
+			writeStream.on('close', function() {
 				test.ok(fs.existsSync(caminhoDoArquivo));
-				test.ifError(err);
 				test.done();
 			});
 		});

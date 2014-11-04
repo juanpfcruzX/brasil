@@ -54,7 +54,7 @@ module.exports = {
 
 			test.equals(endereco.getEnderecoCompleto(), [
 				'RODOVIA SC 401, KM 1 - EDIFÍCIO CELTA ',
-				'PARQTEC ALFA 88030-000 FLORIANÓPOLIS SC'
+				'PARQTEC ALFA 88.030-000 FLORIANÓPOLIS SC'
 			].join(''));
 
 			test.done();
@@ -67,7 +67,7 @@ module.exports = {
 										.comCidade('FLORIANÓPOLIS')
 										.comUf('SC');
 
-			test.equals(endereco.getEnderecoCompleto(), 'PARQTEC ALFA 88030-000 FLORIANÓPOLIS SC');
+			test.equals(endereco.getEnderecoCompleto(), 'PARQTEC ALFA 88.030-000 FLORIANÓPOLIS SC');
 
 			test.done();
 		},
