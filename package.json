@@ -4,7 +4,7 @@
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "scripts": {
-    "test": "nodeunit ./tests/*Test.js"
+    "test": "nodeunit ./tests/*Test.js && nodeunit ./tests/boleto/bancos/*Test.js && nodeunit ./tests/boleto/*Test.js"
   },
   "repository": {
     "type": "git",
@@ -42,8 +42,9 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "gammautils": "0.0.58",
+    "gammautils": "0.0.62",
     "iconv-lite": "^0.4.3",
+    "pdfkit": "^0.7.0",
     "request": "^2.37.0"
   },
   "devDependencies": {

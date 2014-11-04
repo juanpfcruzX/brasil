@@ -46,6 +46,27 @@ module.exports = {
 		}
 	},
 
+	linhaDigitavel: {
+		'Formata a linha digitavel de um boleto se tiver 47 caracteres': function(test) {
+
+			var esperado = '34191.57213 89766.660164 74514.590004 6 56550000268016',
+				original = '34191572138976666016474514590004656550000268016';
+
+			test.equal(formatacoes.linhaDigitavel(original), esperado);
+			test.done();
+		}
+	},
+
+	boletoBancario: {
+		'Verifica que é apenas um alias para .linhaDigitavel': function(test) {
+			var linhaDigitavel = formatacoes.linhaDigitavel.toString(),
+				boletoBancario = formatacoes.boletoBancario.toString();
+
+			test.equal(linhaDigitavel, boletoBancario);
+			test.done();
+		},
+	},
+
 	nit: {
 		'Verifica que é apenas um alias para .pisPasep': function(test) {
 			test.equal(formatacoes.pisPasep.toString(), formatacoes.nit.toString());
