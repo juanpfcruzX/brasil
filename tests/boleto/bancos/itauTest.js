@@ -277,6 +277,8 @@ module.exports = {
 		datas2.comVencimento(26, 9, 2014);
 
 		var beneficiario2 = Beneficiario.novoBeneficiario();
+		beneficiario2.comNome('José da Silva');
+		beneficiario2.comRegistroNacional('397.861.533-91');
 		beneficiario2.comCarteira('157');
 		beneficiario2.comAgencia('654');
 		beneficiario2.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
@@ -318,7 +320,7 @@ module.exports = {
 			'Agradecemos a preferência, volte sempre!'
 		]);
 
-		var geradorDeBoleto = new GeradorDeBoleto([boleto]);
+		var geradorDeBoleto = new GeradorDeBoleto([boleto, boleto2]);
 
 		geradorDeBoleto.gerarPDF(function boletosGerados(err, pdf) {
 			test.ifError(err);
