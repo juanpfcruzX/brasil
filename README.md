@@ -8,7 +8,7 @@ Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 ### Demonstração
 
  - Pesquisando um CNPJ na Receita Federal: [demo online](http://brasil.gammasoft.com.br/) ou [veja o código fonte](https://github.com/gammasoft/brasil-exemplo).
- - Boletos bancários em node.js: Veja a [documentação aqui](https://github.com/gammasoft/brasil/releases/tag/v0.0.29) ou veja o [resultado final aqui](https://s3-sa-east-1.amazonaws.com/gammasoft/open-source/brasil/boleto.pdf)
+ - Boletos bancários em node.js: veja a [documentação aqui](https://github.com/gammasoft/brasil/releases/tag/v0.0.29) ou veja o [resultado final aqui](https://s3-sa-east-1.amazonaws.com/gammasoft/open-source/brasil/boleto.pdf)
 
 ### Documentação
 
