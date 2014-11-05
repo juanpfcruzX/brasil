@@ -174,6 +174,19 @@ module.exports = {
         }
     },
 
+    obterBancosComCodigo: {
+        'Verifica que apenas bancos com codigo febraban são retornados': function(test) {
+            var bancosComCodigo = dados.obterBancosComCodigo();
+
+            bancosComCodigo.forEach(function(banco) {
+                test.ok(banco.codigo !== '');
+            });
+
+            test.equal(bancosComCodigo.length, 176);
+            test.done();
+        },
+    },
+
     obterBancoPorCodigo: {
         'Verifica que encontra corretamente o banco solicitado': function(test) {
             test.equal(dados.obterBancoPorCodigo('001').nome, 'Banco do Brasil S.A.');
