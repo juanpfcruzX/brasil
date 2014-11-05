@@ -1,4 +1,7 @@
-var dados = require('../brasil').dados;
+var gammautils = require('gammautils'),
+    groupBySync = gammautils.array.groupBySync,
+    values = gammautils.object.values,
+    dados = require('../brasil').dados;
 
 var existsSync = (process.version.indexOf('v0.6') !== -1 ? require('path').existsSync : existsSync = require('fs').existsSync);
 
@@ -169,7 +172,7 @@ module.exports = {
         'Verifica que o número correto de bancos é retornado': function(test) {
             var bancos = require(dados.bancosArray);
 
-            test.equal(bancos.length, 216);
+            test.equal(bancos.length, 215);
             test.done();
         }
     },
@@ -182,9 +185,21 @@ module.exports = {
                 test.ok(banco.codigo !== '');
             });
 
-            test.equal(bancosComCodigo.length, 176);
+            test.equal(bancosComCodigo.length, 175);
             test.done();
         },
+
+        'Verifica que não existem bancos repetidos (com o mesmo código mais de uma vez)': function(test) {
+            var bancosComCodigo = dados.obterBancosComCodigo();
+
+            values(groupBySync(bancosComCodigo, function(banco) {
+                return banco.codigo;
+            })).forEach(function(bancos) {
+                test.equal(bancos.length, 1);
+            });
+
+            test.done();
+        }
     },
 
     obterBancoPorCodigo: {
@@ -192,19 +207,16 @@ module.exports = {
             test.equal(dados.obterBancoPorCodigo('001').nome, 'Banco do Brasil S.A.');
             test.equal(dados.obterBancoPorCodigo('341').nome, 'Itaú Unibanco S.A.');
             test.equal(dados.obterBancoPorCodigo('237').nome, 'Banco Bradesco S.A.');
-
             test.done();
         },
 
         'Verifica que retorna nulo caso passe um código inexistente': function(test) {
             test.equal(dados.obterBancoPorCodigo('XXX'), null);
-
             test.done();
         },
 
         'Verifica que retorna nulo caso passe string vazia': function(test) {
             test.equal(dados.obterBancoPorCodigo(''), null);
-
             test.done();
         }
     },
@@ -212,7 +224,7 @@ module.exports = {
     obterBancosPorNome: {
         'Verifica que se obtem os bancos desejados passando apenas uma parte do nome': function(test) {
             test.equal(dados.obterBancosPorNome('   brasil  ').length, 47);
-            test.equal(dados.obterBancosPorNome('bradésç   ').length, 4);
+            test.equal(dados.obterBancosPorNome('bradésç   ').length, 3);
             test.equal(dados.obterBancosPorNome('itau').length, 7);
 
             test.done();

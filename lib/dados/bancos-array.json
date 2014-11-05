@@ -120,11 +120,6 @@
         "site": "http://www.iamex.com.br"
     },
     {
-        "codigo": "394",
-        "nome": "Banco Bradesco Financiamentos S.A.",
-        "site": "http://www.bmc.com.br"
-    },
-    {
         "codigo": "237",
         "nome": "Banco Bradesco S.A.",
         "site": "http://www.bradesco.com.br"
@@ -377,6 +372,9 @@
     {
         "codigo": "394",
         "nome": "Banco Finasa BMC S.A.",
+        "outrosNomes": [
+            "Banco Bradesco Financiamentos S.A."
+        ],
         "site": "http://www.bmc.com.br"
     },
     {
