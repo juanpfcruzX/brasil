@@ -1,4 +1,7 @@
-//browserify brasil.js -s brasil | uglifyjs > ./dist/brasil.browser.js
+// browserify -i ./lib/boletoUtils.js -i ./lib/consultasUtils.js brasil.js -s brasil | uglifyjs > ./dist/brasil.browser.js
+
+// Para melhorar a exportação para o browser
+// https://github.com/substack/browserify-handbook#browser-field
 
 module.exports = {
     nfe: require('./lib/nfeUtils'),

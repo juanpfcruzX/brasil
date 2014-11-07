@@ -6,6 +6,13 @@ var boleto = require('../brasil').boleto,
 	Datas = boleto.Datas;
 
 module.exports = {
+    especiesDeDocumento: {
+        'Verifica que contém o número correto de espécies': function(test) {
+            test.equals(Object.keys(boleto.especiesDeDocumento).length, 21);
+            test.done();
+        },
+    },
+
     bancos: {
         'Todos os bancos estão disponíveis': function(test) {
             test.ok(new bancos.Itau());
