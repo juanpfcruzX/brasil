@@ -18,7 +18,11 @@ Verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [test
 
 ### Instalação
 
+**node.js**  
 `npm install brasil --save`
+
+**browser**  
+`bower install brasil --save` (as funcionalidades de boletos e consultas não estão disponíveis)
 
 ### Roadmap
 
