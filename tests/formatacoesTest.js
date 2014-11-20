@@ -46,6 +46,81 @@ module.exports = {
 		}
 	},
 
+    dinheiro: {
+        'Trata casas decimais por padrão': function(test) {
+            test.equal(formatacoes.dinheiro(1), 'R$ 1,00');
+            test.equal(formatacoes.dinheiro(12), 'R$ 12,00');
+            test.equal(formatacoes.dinheiro(123), 'R$ 123,00');
+            test.equal(formatacoes.dinheiro(1234), 'R$ 1.234,00');
+            test.equal(formatacoes.dinheiro(12345), 'R$ 12.345,00');
+            test.done();
+        },
+
+        'Não arredonda, simplesmente corta as casas decimais além do especificado': function(test) {
+            test.equal(formatacoes.dinheiro(35.855), 'R$ 35,85');
+            test.equal(formatacoes.dinheiro(35.859), 'R$ 35,85');
+
+            test.equal(formatacoes.dinheiro(35.855, {
+                casasDecimais: 3
+            }), 'R$ 35,855');
+
+            test.equal(formatacoes.dinheiro(35.859, {
+                casasDecimais: 3
+            }), 'R$ 35,859');
+
+            test.equal(formatacoes.dinheiro(1.005), 'R$ 1,00');
+            test.equal(formatacoes.dinheiro(1.005, {
+                casasDecimais: 3
+            }), 'R$ 1,005');
+
+            test.done();
+        },
+
+        'É possível passar outro símbolo': function(test) {
+            test.equal(formatacoes.dinheiro(73.315, {
+                simbolo: 'BRL '
+            }), 'BRL 73,31');
+
+            test.done();
+        },
+
+        'É possível posicionar o símbolo a direita': function(test) {
+            test.equal(formatacoes.dinheiro(859.385, {
+                simbolo: 'BRL',
+                posicionamento: 'direita'
+            }), '859,38BRL');
+
+            test.done();
+        },
+    },
+
+    numero: {
+        'Por padrão não trata casas decimais a menos que você especifique': function(test) {
+            test.equal(formatacoes.numero(1), '1');
+            test.equal(formatacoes.numero(1.00), '1');
+            test.equal(formatacoes.numero(1.010), '1,01');
+
+            test.equal(formatacoes.numero(1.00, {
+                casasDecimais: 2
+            }), '1,00');
+
+            test.equal(formatacoes.numero(1.010, {
+                casasDecimais: 3
+            }), '1,010');
+
+            test.done();
+        },
+
+        'Pocisiona separador de milhar padrão': function(test) {
+            test.equal(formatacoes.numero(1234.2), '1.234,2');
+            test.equal(formatacoes.numero(12345.2), '12.345,2');
+            test.equal(formatacoes.numero(1112345.2, {
+                casasDecimais: 2
+            }), '1.112.345,20');
+            test.done();
+        },
+    },
+
     data: {
         'Verifica formatação correta': function(test) {
             var data = new Date(2014, 10, 20);

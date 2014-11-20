@@ -1,6 +1,6 @@
 {
   "name": "brasil",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "browser": "brasil.browser.js",
@@ -56,7 +56,7 @@
       "name": "Renato Gama",
       "email": "renatoargh@gmail.com",
       "url": "https://github.com/renatoargh",
-      "contributions": 111,
+      "contributions": 112,
       "hireable": false
     },
     {
