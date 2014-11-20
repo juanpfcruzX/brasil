@@ -46,6 +46,64 @@ module.exports = {
 		}
 	},
 
+    data: {
+        'Verifica formatação correta': function(test) {
+            var data = new Date(2014, 10, 20);
+            test.equal(formatacoes.data(data), '20/11/2014');
+            test.done();
+        },
+
+        'Caso não seja uma data válida retorna o que foi passado': function(test) {
+            var data = new Date('inválido');
+            test.equal(formatacoes.data(data), 'Invalid Date');
+            test.done();
+        },
+    },
+
+    hora: {
+        'Verifica formatação correta': function(test) {
+            var data = new Date(2014, 10, 20, 23, 34, 45);
+            test.equal(formatacoes.hora(data), '23:34:45');
+            test.done();
+        },
+
+        'Pode-se formatar sem os segundos': function(test) {
+            var data = new Date(2014, 10, 20, 23, 34, 45);
+            test.equal(formatacoes.hora(data, {
+                comSegundos: false
+            }), '23:34');
+            test.done();
+        },
+
+        'Caso não seja uma data válida retorna o que foi passado': function(test) {
+            var data = new Date('inválido');
+            test.equal(formatacoes.hora(data), 'Invalid Date');
+            test.done();
+        },
+    },
+
+    dataEHora: {
+        'Verifica formatação correta': function(test) {
+            var data = new Date(2014, 10, 20, 23, 34, 45);
+            test.equal(formatacoes.dataEHora(data), '20/11/2014 23:34:45');
+            test.done();
+        },
+
+        'Caso não seja uma data válida retorna o que foi passado': function(test) {
+            var data = new Date('inválido');
+            test.equal(formatacoes.dataEHora(data), 'Invalid Date');
+            test.done();
+        },
+    },
+
+    tituloDeEleitor: {
+        'Formata de acordo com a formatação impressa no título de eleitor': function(test) {
+            test.equal(formatacoes.tituloDeEleitor('273397340264'), '2733 9734 0264');
+            test.equal(formatacoes.tituloDeEleitor('\t2 7 3-39-734026-4   '), '2733 9734 0264');
+            test.done();
+        },
+    },
+
 	linhaDigitavel: {
 		'Formata a linha digitavel de um boleto se tiver 47 caracteres': function(test) {
 

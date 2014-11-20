@@ -1,8 +1,9 @@
 {
   "name": "brasil",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
+  "browser": "brasil.browser.js",
   "scripts": {
     "test": "nodeunit ./tests/*Test.js && nodeunit ./tests/boleto/bancos/*Test.js && nodeunit ./tests/boleto/*Test.js"
   },
@@ -42,7 +43,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "gammautils": "0.0.62",
+    "gammautils": "0.0.63",
     "iconv-lite": "^0.4.3",
     "pdfkit": "^0.7.0",
     "request": "^2.37.0"
@@ -55,7 +56,7 @@
       "name": "Renato Gama",
       "email": "renatoargh@gmail.com",
       "url": "https://github.com/renatoargh",
-      "contributions": 102,
+      "contributions": 111,
       "hireable": false
     },
     {

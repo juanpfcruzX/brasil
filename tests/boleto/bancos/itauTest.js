@@ -281,7 +281,7 @@ module.exports = {
 		beneficiario2.comRegistroNacional('397.861.533-91');
 		beneficiario2.comCarteira('157');
 		beneficiario2.comAgencia('654');
-		beneficiario2.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
+		beneficiario2.comContaCorrente('8711'); //Não se deve indicar o dígito da conta
 		beneficiario2.comNossoNumero('07967777')
 		beneficiario2.comDigitoNossoNumero('4');
 
