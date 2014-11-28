@@ -1,7 +1,6 @@
 Brasil
 ======
-
-[![Build Status](https://drone.io/github.com/gammasoft/brasil/status.png)](https://drone.io/github.com/gammasoft/brasil/latest) [![Última versão no npm](https://badge.fury.io/js/brasil.png)](http://npmjs.org/package/brasil) ![http://img.shields.io/npm/dm/brasil.svg](http://img.shields.io/npm/dm/brasil.svg) [![Licença](http://img.shields.io/badge/Licen%C3%A7a-MIT-brightgreen.svg)](http://gammasoft.mit-license.org/)
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/gammasoft/brasil?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://drone.io/github.com/gammasoft/brasil/status.png)](https://drone.io/github.com/gammasoft/brasil/latest) [![Última versão no npm](https://badge.fury.io/js/brasil.png)](http://npmjs.org/package/brasil) ![http://img.shields.io/npm/dm/brasil.svg](http://img.shields.io/npm/dm/brasil.svg) [![Licença](http://img.shields.io/badge/Licen%C3%A7a-MIT-brightgreen.svg)](http://gammasoft.mit-license.org/)
 
 Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
