@@ -203,7 +203,18 @@ module.exports = {
 			test.equal(validacoes.eRegistroNacional(" 88.142.322/0001-16 "), "cnpj");
 			test.equal(validacoes.eRegistroNacional("88.142.322/0001-16"), "cnpj");
 			test.equal(validacoes.eRegistroNacional("28716876000158"), "cnpj");
-			test.equal(validacoes.eRegistroNacional("13.381.462/0001-48"), "cnpj");
+            test.equal(validacoes.eRegistroNacional("13.381.462/0001-48"), "cnpj");
+
+            test.equal(validacoes.eRegistroNacional("00.000.000/0000-00"), false);
+            test.equal(validacoes.eRegistroNacional("11.111.111/1111-11"), false);
+            test.equal(validacoes.eRegistroNacional("22.222.222/2222-22"), false);
+            test.equal(validacoes.eRegistroNacional("33.333.333/3333-33"), false);
+            test.equal(validacoes.eRegistroNacional("44.444.444/4444-44"), false);
+            test.equal(validacoes.eRegistroNacional("55.555.555/5555-55"), false);
+            test.equal(validacoes.eRegistroNacional("66.666.666/6666-66"), false);
+            test.equal(validacoes.eRegistroNacional("77.777.777/7777-77"), false);
+            test.equal(validacoes.eRegistroNacional("88.888.888/8888-88"), false);
+            test.equal(validacoes.eRegistroNacional("99.999.999/9999-99"), false);
 
 			test.done();
 		},

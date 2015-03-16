@@ -1,6 +1,6 @@
 {
   "name": "brasil",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "description": "Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros",
   "main": "brasil.js",
   "browser": "brasil.browser.js",
@@ -43,7 +43,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "gammautils": "0.0.63",
+    "gammautils": "0.0.67",
     "iconv-lite": "^0.4.3",
     "pdfkit": "^0.7.0",
     "request": "^2.37.0"
