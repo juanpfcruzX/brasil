@@ -154,6 +154,15 @@ module.exports = {
         	test.done();
         },
 
+        'Calcula corretamente o fator de vencimento': function(test) {
+            var dataDeVencimento = new Date(2015, 3 - 1, 21, 0, 0, 0, 0),
+                datas = Datas.novasDatas().comVencimento(dataDeVencimento),
+                boleto = Boleto.novoBoleto().comDatas(datas);
+
+            test.equals(boleto.getFatorVencimento(), '6374');
+            test.done();
+        },
+
         'Calcula corretamente o fator de vencimento, ignorando as horas - 1': function(test) {
         	var dataDeVencimento = new Date(2008, 5 - 1, 2, 0, 0, 0, 0),
         		datas = Datas.novasDatas().comVencimento(dataDeVencimento),
