@@ -1,6 +1,26 @@
 var nfe = require("../brasil").nfe;
 
 module.exports = {
+    obterMensagemPorCodigo: {
+        'Verifica que retorna mensagens': function(test) {
+            test.equal(nfe.obterMensagemPorCodigo(100), 'Autorizado o uso da NF-e');
+            test.equal(nfe.obterMensagemPorCodigo(999), 'Rejeição: Erro não catalogado');
+
+            test.done();
+        },
+
+        'Verifica que pode-se passar o código como string': function(test) {
+            test.equal(nfe.obterMensagemPorCodigo('100'), 'Autorizado o uso da NF-e');
+            test.equal(nfe.obterMensagemPorCodigo('999'), 'Rejeição: Erro não catalogado');
+
+            test.done();
+        },
+
+        'Verifica que retornar undefined se o código não for encontrado': function(test) {
+            test.equal(typeof nfe.obterMensagemPorCodigo(42), 'undefined');
+            test.done();
+        },
+    },
 
 	obterProdutosEspecificos: {
 		'Verifica que retorna corretamente os produtos especificos': function(test) {
