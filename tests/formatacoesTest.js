@@ -119,6 +119,14 @@ module.exports = {
             }), '1.112.345,20');
             test.done();
         },
+
+        // 'É possível omitir separador de milhar': function(test) {
+        //     test.equal(formatacoes.numero(1112345.2, {
+        //         separadorDeMilhar: ''
+        //     }), '1112345,20');
+
+        //     test.done();
+        // }
     },
 
     data: {

@@ -31,6 +31,38 @@ module.exports = {
 		},
 	},
 
+    gerarDadosDaNfe: {
+        'Verifica geração dos dados da NF-e': function(test) {
+            var dadosDaNfe = nfe.gerarDadosDaNfe({
+                uf: 'SP',
+                tipoDeEmissao: 5,
+                cnpj: '05.481.336/0001-37',
+                valorDaNfe: 'R$ 25.680,00',
+                destaqueDeIcmsProprio: true,
+                destaqueDeIcmsPorST: false,
+                dataDeEmissao: new Date(2015, 3, 11),
+            });
+
+            test.equal(dadosDaNfe, '355054813360001370000000256800012119');
+            test.done();
+        },
+
+        'Verifica geração dos dados da NF-e passando o dia como string': function(test) {
+            var dadosDaNfe = nfe.gerarDadosDaNfe({
+                uf: 'SP',
+                tipoDeEmissao: 5,
+                cnpj: '05481336000137',
+                valorDaNfe: 25680,
+                destaqueDeIcmsProprio: true,
+                destaqueDeIcmsPorST: false,
+                dataDeEmissao: '11',
+            });
+
+            test.equal(dadosDaNfe, '355054813360001370000000256800012119');
+            test.done();
+        }
+    },
+
 	gerarChaveDeAcesso: {
 		"Verifica geração de chave de acesso": function(test){
 			var chave = nfe.gerarChaveDeAcesso({
@@ -47,6 +79,22 @@ module.exports = {
 			test.equal(chave, "52130900132781000178551000000206141501152010");
 			test.done();
 		},
+
+        "Verifica geração de chave de acesso quando CNPJ tem mascara": function(test){
+            var chave = nfe.gerarChaveDeAcesso({
+                uf: "GO",
+                dataDeEmissao: new Date(2013, 8),
+                cnpj: "00.132.781/0001-78",
+                modelo: "55",
+                serie: 100,
+                numero: 20614,
+                tipoDeEmissao: 1,
+                numeroAleatorio: "50115201"
+            });
+
+            test.equal(chave, "52130900132781000178551000000206141501152010");
+            test.done();
+        },
 
 		"Verifica que pode-se gerar a chave passando o codigo da UF": function(test){
 			var chave = nfe.gerarChaveDeAcesso({
@@ -121,6 +169,23 @@ module.exports = {
 			test.done();
 		}
 	},
+
+    formatarDadosDaNfe: {
+        "Verifica formatação dos dados da nfe": function(test){
+            test.equal(nfe.formatarDadosDaNfe("355054813360001370000000256800012119"), "3550 5481 3360 0013 7000 0000 2568 0001 2119");
+            test.done();
+        },
+
+        // "Verifica que devolve a mesma string passada caso não tenham 44 caracteres": function(test){
+        //     test.equal(nfe.formatarDadosDaNfe(""), "");
+        //     test.done();
+        // },
+
+        // "Verifica que devolve a mesma string passada caso não tenham apenas números": function(test){
+        //     test.equal(nfe.formatarDadosDaNfe(""), "");
+        //     test.done();
+        // }
+    },
 
 	validarChaveDeAcesso: {
 		"Verifica que valida-se chaves validas": function(test){
