@@ -4,17 +4,6 @@ Brasil
 
 Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
-### Demonstração
-
- - Pesquisando um CNPJ na Receita Federal: [demo online](http://brasil.gammasoft.com.br/) ou [veja o código da demo](https://github.com/gammasoft/brasil-exemplo).
- - Boletos bancários em node.js: acesse http://boletobancar.io ou veja a [documentação](https://github.com/gammasoft/brasil/releases/tag/v0.0.29) ou veja o [resultado final](https://s3-sa-east-1.amazonaws.com/gammasoft/open-source/brasil/boleto.pdf).
-
-### Documentação
-
-Veja a documentação completa em: http://opensource.gammasoft.com.br/brasil/
-
-Verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [testes](tests) para mais instruções de utilização.
-
 ### Instalação
 
 **node.js**  
@@ -23,6 +12,7 @@ Verifique as [releases](https://github.com/gammasoft/brasil/releases) e os [test
 **browser**  
 `bower install brasil --save` (as funcionalidades de boletos e consultas não estão disponíveis)
 
+<!---
 ### Roadmap
 
 Se você precisa de alguma funcionalidade que o módulo não contempla por favor [abra um issue](https://github.com/gammasoft/brasil/issues/new) para solicitar que ela seja inclusa no roadmap.
@@ -38,8 +28,9 @@ Se você precisa de alguma funcionalidade que o módulo não contempla por favor
  - Criar site com documentação detalhada do módulo, que será gerada automaticamente a cada commit
  - Cliente para web service de calculo de frete dos correios
  - Traduzir numeros em números por extenso
+-->
 
-### Changelog
+### Changelog/Como utilizar
 
 O changelog encontra-se na página de [releases](https://github.com/gammasoft/brasil/releases). Cada release acompanha uma descrição do que foi alterado em relação a última versão.
 
