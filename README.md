@@ -39,6 +39,7 @@ O changelog encontra-se na página de [releases](https://github.com/gammasoft/br
 Se você se interessou por este projeto você também pode se interessar por estes aqui:
 
 - [ie](https://github.com/gammasoft/ie) - Validação de inscrições estaduais.
+- [webdanfe](https://github.com/renatoargh/webdanfe) - Gerador de DANFE em pdf utilizando a API do Webdanfe
 - http://opensource.gammasoft.com.br - Todos os projetos open source da Gammasoft.
 
 ### Contribuidores
