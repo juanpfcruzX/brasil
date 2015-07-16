@@ -40,6 +40,7 @@ Se você se interessou por este projeto você também pode se interessar por est
 
 - [ie](https://github.com/gammasoft/ie) - Validação de inscrições estaduais.
 - [webdanfe](https://github.com/renatoargh/webdanfe) - Gerador de DANFE em pdf utilizando a API do Webdanfe
+- [atualizar-boleto](github.com/brasil-js/atualizar-boleto) - Módulo para atualização de valor do boleto bancário. Calcula multa, mora ou desconto.
 - http://opensource.gammasoft.com.br - Todos os projetos open source da Gammasoft.
 
 ### Contribuidores
