@@ -30,3 +30,5 @@ tratamento-de-dados.js
 lib/boleto/temp/*
 
 tests/boleto/bancos/boleto.pdf
+
+teste.js
