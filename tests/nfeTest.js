@@ -1,6 +1,50 @@
 var nfe = require("../brasil").nfe;
 
 module.exports = {
+    extrairDadosDaChaveDeAcesso: {
+        'Verifica que retorno nulo caso seja passado algo que não é uma chave de acesso': function(test) {
+            test.equal(nfe.extrairDadosDaChaveDeAcesso('gammasoft'), null);
+            test.equal(nfe.extrairDadosDaChaveDeAcesso(42), null);
+            test.done();
+        },
+
+        'Verifica que retorna dados adequadamente 1': function(test) {
+            var chaveDeAcesso = '52150900132781000178551000000514051798110191',
+                dados = nfe.extrairDadosDaChaveDeAcesso(chaveDeAcesso);
+
+            test.deepEqual(dados, {
+                uf: 52,
+                dataDeEmissao: '1509',
+                cnpj: '00132781000178',
+                modelo: '55',
+                serie: 100,
+                numero: 51405,
+                tipoDeEmissao: '1',
+                numeroAleatorio: '798110191'
+            });
+
+            test.done();
+        },
+
+        'Verifica que retorna dados adequadamente 2': function(test) {
+            var chaveDeAcesso = '53150719950366000150550010000000101003800022',
+                dados = nfe.extrairDadosDaChaveDeAcesso(chaveDeAcesso);
+
+            test.deepEqual(dados, {
+                uf: 53,
+                dataDeEmissao: '1507',
+                cnpj: '19950366000150',
+                modelo: '55',
+                serie: 1,
+                numero: 10,
+                tipoDeEmissao: '1',
+                numeroAleatorio: '003800022'
+            });
+
+            test.done();
+        },
+    },
+
     obterMensagemPorCodigo: {
         'Verifica que retorna mensagens': function(test) {
             test.equal(nfe.obterMensagemPorCodigo(100), 'Autorizado o uso da NF-e');
