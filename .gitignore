@@ -24,11 +24,7 @@ consultas/proximasImplementações.txt
 .package.json
 
 lib/consultas/proximasImplementações.txt
-
 tratamento-de-dados.js
-
 lib/boleto/temp/*
-
-tests/boleto/bancos/boleto.pdf
-
+tests/boleto/bancos/*.pdf
 teste.js

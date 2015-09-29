@@ -269,6 +269,11 @@ module.exports = {
 		test.done();
 	},
 
+    'Verifica que arquivo de imagem do logotipo existe': function(test) {
+        test.ok(fs.existsSync(banco.getImagem()));
+        test.done();
+    },
+
 	'Verifica criação de pdf': function(test) { //Mover para teste adequado
 
 		var datas2 = Datas.novasDatas();
