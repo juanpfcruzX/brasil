@@ -54,16 +54,34 @@ module.exports = {
         datas2.comVencimento(4, 9, 2012);
 
         var beneficiario2 = Beneficiario.novoBeneficiario();
-        beneficiario2.comNome("Guilherme")
-        beneficiario2.comAgencia("589")
-        beneficiario2.comCarteira("2")
-        beneficiario2.comContaCorrente("290274")
-        beneficiario2.comDigitoContaCorrente("5")
-        beneficiario2.comNossoNumero("24900000000000132")
+        beneficiario2.comNome("Gammasoft Desenvolvimento de Software Ltda");
+        beneficiario2.comAgencia("589");
+        beneficiario2.comCarteira("2");
+        beneficiario2.comContaCorrente("290274");
+        beneficiario2.comDigitoContaCorrente("5");
+        beneficiario2.comNossoNumero("24900000000000132");
         beneficiario2.comDigitoNossoNumero("3");
+        beneficiario2.comRegistroNacional('19950366000150');
+
+        var enderecoDoBeneficiario = Endereco.novoEndereco();
+        enderecoDoBeneficiario.comLogradouro('Rua da Programação');
+        enderecoDoBeneficiario.comBairro('Zona Rural');
+        enderecoDoBeneficiario.comCep('71550050');
+        enderecoDoBeneficiario.comCidade('Patos de Minas');
+        enderecoDoBeneficiario.comUf('MG');
+        beneficiario2.comEndereco(enderecoDoBeneficiario);
 
         var pagador2 = Pagador.novoPagador();
-        pagador2.comNome("Paulo");
+        pagador2.comNome("Paulo Fulano da Silva");
+        pagador2.comRegistroNacional("77134854817");
+
+        var enderecoDoPagador = Endereco.novoEndereco();
+        enderecoDoPagador.comLogradouro('Avenida dos Testes Unitários');
+        enderecoDoPagador.comBairro('Barra da Tijuca');
+        enderecoDoPagador.comCep('72000000');
+        enderecoDoPagador.comCidade('Rio de Janeiro');
+        enderecoDoPagador.comUf('RJ');
+        pagador2.comEndereco(enderecoDoPagador);
 
         boletoSicgb = Boleto.novoBoleto();
         boletoSicgb.comDatas(datas2)
@@ -71,7 +89,10 @@ module.exports = {
         boletoSicgb.comBanco(banco)
         boletoSicgb.comPagador(pagador2)
         boletoSicgb.comValorBoleto(80.00)
-        boletoSicgb.comNumeroDoDocumento("00000000132");
+        boletoSicgb.comNumeroDoDocumento("NF100/00000132");
+        boletoSicgb.comLocaisDePagamento([
+            'PREFERENCIALMENTE NAS CASAS LOTÉRICAS ATÉ O VALOR LIMITE'
+        ]);
 
         done();
     },
