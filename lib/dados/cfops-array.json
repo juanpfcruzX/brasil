@@ -1,18 +1,8 @@
 [
     {
-        "cfop": "1000",
-        "descricao": "ENTRADAS OU AQUISIÇÕES DE SERVIÇOS DO ESTADO",
-        "descricaoParaBusca": "entradasouaquisicoesdeservicosdoestado"
-    },
-    {
-        "cfop": "1100",
-        "descricao": "COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS",
-        "descricaoParaBusca": "comprasparaindustrializacao,producaorural,comercializacaoouprestacaodeservicos"
-    },
-    {
         "cfop": "1101",
         "descricao": "Compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "compraparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "1102",
@@ -27,12 +17,12 @@
     {
         "cfop": "1113",
         "descricao": "Compra para comercialização, de mercadoria recebida anteriormente em consignação mercantil",
-        "descricaoParaBusca": "compraparacomercializacao,demercadoriarecebidaanteriormenteemconsignacaomercantil"
+        "descricaoParaBusca": "compraparacomercializacaodemercadoriarecebidaanteriormenteemconsignacaomercantil"
     },
     {
         "cfop": "1116",
         "descricao": "Compra para industrialização ou produção rural originada de encomenda para recebimento futuro (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraloriginadadeencomendapararecebimentofuturo(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraloriginadadeencomendapararecebimentofuturonrajustesinief052005decreto288682006"
     },
     {
         "cfop": "1117",
@@ -42,17 +32,17 @@
     {
         "cfop": "1118",
         "descricao": "Compra de mercadoria para comercialização pelo adquirente originário, entregue pelo vendedor remetente ao destinatário, em venda à ordem.",
-        "descricaoParaBusca": "comprademercadoriaparacomercializacaopeloadquirenteoriginario,entreguepelovendedorremetenteaodestinatario,emvendaaordem"
+        "descricaoParaBusca": "comprademercadoriaparacomercializacaopeloadquirenteoriginarioentreguepelovendedorremetenteaodestinatarioemvendaaordem"
     },
     {
         "cfop": "1120",
         "descricao": "Compra para industrialização, em venda à ordem, já recebida do vendedor remetente",
-        "descricaoParaBusca": "compraparaindustrializacao,emvendaaordem,jarecebidadovendedorremetente"
+        "descricaoParaBusca": "compraparaindustrializacaoemvendaaordemjarecebidadovendedorremetente"
     },
     {
         "cfop": "1121",
         "descricao": "Compra para comercialização, em venda à ordem, já recebida do vendedor remetente",
-        "descricaoParaBusca": "compraparacomercializacao,emvendaaordem,jarecebidadovendedorremetente"
+        "descricaoParaBusca": "compraparacomercializacaoemvendaaordemjarecebidadovendedorremetente"
     },
     {
         "cfop": "1122",
@@ -80,14 +70,9 @@
         "descricaoParaBusca": "compraparautilizacaonaprestacaodeservicotributadopeloiss"
     },
     {
-        "cfop": "1150",
-        "descricao": "TRANSFERÊNCIAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "transferenciasparaindustrializacao,producaorural,comercializacaoouprestacaodeservicos(nrajustesinief05/2005)(decreto28868/2006)"
-    },
-    {
         "cfop": "1151",
         "descricao": "Transferência para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "1152",
@@ -105,11 +90,6 @@
         "descricaoParaBusca": "transferenciaparautilizacaonaprestacaodeservico"
     },
     {
-        "cfop": "1200",
-        "descricao": "DEVOLUÇÕES DE VENDAS DE PRODUÇÃO DO ESTABELECIMENTO, DE PRODUTOS DE TERCEIROS OU ANULAÇÕES DE VALORES",
-        "descricaoParaBusca": "devolucoesdevendasdeproducaodoestabelecimento,deprodutosdeterceirosouanulacoesdevalores"
-    },
-    {
         "cfop": "1201",
         "descricao": "Devolução de venda de produção do estabelecimento",
         "descricaoParaBusca": "devolucaodevendadeproducaodoestabelecimento"
@@ -122,12 +102,12 @@
     {
         "cfop": "1203",
         "descricao": "Devolução de venda de produção do estabelecimento, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio",
-        "descricaoParaBusca": "devolucaodevendadeproducaodoestabelecimento,destinadaazonafrancademanausouareasdelivrecomercio"
+        "descricaoParaBusca": "devolucaodevendadeproducaodoestabelecimentodestinadaazonafrancademanausouareasdelivrecomercio"
     },
     {
         "cfop": "1204",
         "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio",
-        "descricaoParaBusca": "devolucaodevendademercadoriaadquiridaourecebidadeterceiros,destinadaazonafrancademanausouareasdelivrecomercio"
+        "descricaoParaBusca": "devolucaodevendademercadoriaadquiridaourecebidadeterceirosdestinadaazonafrancademanausouareasdelivrecomercio"
     },
     {
         "cfop": "1205",
@@ -147,17 +127,12 @@
     {
         "cfop": "1208",
         "descricao": "Devolução de produção do estabelecimento, remetida em transferência",
-        "descricaoParaBusca": "devolucaodeproducaodoestabelecimento,remetidaemtransferencia"
+        "descricaoParaBusca": "devolucaodeproducaodoestabelecimentoremetidaemtransferencia"
     },
     {
         "cfop": "1209",
         "descricao": "Devolução de mercadoria adquirida ou recebida de terceiros, remetida em transferência",
-        "descricaoParaBusca": "devolucaodemercadoriaadquiridaourecebidadeterceiros,remetidaemtransferencia"
-    },
-    {
-        "cfop": "1250",
-        "descricao": "COMPRAS DE ENERGIA ELÉTRICA",
-        "descricaoParaBusca": "comprasdeenergiaeletrica"
+        "descricaoParaBusca": "devolucaodemercadoriaadquiridaourecebidadeterceirosremetidaemtransferencia"
     },
     {
         "cfop": "1251",
@@ -195,11 +170,6 @@
         "descricaoParaBusca": "compradeenergiaeletricaparaconsumopordemandacontratada"
     },
     {
-        "cfop": "1300",
-        "descricao": "AQUISIÇÕES DE SERVIÇOS DE COMUNICAÇÃO",
-        "descricaoParaBusca": "aquisicoesdeservicosdecomunicacao"
-    },
-    {
         "cfop": "1301",
         "descricao": "Aquisição de serviço de comunicação para execução de serviço da mesma natureza",
         "descricaoParaBusca": "aquisicaodeservicodecomunicacaoparaexecucaodeservicodamesmanatureza"
@@ -228,11 +198,6 @@
         "cfop": "1306",
         "descricao": "Aquisição de serviço de comunicação por estabelecimento de produtor rural",
         "descricaoParaBusca": "aquisicaodeservicodecomunicacaoporestabelecimentodeprodutorrural"
-    },
-    {
-        "cfop": "1350",
-        "descricao": "AQUISIÇÕES DE SERVIÇOS DE TRANSPORTE",
-        "descricaoParaBusca": "aquisicoesdeservicosdetransporte"
     },
     {
         "cfop": "1351",
@@ -265,14 +230,14 @@
         "descricaoParaBusca": "aquisicaodeservicodetransporteporestabelecimentodeprodutorrural"
     },
     {
-        "cfop": "1400",
-        "descricao": "ENTRADAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA",
-        "descricaoParaBusca": "entradasdemercadoriassujeitasaoregimedesubstituicaotributaria"
+        "cfop": "1360",
+        "descricao": "Aquisição de serviço de transporte por contribuinte substituto em relação ao serviço de transporte",
+        "descricaoParaBusca": "aquisicaodeservicodetransporteporcontribuintesubstitutoemrelacaoaoservicodetransporte"
     },
     {
         "cfop": "1401",
         "descricao": "Compra para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributaria(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributarianrajustesinief052005decreto288682006"
     },
     {
         "cfop": "1403",
@@ -292,7 +257,7 @@
     {
         "cfop": "1408",
         "descricao": "Transferência para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributaria(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributarianrajustesinief052005decreto288682006"
     },
     {
         "cfop": "1409",
@@ -302,7 +267,7 @@
     {
         "cfop": "1410",
         "descricao": "Devolução de venda de mercadoria, de produção do estabelecimento, sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "devolucaodevendademercadoria,deproducaodoestabelecimento,sujeitaaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "devolucaodevendademercadoriadeproducaodoestabelecimentosujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "1411",
@@ -312,17 +277,12 @@
     {
         "cfop": "1414",
         "descricao": "Retorno de mercadoria de produção do estabelecimento, remetida para venda fora do estabelecimento, sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "retornodemercadoriadeproducaodoestabelecimento,remetidaparavendaforadoestabelecimento,sujeitaaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "retornodemercadoriadeproducaodoestabelecimentoremetidaparavendaforadoestabelecimentosujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "1415",
         "descricao": "Retorno de mercadoria adquirida ou recebida de terceiros, remetida para venda fora do estabelecimento em operação com mercadoria sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "retornodemercadoriaadquiridaourecebidadeterceiros,remetidaparavendaforadoestabelecimentoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
-    },
-    {
-        "cfop": "1450",
-        "descricao": "SISTEMAS DE INTEGRAÇÃO",
-        "descricaoParaBusca": "sistemasdeintegracao"
+        "descricaoParaBusca": "retornodemercadoriaadquiridaourecebidadeterceirosremetidaparavendaforadoestabelecimentoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "1451",
@@ -335,11 +295,6 @@
         "descricaoParaBusca": "retornodeinsumonaoutilizadonaproducao"
     },
     {
-        "cfop": "1500",
-        "descricao": "ENTRADAS DE MERCADORIAS REMETIDAS PARA FORMAÇÃO DE LOTE OU COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES (NR Ajuste SINIEF 09/2005) ",
-        "descricaoParaBusca": "entradasdemercadoriasremetidasparaformacaodeloteoucomfimespecificodeexportacaoeeventuaisdevolucoes(nrajustesinief09/2005)"
-    },
-    {
         "cfop": "1501",
         "descricao": "Entrada de mercadoria recebida com fim específico de exportação",
         "descricaoParaBusca": "entradademercadoriarecebidacomfimespecificodeexportacao"
@@ -347,27 +302,22 @@
     {
         "cfop": "1503",
         "descricao": "Entrada decorrente de devolução de produto, de fabricação do estabelecimento, remetido com fim específico de exportação",
-        "descricaoParaBusca": "entradadecorrentededevolucaodeproduto,defabricacaodoestabelecimento,remetidocomfimespecificodeexportacao"
+        "descricaoParaBusca": "entradadecorrentededevolucaodeprodutodefabricacaodoestabelecimentoremetidocomfimespecificodeexportacao"
     },
     {
         "cfop": "1504",
         "descricao": "Entrada decorrente de devolução de mercadoria remetida com fim específico de exportação, adquirida ou recebida de terceiros",
-        "descricaoParaBusca": "entradadecorrentededevolucaodemercadoriaremetidacomfimespecificodeexportacao,adquiridaourecebidadeterceiros"
+        "descricaoParaBusca": "entradadecorrentededevolucaodemercadoriaremetidacomfimespecificodeexportacaoadquiridaourecebidadeterceiros"
     },
     {
         "cfop": "1505",
         "descricao": "Entrada decorrente de devolução simbólica de mercadoria remetida para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento.",
-        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoriaremetidaparaformacaodelotedeexportacao,deprodutoindustrializadoouproduzidopeloproprioestabelecimento"
+        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoriaremetidaparaformacaodelotedeexportacaodeprodutoindustrializadoouproduzidopeloproprioestabelecimento"
     },
     {
         "cfop": "1506",
         "descricao": "Entrada decorrente de devolução simbólica de mercadoria, adquirida ou recebida de terceiros, remetida para formação de lote de exportação.",
-        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoria,adquiridaourecebidadeterceiros,remetidaparaformacaodelotedeexportacao"
-    },
-    {
-        "cfop": "1550",
-        "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO",
-        "descricaoParaBusca": "operacoescombensdeativoimobilizadoemateriaisparausoouconsumo"
+        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoriaadquiridaourecebidadeterceirosremetidaparaformacaodelotedeexportacao"
     },
     {
         "cfop": "1551",
@@ -392,7 +342,7 @@
     {
         "cfop": "1555",
         "descricao": "Entrada de bem do ativo imobilizado de terceiro, remetido para uso no estabelecimento",
-        "descricaoParaBusca": "entradadebemdoativoimobilizadodeterceiro,remetidoparausonoestabelecimento"
+        "descricaoParaBusca": "entradadebemdoativoimobilizadodeterceiroremetidoparausonoestabelecimento"
     },
     {
         "cfop": "1556",
@@ -405,19 +355,14 @@
         "descricaoParaBusca": "transferenciadematerialparausoouconsumo"
     },
     {
-        "cfop": "1600",
-        "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS",
-        "descricaoParaBusca": "creditoseressarcimentosdeicms"
-    },
-    {
         "cfop": "1601",
         "descricao": "Recebimento, por transferência, de crédito de ICMS",
-        "descricaoParaBusca": "recebimento,portransferencia,decreditodeicms"
+        "descricaoParaBusca": "recebimentoportransferenciadecreditodeicms"
     },
     {
         "cfop": "1602",
         "descricao": "Recebimento, por transferência, de saldo credor do ICMS, de outro estabelecimento da mesma empresa, para compensação de saldo devedor do imposto.",
-        "descricaoParaBusca": "recebimento,portransferencia,desaldocredordoicms,deoutroestabelecimentodamesmaempresa,paracompensacaodesaldodevedordoimposto"
+        "descricaoParaBusca": "recebimentoportransferenciadesaldocredordoicmsdeoutroestabelecimentodamesmaempresaparacompensacaodesaldodevedordoimposto"
     },
     {
         "cfop": "1603",
@@ -432,12 +377,7 @@
     {
         "cfop": "1605",
         "descricao": "Recebimento, por transferência, de saldo devedor do ICMS de outro estabelecimento da mesma empresa",
-        "descricaoParaBusca": "recebimento,portransferencia,desaldodevedordoicmsdeoutroestabelecimentodamesmaempresa"
-    },
-    {
-        "cfop": "1650",
-        "descricao": "ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES (ACR Ajuste SINIEF 9/2003 - a partir 01.01.2004)",
-        "descricaoParaBusca": "entradasdecombustiveis,derivadosounaodepetroleo,elubrificantes(acrajustesinief9/2003apartir01012004)"
+        "descricaoParaBusca": "recebimentoportransferenciadesaldodevedordoicmsdeoutroestabelecimentodamesmaempresa"
     },
     {
         "cfop": "1651",
@@ -490,11 +430,6 @@
         "descricaoParaBusca": "retornodecombustiveloulubrificanteremetidosparaarmazenagem"
     },
     {
-        "cfop": "1900",
-        "descricao": "OUTRAS ENTRADAS DE MERCADORIAS OU AQUISIÇÕES DE SERVIÇOS",
-        "descricaoParaBusca": "outrasentradasdemercadoriasouaquisicoesdeservicos"
-    },
-    {
         "cfop": "1901",
         "descricao": "Entrada para industrialização por encomenda",
         "descricaoParaBusca": "entradaparaindustrializacaoporencomenda"
@@ -542,7 +477,7 @@
     {
         "cfop": "1910",
         "descricao": "Entrada de bonificação, doação ou brinde",
-        "descricaoParaBusca": "entradadebonificacao,doacaooubrinde"
+        "descricaoParaBusca": "entradadebonificacaodoacaooubrinde"
     },
     {
         "cfop": "1911",
@@ -587,7 +522,7 @@
     {
         "cfop": "1919",
         "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, remetida anteriormente em consignação mercantil ou industrial",
-        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrial,remetidaanteriormenteemconsignacaomercantilouindustrial"
+        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrialremetidaanteriormenteemconsignacaomercantilouindustrial"
     },
     {
         "cfop": "1920",
@@ -607,17 +542,17 @@
     {
         "cfop": "1923",
         "descricao": "Entrada de mercadoria recebida do vendedor remetente, em venda à ordem",
-        "descricaoParaBusca": "entradademercadoriarecebidadovendedorremetente,emvendaaordem"
+        "descricaoParaBusca": "entradademercadoriarecebidadovendedorremetenteemvendaaordem"
     },
     {
         "cfop": "1924",
         "descricao": "Entrada para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "entradaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoestanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "entradaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoestanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "1925",
         "descricao": "Retorno de mercadoria remetida para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "retornodemercadoriaremetidaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoestanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "retornodemercadoriaremetidaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoestanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "1926",
@@ -627,7 +562,7 @@
     {
         "cfop": "1931",
         "descricao": "Lançamento efetuado pelo tomador do serviço de transporte, quando a responsabilidade de retenção do imposto for atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não-inscrito na Unidade da Federação onde se tenha iniciado o serviço.",
-        "descricaoParaBusca": "lancamentoefetuadopelotomadordoservicodetransporte,quandoaresponsabilidadederetencaodoimpostoforatribuidaaoremetenteoualienantedamercadoria,peloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondesetenhainiciadooservico"
+        "descricaoParaBusca": "lancamentoefetuadopelotomadordoservicodetransportequandoaresponsabilidadederetencaodoimpostoforatribuidaaoremetenteoualienantedamercadoriapeloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondesetenhainiciadooservico"
     },
     {
         "cfop": "1932",
@@ -637,7 +572,12 @@
     {
         "cfop": "1933",
         "descricao": "Aquisição de serviço tributado pelo Imposto sobre Serviços de Qualquer Natureza (Ajuste SINIEF 06/2005) (NR)",
-        "descricaoParaBusca": "aquisicaodeservicotributadopeloimpostosobreservicosdequalquernatureza(ajustesinief06/2005)(nr)"
+        "descricaoParaBusca": "aquisicaodeservicotributadopeloimpostosobreservicosdequalquernaturezaajustesinief062005nr"
+    },
+    {
+        "cfop": "1934",
+        "descricao": "Entrada simbólica de mercadoria recebida para depósito fechado ou armazém geral",
+        "descricaoParaBusca": "entradasimbolicademercadoriarecebidaparadepositofechadoouarmazemgeral"
     },
     {
         "cfop": "1949",
@@ -645,19 +585,9 @@
         "descricaoParaBusca": "outraentradademercadoriaouprestacaodeserviconaoespecificada"
     },
     {
-        "cfop": "2000",
-        "descricao": "ENTRADAS OU AQUISIÇÕES DE SERVIÇOS DE OUTROS ESTADOS",
-        "descricaoParaBusca": "entradasouaquisicoesdeservicosdeoutrosestados"
-    },
-    {
-        "cfop": "2100",
-        "descricao": "COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005 (Decreto 28.868/2006)",
-        "descricaoParaBusca": "comprasparaindustrializacao,producaorural,comercializacaoouprestacaodeservicos(nrajustesinief05/2005(decreto28868/2006)"
-    },
-    {
         "cfop": "2101",
         "descricao": "Compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "compraparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "2102",
@@ -672,12 +602,12 @@
     {
         "cfop": "2113",
         "descricao": "Compra para comercialização, de mercadoria recebida anteriormente em consignação mercantil",
-        "descricaoParaBusca": "compraparacomercializacao,demercadoriarecebidaanteriormenteemconsignacaomercantil"
+        "descricaoParaBusca": "compraparacomercializacaodemercadoriarecebidaanteriormenteemconsignacaomercantil"
     },
     {
         "cfop": "2116",
         "descricao": "Compra para industrialização ou produção rural originada de encomenda para recebimento futuro (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraloriginadadeencomendapararecebimentofuturo(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraloriginadadeencomendapararecebimentofuturonrajustesinief052005decreto288682006"
     },
     {
         "cfop": "2117",
@@ -687,17 +617,17 @@
     {
         "cfop": "2118",
         "descricao": "Compra de mercadoria para comercialização pelo adquirente originário, entregue pelo vendedor remetente ao destinatário, em venda à ordem",
-        "descricaoParaBusca": "comprademercadoriaparacomercializacaopeloadquirenteoriginario,entreguepelovendedorremetenteaodestinatario,emvendaaordem"
+        "descricaoParaBusca": "comprademercadoriaparacomercializacaopeloadquirenteoriginarioentreguepelovendedorremetenteaodestinatarioemvendaaordem"
     },
     {
         "cfop": "2120",
         "descricao": "Compra para industrialização, em venda à ordem, já recebida do vendedor remetente",
-        "descricaoParaBusca": "compraparaindustrializacao,emvendaaordem,jarecebidadovendedorremetente"
+        "descricaoParaBusca": "compraparaindustrializacaoemvendaaordemjarecebidadovendedorremetente"
     },
     {
         "cfop": "2121",
         "descricao": "Compra para comercialização, em venda à ordem, já recebida do vendedor remetente",
-        "descricaoParaBusca": "compraparacomercializacao,emvendaaordem,jarecebidadovendedorremetente"
+        "descricaoParaBusca": "compraparacomercializacaoemvendaaordemjarecebidadovendedorremetente"
     },
     {
         "cfop": "2122",
@@ -725,14 +655,9 @@
         "descricaoParaBusca": "compraparautilizacaonaprestacaodeservicotributadopeloiss"
     },
     {
-        "cfop": "2150",
-        "descricao": "TRANSFERÊNCIAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "transferenciasparaindustrializacao,producaorural,comercializacaoouprestacaodeservicos(nrajustesinief05/2005)(decreto28868/2006)"
-    },
-    {
         "cfop": "2151",
         "descricao": "Transferência para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "2152",
@@ -748,11 +673,6 @@
         "cfop": "2154",
         "descricao": "Transferência para utilização na prestação de serviço",
         "descricaoParaBusca": "transferenciaparautilizacaonaprestacaodeservico"
-    },
-    {
-        "cfop": "2200",
-        "descricao": "DEVOLUÇÕES DE VENDAS DE PRODUÇÃO DO ESTABELECIMENTO OU DE TERCEIROS OU ANULAÇÕES DE VALORES",
-        "descricaoParaBusca": "devolucoesdevendasdeproducaodoestabelecimentooudeterceirosouanulacoesdevalores"
     },
     {
         "cfop": "2201",
@@ -772,7 +692,7 @@
     {
         "cfop": "2204",
         "descricao": "Devolução de venda de mercadoria adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio",
-        "descricaoParaBusca": "devolucaodevendademercadoriaadquiridaourecebidadeterceiros,destinadaazonafrancademanausouareasdelivrecomercio"
+        "descricaoParaBusca": "devolucaodevendademercadoriaadquiridaourecebidadeterceirosdestinadaazonafrancademanausouareasdelivrecomercio"
     },
     {
         "cfop": "2205",
@@ -792,17 +712,12 @@
     {
         "cfop": "2208",
         "descricao": "Devolução de produção do estabelecimento, remetida em transferência.",
-        "descricaoParaBusca": "devolucaodeproducaodoestabelecimento,remetidaemtransferencia"
+        "descricaoParaBusca": "devolucaodeproducaodoestabelecimentoremetidaemtransferencia"
     },
     {
         "cfop": "2209",
         "descricao": "Devolução de mercadoria adquirida ou recebida de terceiros e remetida em transferência",
         "descricaoParaBusca": "devolucaodemercadoriaadquiridaourecebidadeterceiroseremetidaemtransferencia"
-    },
-    {
-        "cfop": "2250",
-        "descricao": "COMPRAS DE ENERGIA ELÉTRICA",
-        "descricaoParaBusca": "comprasdeenergiaeletrica"
     },
     {
         "cfop": "2251",
@@ -840,11 +755,6 @@
         "descricaoParaBusca": "compradeenergiaeletricaparaconsumopordemandacontratada"
     },
     {
-        "cfop": "2300",
-        "descricao": "AQUISIÇÕES DE SERVIÇOS DE COMUNICAÇÃO",
-        "descricaoParaBusca": "aquisicoesdeservicosdecomunicacao"
-    },
-    {
         "cfop": "2301",
         "descricao": "Aquisição de serviço de comunicação para execução de serviço da mesma natureza",
         "descricaoParaBusca": "aquisicaodeservicodecomunicacaoparaexecucaodeservicodamesmanatureza"
@@ -873,11 +783,6 @@
         "cfop": "2306",
         "descricao": "Aquisição de serviço de comunicação por estabelecimento de produtor rural",
         "descricaoParaBusca": "aquisicaodeservicodecomunicacaoporestabelecimentodeprodutorrural"
-    },
-    {
-        "cfop": "2350",
-        "descricao": "AQUISIÇÕES DE SERVIÇOS DE TRANSPORTE",
-        "descricaoParaBusca": "aquisicoesdeservicosdetransporte"
     },
     {
         "cfop": "2351",
@@ -910,14 +815,9 @@
         "descricaoParaBusca": "aquisicaodeservicodetransporteporestabelecimentodeprodutorrural"
     },
     {
-        "cfop": "2400",
-        "descricao": "ENTRADAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA",
-        "descricaoParaBusca": "entradasdemercadoriassujeitasaoregimedesubstituicaotributaria"
-    },
-    {
         "cfop": "2401",
         "descricao": "Compra para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributaria(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributarianrajustesinief052005decreto288682006"
     },
     {
         "cfop": "2403",
@@ -937,7 +837,7 @@
     {
         "cfop": "2408",
         "descricao": "Transferência para industrialização ou produção rural de mercadoria sujeita ao regime de substituição tributária (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributaria(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "transferenciaparaindustrializacaoouproducaoruraldemercadoriasujeitaaoregimedesubstituicaotributarianrajustesinief052005decreto288682006"
     },
     {
         "cfop": "2409",
@@ -947,7 +847,7 @@
     {
         "cfop": "2410",
         "descricao": "Devolução de venda de produção do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária",
-        "descricaoParaBusca": "devolucaodevendadeproducaodoestabelecimento,quandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "devolucaodevendadeproducaodoestabelecimentoquandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "2411",
@@ -957,17 +857,12 @@
     {
         "cfop": "2414",
         "descricao": "Retorno de produção do estabelecimento, remetida para venda fora do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária",
-        "descricaoParaBusca": "retornodeproducaodoestabelecimento,remetidaparavendaforadoestabelecimento,quandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "retornodeproducaodoestabelecimentoremetidaparavendaforadoestabelecimentoquandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "2415",
         "descricao": "Retorno de mercadoria adquirida ou recebida de terceiros, remetida para venda fora do estabelecimento em operação com mercadoria sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "retornodemercadoriaadquiridaourecebidadeterceiros,remetidaparavendaforadoestabelecimentoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
-    },
-    {
-        "cfop": "2500",
-        "descricao": "ENTRADAS DE MERCADORIAS REMETIDAS PARA FORMAÇÃO DE LOTE OU COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES (NR Ajuste SINIEF 09/2005)",
-        "descricaoParaBusca": "entradasdemercadoriasremetidasparaformacaodeloteoucomfimespecificodeexportacaoeeventuaisdevolucoes(nrajustesinief09/2005)"
+        "descricaoParaBusca": "retornodemercadoriaadquiridaourecebidadeterceirosremetidaparavendaforadoestabelecimentoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "2501",
@@ -977,27 +872,22 @@
     {
         "cfop": "2503",
         "descricao": "Entrada decorrente de devolução de produto industrializado pelo estabelecimento, remetido com fim específico de exportação",
-        "descricaoParaBusca": "entradadecorrentededevolucaodeprodutoindustrializadopeloestabelecimento,remetidocomfimespecificodeexportacao"
+        "descricaoParaBusca": "entradadecorrentededevolucaodeprodutoindustrializadopeloestabelecimentoremetidocomfimespecificodeexportacao"
     },
     {
         "cfop": "2504",
         "descricao": "Entrada decorrente de devolução de mercadoria remetida com fim específico de exportação, adquirida ou recebida de terceiros",
-        "descricaoParaBusca": "entradadecorrentededevolucaodemercadoriaremetidacomfimespecificodeexportacao,adquiridaourecebidadeterceiros"
+        "descricaoParaBusca": "entradadecorrentededevolucaodemercadoriaremetidacomfimespecificodeexportacaoadquiridaourecebidadeterceiros"
     },
     {
         "cfop": "2505",
         "descricao": "Entrada decorrente de devolução simbólica de mercadoria remetida para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento.",
-        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoriaremetidaparaformacaodelotedeexportacao,deprodutoindustrializadoouproduzidopeloproprioestabelecimento"
+        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoriaremetidaparaformacaodelotedeexportacaodeprodutoindustrializadoouproduzidopeloproprioestabelecimento"
     },
     {
         "cfop": "2506",
         "descricao": "Entrada decorrente de devolução simbólica de mercadoria, adquirida ou recebida de terceiros, remetida para formação de lote de exportação.",
-        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoria,adquiridaourecebidadeterceiros,remetidaparaformacaodelotedeexportacao"
-    },
-    {
-        "cfop": "2550",
-        "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO",
-        "descricaoParaBusca": "operacoescombensdeativoimobilizadoemateriaisparausoouconsumo"
+        "descricaoParaBusca": "entradadecorrentededevolucaosimbolicademercadoriaadquiridaourecebidadeterceirosremetidaparaformacaodelotedeexportacao"
     },
     {
         "cfop": "2551",
@@ -1022,7 +912,7 @@
     {
         "cfop": "2555",
         "descricao": "Entrada de bem do ativo imobilizado de terceiro, remetido para uso no estabelecimento",
-        "descricaoParaBusca": "entradadebemdoativoimobilizadodeterceiro,remetidoparausonoestabelecimento"
+        "descricaoParaBusca": "entradadebemdoativoimobilizadodeterceiroremetidoparausonoestabelecimento"
     },
     {
         "cfop": "2556",
@@ -1035,19 +925,9 @@
         "descricaoParaBusca": "transferenciadematerialparausoouconsumo"
     },
     {
-        "cfop": "2600",
-        "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS",
-        "descricaoParaBusca": "creditoseressarcimentosdeicms"
-    },
-    {
         "cfop": "2603",
         "descricao": "Ressarcimento de ICMS retido por substituição tributária",
         "descricaoParaBusca": "ressarcimentodeicmsretidoporsubstituicaotributaria"
-    },
-    {
-        "cfop": "2650",
-        "descricao": "ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES (ACR Ajuste SINIEF 9/2003)",
-        "descricaoParaBusca": "entradasdecombustiveis,derivadosounaodepetroleo,elubrificantes(acrajustesinief9/2003)"
     },
     {
         "cfop": "2651",
@@ -1100,11 +980,6 @@
         "descricaoParaBusca": "retornodecombustiveloulubrificanteremetidosparaarmazenagem"
     },
     {
-        "cfop": "2900",
-        "descricao": "OUTRAS ENTRADAS DE MERCADORIAS OU AQUISIÇÕES DE SERVIÇOS",
-        "descricaoParaBusca": "outrasentradasdemercadoriasouaquisicoesdeservicos"
-    },
-    {
         "cfop": "2901",
         "descricao": "Entrada para industrialização por encomenda",
         "descricaoParaBusca": "entradaparaindustrializacaoporencomenda"
@@ -1152,7 +1027,7 @@
     {
         "cfop": "2910",
         "descricao": "Entrada de bonificação, doação ou brinde",
-        "descricaoParaBusca": "entradadebonificacao,doacaooubrinde"
+        "descricaoParaBusca": "entradadebonificacaodoacaooubrinde"
     },
     {
         "cfop": "2911",
@@ -1197,7 +1072,7 @@
     {
         "cfop": "2919",
         "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, remetida anteriormente em consignação mercantil ou industrial",
-        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrial,remetidaanteriormenteemconsignacaomercantilouindustrial"
+        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrialremetidaanteriormenteemconsignacaomercantilouindustrial"
     },
     {
         "cfop": "2920",
@@ -1217,22 +1092,22 @@
     {
         "cfop": "2923",
         "descricao": "Entrada de mercadoria recebida do vendedor remetente, em venda à ordem",
-        "descricaoParaBusca": "entradademercadoriarecebidadovendedorremetente,emvendaaordem"
+        "descricaoParaBusca": "entradademercadoriarecebidadovendedorremetenteemvendaaordem"
     },
     {
         "cfop": "2924",
         "descricao": "Entrada para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "entradaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoestanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "entradaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoestanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "2925",
         "descricao": "Retorno de mercadoria remetida para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "retornodemercadoriaremetidaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoestanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "retornodemercadoriaremetidaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoestanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "2931",
         "descricao": "Lançamento efetuado pelo tomador do serviço de transporte, quando a responsabilidade de retenção do imposto for atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não-inscrito na Unidade da Federação onde se tenha iniciado o serviço",
-        "descricaoParaBusca": "lancamentoefetuadopelotomadordoservicodetransporte,quandoaresponsabilidadederetencaodoimpostoforatribuidaaoremetenteoualienantedamercadoria,peloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondesetenhainiciadooservico"
+        "descricaoParaBusca": "lancamentoefetuadopelotomadordoservicodetransportequandoaresponsabilidadederetencaodoimpostoforatribuidaaoremetenteoualienantedamercadoriapeloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondesetenhainiciadooservico"
     },
     {
         "cfop": "2932",
@@ -1245,24 +1120,19 @@
         "descricaoParaBusca": "aquisicaodeservicotributadopeloimpostosobreservicosdequalquernatureza"
     },
     {
+        "cfop": "2934",
+        "descricao": "Entrada simbólica de mercadoria recebida para depósito fechado ou armazém geral",
+        "descricaoParaBusca": "entradasimbolicademercadoriarecebidaparadepositofechadoouarmazemgeral"
+    },
+    {
         "cfop": "2949",
         "descricao": "Outra entrada de mercadoria ou prestação de serviço não especificado",
         "descricaoParaBusca": "outraentradademercadoriaouprestacaodeserviconaoespecificado"
     },
     {
-        "cfop": "3000",
-        "descricao": "ENTRADAS OU AQUISIÇÕES DE SERVIÇOS DO EXTERIOR",
-        "descricaoParaBusca": "entradasouaquisicoesdeservicosdoexterior"
-    },
-    {
-        "cfop": "3100",
-        "descricao": "COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU PRESTAÇÃO DE SERVIÇOS (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "comprasparaindustrializacao,producaorural,comercializacaoouprestacaodeservicos(nrajustesinief05/2005)(decreto28868/2006)"
-    },
-    {
         "cfop": "3101",
         "descricao": "Compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "compraparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "compraparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "3102",
@@ -1275,19 +1145,14 @@
         "descricaoParaBusca": "compraparautilizacaonaprestacaodeservico"
     },
     {
-        "cfop": "3128",
-        "descricao": "Compra para utilização na prestação de serviço tributado pelo ISS",
-        "descricaoParaBusca": "compraparautilizacaonaprestacaodeservicotributadopeloiss"
-    },
-    {
         "cfop": "3127",
         "descricao": "Compra para industrialização sob o regime de drawback",
         "descricaoParaBusca": "compraparaindustrializacaosoboregimededrawback"
     },
     {
-        "cfop": "3200",
-        "descricao": "DEVOLUÇÕES DE VENDAS DE PRODUÇÃO PRÓPRIA, DE TERCEIROS OU ANULAÇÕES DE VALORES",
-        "descricaoParaBusca": "devolucoesdevendasdeproducaopropria,deterceirosouanulacoesdevalores"
+        "cfop": "3128",
+        "descricao": "Compra para utilização na prestação de serviço tributado pelo ISS",
+        "descricaoParaBusca": "compraparautilizacaonaprestacaodeservicotributadopeloiss"
     },
     {
         "cfop": "3201",
@@ -1320,29 +1185,14 @@
         "descricaoParaBusca": "devolucaodevendadeproducaodoestabelecimentosoboregimededrawback"
     },
     {
-        "cfop": "3250",
-        "descricao": "COMPRAS DE ENERGIA ELÉTRICA",
-        "descricaoParaBusca": "comprasdeenergiaeletrica"
-    },
-    {
         "cfop": "3251",
         "descricao": "Compra de energia elétrica para distribuição ou comercialização",
         "descricaoParaBusca": "compradeenergiaeletricaparadistribuicaooucomercializacao"
     },
     {
-        "cfop": "3300",
-        "descricao": "AQUISIÇÕES DE SERVIÇOS DE COMUNICAÇÃO",
-        "descricaoParaBusca": "aquisicoesdeservicosdecomunicacao"
-    },
-    {
         "cfop": "3301",
         "descricao": "Aquisição de serviço de comunicação para execução de serviço da mesma natureza",
         "descricaoParaBusca": "aquisicaodeservicodecomunicacaoparaexecucaodeservicodamesmanatureza"
-    },
-    {
-        "cfop": "3350",
-        "descricao": "AQUISIÇÕES DE SERVIÇOS DE TRANSPORTE",
-        "descricaoParaBusca": "aquisicoesdeservicosdetransporte"
     },
     {
         "cfop": "3351",
@@ -1375,19 +1225,9 @@
         "descricaoParaBusca": "aquisicaodeservicodetransporteporestabelecimentodeprodutorrural"
     },
     {
-        "cfop": "3500",
-        "descricao": "ENTRADAS DE MERCADORIAS REMETIDAS COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES",
-        "descricaoParaBusca": "entradasdemercadoriasremetidascomfimespecificodeexportacaoeeventuaisdevolucoes"
-    },
-    {
         "cfop": "3503",
         "descricao": "Devolução de mercadoria exportada que tenha sido recebida com fim específico de exportação",
         "descricaoParaBusca": "devolucaodemercadoriaexportadaquetenhasidorecebidacomfimespecificodeexportacao"
-    },
-    {
-        "cfop": "3550",
-        "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO",
-        "descricaoParaBusca": "operacoescombensdeativoimobilizadoemateriaisparausoouconsumo"
     },
     {
         "cfop": "3551",
@@ -1405,11 +1245,6 @@
         "descricaoParaBusca": "compradematerialparausoouconsumo"
     },
     {
-        "cfop": "3650",
-        "descricao": "ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES",
-        "descricaoParaBusca": "entradasdecombustiveis,derivadosounaodepetroleo,elubrificantes"
-    },
-    {
         "cfop": "3651",
         "descricao": "Compra de combustível ou lubrificante para industrialização subseqüente",
         "descricaoParaBusca": "compradecombustiveloulubrificanteparaindustrializacaosubsequente"
@@ -1425,11 +1260,6 @@
         "descricaoParaBusca": "compradecombustiveloulubrificanteporconsumidorouusuariofinal"
     },
     {
-        "cfop": "3900",
-        "descricao": "OUTRAS ENTRADAS DE MERCADORIAS OU AQUISIÇÕES DE SERVIÇOS",
-        "descricaoParaBusca": "outrasentradasdemercadoriasouaquisicoesdeservicos"
-    },
-    {
         "cfop": "3930",
         "descricao": "Lançamento efetuado a título de entrada de bem sob amparo de regime especial aduaneiro de admissão temporária",
         "descricaoParaBusca": "lancamentoefetuadoatitulodeentradadebemsobamparoderegimeespecialaduaneirodeadmissaotemporaria"
@@ -1438,16 +1268,6 @@
         "cfop": "3949",
         "descricao": "Outra entrada de mercadoria ou prestação de serviço não especificado",
         "descricaoParaBusca": "outraentradademercadoriaouprestacaodeserviconaoespecificado"
-    },
-    {
-        "cfop": "5000",
-        "descricao": "SAÍDAS OU PRESTAÇÕES DE SERVIÇOS PARA O ESTADO",
-        "descricaoParaBusca": "saidasouprestacoesdeservicosparaoestado"
-    },
-    {
-        "cfop": "5100",
-        "descricao": "VENDAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS",
-        "descricaoParaBusca": "vendasdeproducaopropriaoudeterceiros"
     },
     {
         "cfop": "5101",
@@ -1467,7 +1287,7 @@
     {
         "cfop": "5104",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, efetuada fora do estabelecimento",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,efetuadaforadoestabelecimento"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosefetuadaforadoestabelecimento"
     },
     {
         "cfop": "5105",
@@ -1477,7 +1297,7 @@
     {
         "cfop": "5106",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,quenaodevaporeletransitar"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosquenaodevaporeletransitar"
     },
     {
         "cfop": "5109",
@@ -1487,7 +1307,7 @@
     {
         "cfop": "5110",
         "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comercio, de que trata o Anexo do Convênio SINIEF s/n, de 15 de dezembro de 1970, que dispõe sobre o Sistema Nacional Integrado de Informações Econômico-Fiscais",
-        "descricaoParaBusca": "vendademercadoria,adquiridaourecebidadeterceiros,destinadaazonafrancademanausouareasdelivrecomercio,dequetrataoanexodoconveniosiniefs/n,de15dedezembrode1970,quedispoesobreosistemanacionalintegradodeinformacoeseconomicofiscais"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosdestinadaazonafrancademanausouareasdelivrecomerciodequetrataoanexodoconveniosiniefsnde15dedezembrode1970quedispoesobreosistemanacionalintegradodeinformacoeseconomicofiscais"
     },
     {
         "cfop": "5111",
@@ -1512,7 +1332,7 @@
     {
         "cfop": "5115",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, recebida anteriormente em consignação mercantil",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,recebidaanteriormenteemconsignacaomercantil"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosrecebidaanteriormenteemconsignacaomercantil"
     },
     {
         "cfop": "5116",
@@ -1522,32 +1342,32 @@
     {
         "cfop": "5117",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, originada de encomenda para entrega futura",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,originadadeencomendaparaentregafutura"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosoriginadadeencomendaparaentregafutura"
     },
     {
         "cfop": "5118",
         "descricao": "Venda de produção do estabelecimento entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimentoentregueaodestinatarioporcontaeordemdoadquirenteoriginario,emvendaaordem"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentoentregueaodestinatarioporcontaeordemdoadquirenteoriginarioemvendaaordem"
     },
     {
         "cfop": "5119",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatarioporcontaeordemdoadquirenteoriginario,emvendaaordem"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatarioporcontaeordemdoadquirenteoriginarioemvendaaordem"
     },
     {
         "cfop": "5120",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário pelo vendedor remetente, em venda à ordem",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatariopelovendedorremetente,emvendaaordem"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatariopelovendedorremetenteemvendaaordem"
     },
     {
         "cfop": "5122",
         "descricao": "Venda de produção do estabelecimento remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimentoremetidaparaindustrializacao,porcontaeordemdoadquirente,semtransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentoremetidaparaindustrializacaoporcontaeordemdoadquirentesemtransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "5123",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosremetidaparaindustrializacao,porcontaeordemdoadquirente,semtransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosremetidaparaindustrializacaoporcontaeordemdoadquirentesemtransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "5124",
@@ -1558,11 +1378,6 @@
         "cfop": "5125",
         "descricao": "Industrialização efetuada para outra empresa quando a mercadoria recebida para utilização no processo de industrialização não transitar pelo estabelecimento adquirente da mercadoria",
         "descricaoParaBusca": "industrializacaoefetuadaparaoutraempresaquandoamercadoriarecebidaparautilizacaonoprocessodeindustrializacaonaotransitarpeloestabelecimentoadquirentedamercadoria"
-    },
-    {
-        "cfop": "5150",
-        "descricao": "TRANSFERÊNCIAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS",
-        "descricaoParaBusca": "transferenciasdeproducaopropriaoudeterceiros"
     },
     {
         "cfop": "5151",
@@ -1582,22 +1397,17 @@
     {
         "cfop": "5155",
         "descricao": "Transferência de produção do estabelecimento, que não deva por ele transitar",
-        "descricaoParaBusca": "transferenciadeproducaodoestabelecimento,quenaodevaporeletransitar"
+        "descricaoParaBusca": "transferenciadeproducaodoestabelecimentoquenaodevaporeletransitar"
     },
     {
         "cfop": "5156",
         "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar",
-        "descricaoParaBusca": "transferenciademercadoriaadquiridaourecebidadeterceiros,quenaodevaporeletransitar"
-    },
-    {
-        "cfop": "5200",
-        "descricao": "DEVOLUÇÕES DE COMPRAS PARA INDUSTRIALIZAÇÃO, PRODUÇÃO RURAL, COMERCIALIZAÇÃO OU ANULAÇÕES DE VALORES (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "devolucoesdecomprasparaindustrializacao,producaorural,comercializacaoouanulacoesdevalores(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "transferenciademercadoriaadquiridaourecebidadeterceirosquenaodevaporeletransitar"
     },
     {
         "cfop": "5201",
         "descricao": "Devolução de compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "devolucaodecompraparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "devolucaodecompraparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "5202",
@@ -1633,11 +1443,6 @@
         "cfop": "5210",
         "descricao": "Devolução de compra para utilização na prestação de serviço",
         "descricaoParaBusca": "devolucaodecompraparautilizacaonaprestacaodeservico"
-    },
-    {
-        "cfop": "5250",
-        "descricao": "VENDAS DE ENERGIA ELÉTRICA",
-        "descricaoParaBusca": "vendasdeenergiaeletrica"
     },
     {
         "cfop": "5251",
@@ -1680,96 +1485,6 @@
         "descricaoParaBusca": "vendadeenergiaeletricaanaocontribuinte"
     },
     {
-        "cfop": "5300",
-        "descricao": "PRESTAÇÕES DE SERVIÇOS DE COMUNICAÇÃO",
-        "descricaoParaBusca": "prestacoesdeservicosdecomunicacao"
-    },
-    {
-        "cfop": "5301",
-        "descricao": "Prestação de serviço de comunicação para execução de serviço da mesma natureza",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoparaexecucaodeservicodamesmanatureza"
-    },
-    {
-        "cfop": "5302",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento industrial",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentoindustrial"
-    },
-    {
-        "cfop": "5303",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento comercial",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentocomercial"
-    },
-    {
-        "cfop": "5304",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento de prestador de serviço de transporte",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentodeprestadordeservicodetransporte"
-    },
-    {
-        "cfop": "5305",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento de geradora ou de distribuidora de energia elétrica",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentodegeradoraoudedistribuidoradeenergiaeletrica"
-    },
-    {
-        "cfop": "5306",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento de produtor rural",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentodeprodutorrural"
-    },
-    {
-        "cfop": "5307",
-        "descricao": "Prestação de serviço de comunicação a não contribuinte",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoanaocontribuinte"
-    },
-    {
-        "cfop": "5350",
-        "descricao": "PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE",
-        "descricaoParaBusca": "prestacoesdeservicosdetransporte"
-    },
-    {
-        "cfop": "5351",
-        "descricao": "Prestação de serviço de transporte para execução de serviço da mesma natureza",
-        "descricaoParaBusca": "prestacaodeservicodetransporteparaexecucaodeservicodamesmanatureza"
-    },
-    {
-        "cfop": "5352",
-        "descricao": "Prestação de serviço de transporte a estabelecimento industrial",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentoindustrial"
-    },
-    {
-        "cfop": "5353",
-        "descricao": "Prestação de serviço de transporte a estabelecimento comercial",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentocomercial"
-    },
-    {
-        "cfop": "5354",
-        "descricao": "Prestação de serviço de transporte a estabelecimento de prestador de serviço de comunicação",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentodeprestadordeservicodecomunicacao"
-    },
-    {
-        "cfop": "5355",
-        "descricao": "Prestação de serviço de transporte a estabelecimento de geradora ou de distribuidora de energia elétrica",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentodegeradoraoudedistribuidoradeenergiaeletrica"
-    },
-    {
-        "cfop": "5356",
-        "descricao": "Prestação de serviço de transporte a estabelecimento de produtor rural",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentodeprodutorrural"
-    },
-    {
-        "cfop": "5357",
-        "descricao": "Prestação de serviço de transporte a não contribuinte",
-        "descricaoParaBusca": "prestacaodeservicodetransporteanaocontribuinte"
-    },
-    {
-        "cfop": "5359",
-        "descricao": "Prestação de serviço de transporte a contribuinte ou a não-contribuinte, quando a mercadoria transportada esteja dispensada de emissão de Nota Fiscal",
-        "descricaoParaBusca": "prestacaodeservicodetransporteacontribuinteouanaocontribuinte,quandoamercadoriatransportadaestejadispensadadeemissaodenotafiscal"
-    },
-    {
-        "cfop": "5400",
-        "descricao": "SAÍDAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA",
-        "descricaoParaBusca": "saidasdemercadoriassujeitasaoregimedesubstituicaotributaria"
-    },
-    {
         "cfop": "5401",
         "descricao": "Venda de produção do estabelecimento quando o produto esteja sujeito ao regime de substituição tributária",
         "descricaoParaBusca": "vendadeproducaodoestabelecimentoquandooprodutoestejasujeitoaoregimedesubstituicaotributaria"
@@ -1777,17 +1492,17 @@
     {
         "cfop": "5402",
         "descricao": "Venda de produção do estabelecimento de produto sujeito ao regime de substituição tributária, em operação entre contribuintes substitutos do mesmo produto",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimentodeprodutosujeitoaoregimedesubstituicaotributaria,emoperacaoentrecontribuintessubstitutosdomesmoproduto"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentodeprodutosujeitoaoregimedesubstituicaotributariaemoperacaoentrecontribuintessubstitutosdomesmoproduto"
     },
     {
         "cfop": "5403",
         "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, sujeita ao regime de substituição tributária, na condição de contribuinte-substituto",
-        "descricaoParaBusca": "vendademercadoria,adquiridaourecebidadeterceiros,sujeitaaoregimedesubstituicaotributaria,nacondicaodecontribuintesubstituto"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirossujeitaaoregimedesubstituicaotributarianacondicaodecontribuintesubstituto"
     },
     {
         "cfop": "5405",
         "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, sujeita ao regime de substituição tributária, na condição de contribuinte-substituído",
-        "descricaoParaBusca": "vendademercadoria,adquiridaourecebidadeterceiros,sujeitaaoregimedesubstituicaotributaria,nacondicaodecontribuintesubstituido"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirossujeitaaoregimedesubstituicaotributarianacondicaodecontribuintesubstituido"
     },
     {
         "cfop": "5408",
@@ -1812,27 +1527,22 @@
     {
         "cfop": "5412",
         "descricao": "Devolução de bem do ativo imobilizado, em operação com mercadoria sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "devolucaodebemdoativoimobilizado,emoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "devolucaodebemdoativoimobilizadoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "5413",
         "descricao": "Devolução de mercadoria destinada ao uso ou consumo, em operação com mercadoria sujeita ao regime de substituição tributária.",
-        "descricaoParaBusca": "devolucaodemercadoriadestinadaaousoouconsumo,emoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "devolucaodemercadoriadestinadaaousoouconsumoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "5414",
         "descricao": "Remessa de produção do estabelecimento para venda fora do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária",
-        "descricaoParaBusca": "remessadeproducaodoestabelecimentoparavendaforadoestabelecimento,quandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "remessadeproducaodoestabelecimentoparavendaforadoestabelecimentoquandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "5415",
         "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros para venda fora do estabelecimento, em operação com mercadoria sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceirosparavendaforadoestabelecimento,emoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
-    },
-    {
-        "cfop": "5450",
-        "descricao": "SISTEMAS DE INTEGRAÇÃO",
-        "descricaoParaBusca": "sistemasdeintegracao"
+        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceirosparavendaforadoestabelecimentoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "5451",
@@ -1840,19 +1550,14 @@
         "descricaoParaBusca": "remessadeanimaledeinsumoparaestabelecimentoprodutor"
     },
     {
-        "cfop": "5500",
-        "descricao": "REMESSAS PARA FORMAÇÃO DE LOTE E COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES (NR Ajuste SINIEF 09/2005)",
-        "descricaoParaBusca": "remessasparaformacaodeloteecomfimespecificodeexportacaoeeventuaisdevolucoes(nrajustesinief09/2005)"
-    },
-    {
         "cfop": "5501",
         "descricao": "Remessa de produção do estabelecimento, com fim específico de exportação",
-        "descricaoParaBusca": "remessadeproducaodoestabelecimento,comfimespecificodeexportacao"
+        "descricaoParaBusca": "remessadeproducaodoestabelecimentocomfimespecificodeexportacao"
     },
     {
         "cfop": "5502",
         "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros, com fim específico de exportação",
-        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceiros,comfimespecificodeexportacao"
+        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceiroscomfimespecificodeexportacao"
     },
     {
         "cfop": "5503",
@@ -1862,17 +1567,12 @@
     {
         "cfop": "5504",
         "descricao": "Remessa de mercadoria para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento.",
-        "descricaoParaBusca": "remessademercadoriaparaformacaodelotedeexportacao,deprodutoindustrializadoouproduzidopeloproprioestabelecimento"
+        "descricaoParaBusca": "remessademercadoriaparaformacaodelotedeexportacaodeprodutoindustrializadoouproduzidopeloproprioestabelecimento"
     },
     {
         "cfop": "5505",
         "descricao": "Remessa de mercadoria, adquirida ou recebida de terceiros, para formação de lote de exportação.",
-        "descricaoParaBusca": "remessademercadoria,adquiridaourecebidadeterceiros,paraformacaodelotedeexportacao"
-    },
-    {
-        "cfop": "5550",
-        "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO",
-        "descricaoParaBusca": "operacoescombensdeativoimobilizadoemateriaisparausoouconsumo"
+        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceirosparaformacaodelotedeexportacao"
     },
     {
         "cfop": "5551",
@@ -1897,7 +1597,7 @@
     {
         "cfop": "5555",
         "descricao": "Devolução de bem do ativo imobilizado de terceiro, recebido para uso no estabelecimento",
-        "descricaoParaBusca": "devolucaodebemdoativoimobilizadodeterceiro,recebidoparausonoestabelecimento"
+        "descricaoParaBusca": "devolucaodebemdoativoimobilizadodeterceirorecebidoparausonoestabelecimento"
     },
     {
         "cfop": "5556",
@@ -1910,11 +1610,6 @@
         "descricaoParaBusca": "transferenciadematerialdeusoouconsumo"
     },
     {
-        "cfop": "5600",
-        "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS",
-        "descricaoParaBusca": "creditoseressarcimentosdeicms"
-    },
-    {
         "cfop": "5601",
         "descricao": "Transferência de crédito de ICMS acumulado",
         "descricaoParaBusca": "transferenciadecreditodeicmsacumulado"
@@ -1922,7 +1617,7 @@
     {
         "cfop": "5602",
         "descricao": "Transferência de saldo credor do ICMS, para outro estabelecimento da mesma empresa, destinado à compensação de saldo devedor do ICMS",
-        "descricaoParaBusca": "transferenciadesaldocredordoicms,paraoutroestabelecimentodamesmaempresa,destinadoacompensacaodesaldodevedordoicms"
+        "descricaoParaBusca": "transferenciadesaldocredordoicmsparaoutroestabelecimentodamesmaempresadestinadoacompensacaodesaldodevedordoicms"
     },
     {
         "cfop": "5603",
@@ -1940,11 +1635,6 @@
         "descricaoParaBusca": "utilizacaodesaldocredordoicmsparaextincaoporcompensacaodedebitosfiscais"
     },
     {
-        "cfop": "5650",
-        "descricao": "SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES",
-        "descricaoParaBusca": "saidasdecombustiveis,derivadosounaodepetroleo,elubrificantes"
-    },
-    {
         "cfop": "5651",
         "descricao": "Venda de combustível ou lubrificante de produção do estabelecimento destinados à industrialização subseqüente",
         "descricaoParaBusca": "vendadecombustiveloulubrificantedeproducaodoestabelecimentodestinadosaindustrializacaosubsequente"
@@ -1952,32 +1642,32 @@
     {
         "cfop": "5652",
         "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados à comercialização",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,deproducaodoestabelecimento,destinadosacomercializacao"
+        "descricaoParaBusca": "vendadecombustiveloulubrificantedeproducaodoestabelecimentodestinadosacomercializacao"
     },
     {
         "cfop": "5653",
         "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados a consumidor ou usuário final",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,deproducaodoestabelecimento,destinadosaconsumidorouusuariofinal"
+        "descricaoParaBusca": "vendadecombustiveloulubrificantedeproducaodoestabelecimentodestinadosaconsumidorouusuariofinal"
     },
     {
         "cfop": "5654",
         "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à industrialização subseqüente",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,destinadosaindustrializacaosubsequente"
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteadquiridosourecebidosdeterceirosdestinadosaindustrializacaosubsequente"
     },
     {
         "cfop": "5655",
         "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à comercialização",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,destinadosacomercializacao"
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteadquiridosourecebidosdeterceirosdestinadosacomercializacao"
     },
     {
         "cfop": "5656",
         "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados a consumidor ou usuário final",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,destinadosaconsumidorouusuariofinal"
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteadquiridosourecebidosdeterceirosdestinadosaconsumidorouusuariofinal"
     },
     {
         "cfop": "5657",
         "descricao": "Remessa de combustível ou lubrificante, adquiridos ou recebidos de terceiros, para venda fora do estabelecimento",
-        "descricaoParaBusca": "remessadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,paravendaforadoestabelecimento"
+        "descricaoParaBusca": "remessadecombustiveloulubrificanteadquiridosourecebidosdeterceirosparavendaforadoestabelecimento"
     },
     {
         "cfop": "5658",
@@ -2022,12 +1712,12 @@
     {
         "cfop": "5666",
         "descricao": "Remessa, por conta e ordem de terceiros, de combustível ou lubrificante recebidos para armazenagem",
-        "descricaoParaBusca": "remessa,porcontaeordemdeterceiros,decombustiveloulubrificanterecebidosparaarmazenagem"
+        "descricaoParaBusca": "remessaporcontaeordemdeterceirosdecombustiveloulubrificanterecebidosparaarmazenagem"
     },
     {
-        "cfop": "5900",
-        "descricao": "OUTRAS SAÍDAS DE MERCADORIAS OU PRESTAÇÕES DE SERVIÇOS",
-        "descricaoParaBusca": "outrassaidasdemercadoriasouprestacoesdeservicos"
+        "cfop": "5667",
+        "descricao": "Venda de combustível ou lubrificante a consumidor ou usuário final estabelecido em outra unidade da Federação",
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteaconsumidorouusuariofinalestabelecidoemoutraunidadedafederacao"
     },
     {
         "cfop": "5901",
@@ -2077,7 +1767,7 @@
     {
         "cfop": "5910",
         "descricao": "Remessa em bonificação, doação ou brinde",
-        "descricaoParaBusca": "remessaembonificacao,doacaooubrinde"
+        "descricaoParaBusca": "remessaembonificacaodoacaooubrinde"
     },
     {
         "cfop": "5911",
@@ -2122,7 +1812,7 @@
     {
         "cfop": "5919",
         "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, recebida anteriormente em consignação mercantil ou industrial",
-        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrial,recebidaanteriormenteemconsignacaomercantilouindustrial"
+        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrialrecebidaanteriormenteemconsignacaomercantilouindustrial"
     },
     {
         "cfop": "5920",
@@ -2142,17 +1832,17 @@
     {
         "cfop": "5923",
         "descricao": "Remessa de mercadoria por conta e ordem de terceiros, em venda à ordem",
-        "descricaoParaBusca": "remessademercadoriaporcontaeordemdeterceiros,emvendaaordem"
+        "descricaoParaBusca": "remessademercadoriaporcontaeordemdeterceirosemvendaaordem"
     },
     {
         "cfop": "5924",
         "descricao": "Remessa para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "remessaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoestanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "remessaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoestanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "5925",
         "descricao": "Retorno de mercadoria recebida para industrialização por conta e ordem do adquirente da mercadoria, quando aquela não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "retornodemercadoriarecebidaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoaquelanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "retornodemercadoriarecebidaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoaquelanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "5926",
@@ -2162,7 +1852,7 @@
     {
         "cfop": "5927",
         "descricao": "Lançamento efetuado a título de baixa de estoque decorrente de perda, roubo ou deterioração",
-        "descricaoParaBusca": "lancamentoefetuadoatitulodebaixadeestoquedecorrentedeperda,roubooudeterioracao"
+        "descricaoParaBusca": "lancamentoefetuadoatitulodebaixadeestoquedecorrentedeperdaroubooudeterioracao"
     },
     {
         "cfop": "5928",
@@ -2177,7 +1867,7 @@
     {
         "cfop": "5931",
         "descricao": "Lançamento efetuado em decorrência da responsabilidade de retenção do imposto por substituição tributária, atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não inscrito na unidade da Federação onde iniciado o serviço",
-        "descricaoParaBusca": "lancamentoefetuadoemdecorrenciadaresponsabilidadederetencaodoimpostoporsubstituicaotributaria,atribuidaaoremetenteoualienantedamercadoria,peloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondeiniciadooservico"
+        "descricaoParaBusca": "lancamentoefetuadoemdecorrenciadaresponsabilidadederetencaodoimpostoporsubstituicaotributariaatribuidaaoremetenteoualienantedamercadoriapeloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondeiniciadooservico"
     },
     {
         "cfop": "5932",
@@ -2190,14 +1880,14 @@
         "descricaoParaBusca": "prestacaodeservicotributadopeloimpostosobreservicosdequalquernatureza"
     },
     {
+        "cfop": "5934",
+        "descricao": "Remessa simbólica de mercadoria depositada em armazém geral ou depósito fechado",
+        "descricaoParaBusca": "remessasimbolicademercadoriadepositadaemarmazemgeraloudepositofechado"
+    },
+    {
         "cfop": "5949",
         "descricao": "Outra saída de mercadoria ou prestação de serviço não especificado",
         "descricaoParaBusca": "outrasaidademercadoriaouprestacaodeserviconaoespecificado"
-    },
-    {
-        "cfop": "6000",
-        "descricao": "SAÍDAS OU PRESTAÇÕES DE SERVIÇOS PARA OUTROS ESTADOS",
-        "descricaoParaBusca": "saidasouprestacoesdeservicosparaoutrosestados"
     },
     {
         "cfop": "6101",
@@ -2212,12 +1902,12 @@
     {
         "cfop": "6103",
         "descricao": "Venda de produção do estabelecimento, efetuada fora do estabelecimento",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimento,efetuadaforadoestabelecimento"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentoefetuadaforadoestabelecimento"
     },
     {
         "cfop": "6104",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, efetuada fora do estabelecimento",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,efetuadaforadoestabelecimento"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosefetuadaforadoestabelecimento"
     },
     {
         "cfop": "6105",
@@ -2227,17 +1917,17 @@
     {
         "cfop": "6106",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,quenaodevaporeletransitar"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosquenaodevaporeletransitar"
     },
     {
         "cfop": "6107",
         "descricao": "Venda de produção do estabelecimento, destinada a não contribuinte",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimento,destinadaanaocontribuinte"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentodestinadaanaocontribuinte"
     },
     {
         "cfop": "6108",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, destinada a não contribuinte",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,destinadaanaocontribuinte"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosdestinadaanaocontribuinte"
     },
     {
         "cfop": "6109",
@@ -2247,7 +1937,7 @@
     {
         "cfop": "6110",
         "descricao": "Venda de mercadoria, adquirida ou recebida de terceiros, destinada à Zona Franca de Manaus ou Áreas de Livre Comércio, de que trata o Anexo do Convênio SINIEF s/n, de 15 de dezembro de 1970, que dispõe sobre o Sistema Nacional Integrado de Informações Econômico-Fiscais (Decreto nº 26.955/2004) RETROAGINDO SEUS EFEITOS A 24.06.2004",
-        "descricaoParaBusca": "vendademercadoria,adquiridaourecebidadeterceiros,destinadaazonafrancademanausouareasdelivrecomercio,dequetrataoanexodoconveniosiniefs/n,de15dedezembrode1970,quedispoesobreosistemanacionalintegradodeinformacoeseconomicofiscais(decretonº26955/2004)retroagindoseusefeitosa24062004"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosdestinadaazonafrancademanausouareasdelivrecomerciodequetrataoanexodoconveniosiniefsnde15dedezembrode1970quedispoesobreosistemanacionalintegradodeinformacoeseconomicofiscaisdecreton269552004retroagindoseusefeitosa24062004"
     },
     {
         "cfop": "6111",
@@ -2272,7 +1962,7 @@
     {
         "cfop": "6115",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, recebida anteriormente em consignação mercantil",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,recebidaanteriormenteemconsignacaomercantil"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosrecebidaanteriormenteemconsignacaomercantil"
     },
     {
         "cfop": "6116",
@@ -2282,32 +1972,32 @@
     {
         "cfop": "6117",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, originada de encomenda para entrega futura",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,originadadeencomendaparaentregafutura"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosoriginadadeencomendaparaentregafutura"
     },
     {
         "cfop": "6118",
         "descricao": "Venda de produção do estabelecimento entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimentoentregueaodestinatarioporcontaeordemdoadquirenteoriginario,emvendaaordem"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentoentregueaodestinatarioporcontaeordemdoadquirenteoriginarioemvendaaordem"
     },
     {
         "cfop": "6119",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário por conta e ordem do adquirente originário, em venda à ordem",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatarioporcontaeordemdoadquirenteoriginario,emvendaaordem"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatarioporcontaeordemdoadquirenteoriginarioemvendaaordem"
     },
     {
         "cfop": "6120",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinatário pelo vendedor remetente, em venda à ordem",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatariopelovendedorremetente,emvendaaordem"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosentregueaodestinatariopelovendedorremetenteemvendaaordem"
     },
     {
         "cfop": "6122",
         "descricao": "Venda de produção do estabelecimento remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimentoremetidaparaindustrializacao,porcontaeordemdoadquirente,semtransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentoremetidaparaindustrializacaoporcontaeordemdoadquirentesemtransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "6123",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosremetidaparaindustrializacao,porcontaeordemdoadquirente,semtransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosremetidaparaindustrializacaoporcontaeordemdoadquirentesemtransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "6124",
@@ -2318,11 +2008,6 @@
         "cfop": "6125",
         "descricao": "Industrialização efetuada para outra empresa quando a mercadoria recebida para utilização no processo de industrialização não transitar pelo estabelecimento adquirente da mercadoria",
         "descricaoParaBusca": "industrializacaoefetuadaparaoutraempresaquandoamercadoriarecebidaparautilizacaonoprocessodeindustrializacaonaotransitarpeloestabelecimentoadquirentedamercadoria"
-    },
-    {
-        "cfop": "6150",
-        "descricao": "TRANSFERÊNCIAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS",
-        "descricaoParaBusca": "transferenciasdeproducaopropriaoudeterceiros"
     },
     {
         "cfop": "6151",
@@ -2342,22 +2027,17 @@
     {
         "cfop": "6155",
         "descricao": "Transferência de produção do estabelecimento, que não deva por ele transitar",
-        "descricaoParaBusca": "transferenciadeproducaodoestabelecimento,quenaodevaporeletransitar"
+        "descricaoParaBusca": "transferenciadeproducaodoestabelecimentoquenaodevaporeletransitar"
     },
     {
         "cfop": "6156",
         "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar",
-        "descricaoParaBusca": "transferenciademercadoriaadquiridaourecebidadeterceiros,quenaodevaporeletransitar"
-    },
-    {
-        "cfop": "6200",
-        "descricao": "DEVOLUÇÕES DE COMPRAS PARA INDUSTRIALIZAÇÃO, COMERCIALIZAÇÃO OU ANULAÇÕES DE VALORES",
-        "descricaoParaBusca": "devolucoesdecomprasparaindustrializacao,comercializacaoouanulacoesdevalores"
+        "descricaoParaBusca": "transferenciademercadoriaadquiridaourecebidadeterceirosquenaodevaporeletransitar"
     },
     {
         "cfop": "6201",
         "descricao": "Devolução de compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "devolucaodecompraparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "devolucaodecompraparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "6202",
@@ -2393,11 +2073,6 @@
         "cfop": "6210",
         "descricao": "Devolução de compra para utilização na prestação de serviço",
         "descricaoParaBusca": "devolucaodecompraparautilizacaonaprestacaodeservico"
-    },
-    {
-        "cfop": "6250",
-        "descricao": "VENDAS DE ENERGIA ELÉTRICA",
-        "descricaoParaBusca": "vendasdeenergiaeletrica"
     },
     {
         "cfop": "6251",
@@ -2440,96 +2115,6 @@
         "descricaoParaBusca": "vendadeenergiaeletricaanaocontribuinte"
     },
     {
-        "cfop": "6300",
-        "descricao": "PRESTAÇÕES DE SERVIÇOS DE COMUNICAÇÃO",
-        "descricaoParaBusca": "prestacoesdeservicosdecomunicacao"
-    },
-    {
-        "cfop": "6301",
-        "descricao": "Prestação de serviço de comunicação para execução de serviço da mesma natureza",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoparaexecucaodeservicodamesmanatureza"
-    },
-    {
-        "cfop": "6302",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento industrial",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentoindustrial"
-    },
-    {
-        "cfop": "6303",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento comercial",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentocomercial"
-    },
-    {
-        "cfop": "6304",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento de prestador de serviço de transporte",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentodeprestadordeservicodetransporte"
-    },
-    {
-        "cfop": "6305",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento de geradora ou de distribuidora de energia elétrica",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentodegeradoraoudedistribuidoradeenergiaeletrica"
-    },
-    {
-        "cfop": "6306",
-        "descricao": "Prestação de serviço de comunicação a estabelecimento de produtor rural",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoaestabelecimentodeprodutorrural"
-    },
-    {
-        "cfop": "6307",
-        "descricao": "Prestação de serviço de comunicação a não contribuinte",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoanaocontribuinte"
-    },
-    {
-        "cfop": "6350",
-        "descricao": "PRESTAÇÕES DE SERVIÇOS DE TRANSPORTE",
-        "descricaoParaBusca": "prestacoesdeservicosdetransporte"
-    },
-    {
-        "cfop": "6351",
-        "descricao": "Prestação de serviço de transporte para execução de serviço da mesma natureza",
-        "descricaoParaBusca": "prestacaodeservicodetransporteparaexecucaodeservicodamesmanatureza"
-    },
-    {
-        "cfop": "6352",
-        "descricao": "Prestação de serviço de transporte a estabelecimento industrial",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentoindustrial"
-    },
-    {
-        "cfop": "6353",
-        "descricao": "Prestação de serviço de transporte a estabelecimento comercial",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentocomercial"
-    },
-    {
-        "cfop": "6354",
-        "descricao": "Prestação de serviço de transporte a estabelecimento de prestador de serviço de comunicação",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentodeprestadordeservicodecomunicacao"
-    },
-    {
-        "cfop": "6355",
-        "descricao": "Prestação de serviço de transporte a estabelecimento de geradora ou de distribuidora de energia elétrica",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentodegeradoraoudedistribuidoradeenergiaeletrica"
-    },
-    {
-        "cfop": "6356",
-        "descricao": "Prestação de serviço de transporte a estabelecimento de produtor rural",
-        "descricaoParaBusca": "prestacaodeservicodetransporteaestabelecimentodeprodutorrural"
-    },
-    {
-        "cfop": "6357",
-        "descricao": "Prestação de serviço de transporte a não contribuinte",
-        "descricaoParaBusca": "prestacaodeservicodetransporteanaocontribuinte"
-    },
-    {
-        "cfop": "6359",
-        "descricao": "Prestação de serviço de transporte a contribuinte ou a não-contribuinte, quando a mercadoria transportada esteja dispensada de emissão de Nota Fiscal",
-        "descricaoParaBusca": "prestacaodeservicodetransporteacontribuinteouanaocontribuinte,quandoamercadoriatransportadaestejadispensadadeemissaodenotafiscal"
-    },
-    {
-        "cfop": "6400",
-        "descricao": "SAÍDAS DE MERCADORIAS SUJEITAS AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA",
-        "descricaoParaBusca": "saidasdemercadoriassujeitasaoregimedesubstituicaotributaria"
-    },
-    {
         "cfop": "6401",
         "descricao": "Venda de produção do estabelecimento quando o produto estiver sujeito ao regime de substituição tributária",
         "descricaoParaBusca": "vendadeproducaodoestabelecimentoquandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
@@ -2537,17 +2122,17 @@
     {
         "cfop": "6402",
         "descricao": "Venda de produção do estabelecimento de produto sujeito ao regime de substituição tributária, em operação entre contribuintes substitutos do mesmo produto",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimentodeprodutosujeitoaoregimedesubstituicaotributaria,emoperacaoentrecontribuintessubstitutosdomesmoproduto"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentodeprodutosujeitoaoregimedesubstituicaotributariaemoperacaoentrecontribuintessubstitutosdomesmoproduto"
     },
     {
         "cfop": "6403",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros em operação com mercadoria sujeita ao regime de substituição tributária, na condição de contribuinte substituto",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria,nacondicaodecontribuintesubstituto"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosemoperacaocommercadoriasujeitaaoregimedesubstituicaotributarianacondicaodecontribuintesubstituto"
     },
     {
         "cfop": "6404",
         "descricao": "Venda de mercadoria sujeita ao regime de substituição tributária, cujo imposto já tenha sido retido anteriormente",
-        "descricaoParaBusca": "vendademercadoriasujeitaaoregimedesubstituicaotributaria,cujoimpostojatenhasidoretidoanteriormente"
+        "descricaoParaBusca": "vendademercadoriasujeitaaoregimedesubstituicaotributariacujoimpostojatenhasidoretidoanteriormente"
     },
     {
         "cfop": "6408",
@@ -2557,7 +2142,7 @@
     {
         "cfop": "6409",
         "descricao": "Transferência de mercadoria adquirida ou recebida de terceiros, sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "transferenciademercadoriaadquiridaourecebidadeterceiros,sujeitaaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "transferenciademercadoriaadquiridaourecebidadeterceirossujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "6410",
@@ -2572,37 +2157,32 @@
     {
         "cfop": "6412",
         "descricao": "Devolução de bem do ativo imobilizado, em operação com mercadoria sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "devolucaodebemdoativoimobilizado,emoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "devolucaodebemdoativoimobilizadoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "6413",
         "descricao": "Devolução de mercadoria destinada ao uso ou consumo, em operação com mercadoria sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "devolucaodemercadoriadestinadaaousoouconsumo,emoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "devolucaodemercadoriadestinadaaousoouconsumoemoperacaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "6414",
         "descricao": "Remessa de produção do estabelecimento para venda fora do estabelecimento, quando o produto estiver sujeito ao regime de substituição tributária",
-        "descricaoParaBusca": "remessadeproducaodoestabelecimentoparavendaforadoestabelecimento,quandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
+        "descricaoParaBusca": "remessadeproducaodoestabelecimentoparavendaforadoestabelecimentoquandooprodutoestiversujeitoaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "6415",
         "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros para venda fora do estabelecimento, quando a referida ração com mercadoria sujeita ao regime de substituição tributária",
-        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceirosparavendaforadoestabelecimento,quandoareferidaracaocommercadoriasujeitaaoregimedesubstituicaotributaria"
-    },
-    {
-        "cfop": "6500",
-        "descricao": "REMESSAS COM FIM ESPECÍFICO DE EXPORTAÇÃO E EVENTUAIS DEVOLUÇÕES",
-        "descricaoParaBusca": "remessascomfimespecificodeexportacaoeeventuaisdevolucoes"
+        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceirosparavendaforadoestabelecimentoquandoareferidaracaocommercadoriasujeitaaoregimedesubstituicaotributaria"
     },
     {
         "cfop": "6501",
         "descricao": "Remessa de produção do estabelecimento, com fim específico de exportação",
-        "descricaoParaBusca": "remessadeproducaodoestabelecimento,comfimespecificodeexportacao"
+        "descricaoParaBusca": "remessadeproducaodoestabelecimentocomfimespecificodeexportacao"
     },
     {
         "cfop": "6502",
         "descricao": "Remessa de mercadoria adquirida ou recebida de terceiros, com fim específico de exportação",
-        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceiros,comfimespecificodeexportacao"
+        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceiroscomfimespecificodeexportacao"
     },
     {
         "cfop": "6503",
@@ -2612,17 +2192,12 @@
     {
         "cfop": "6504",
         "descricao": "Remessa de mercadoria para formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento.",
-        "descricaoParaBusca": "remessademercadoriaparaformacaodelotedeexportacao,deprodutoindustrializadoouproduzidopeloproprioestabelecimento"
+        "descricaoParaBusca": "remessademercadoriaparaformacaodelotedeexportacaodeprodutoindustrializadoouproduzidopeloproprioestabelecimento"
     },
     {
         "cfop": "6505",
         "descricao": "Remessa de mercadoria, adquirida ou recebida de terceiros, para formação de lote de exportação.",
-        "descricaoParaBusca": "remessademercadoria,adquiridaourecebidadeterceiros,paraformacaodelotedeexportacao"
-    },
-    {
-        "cfop": "6550",
-        "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO",
-        "descricaoParaBusca": "operacoescombensdeativoimobilizadoemateriaisparausoouconsumo"
+        "descricaoParaBusca": "remessademercadoriaadquiridaourecebidadeterceirosparaformacaodelotedeexportacao"
     },
     {
         "cfop": "6551",
@@ -2647,7 +2222,7 @@
     {
         "cfop": "6555",
         "descricao": "Devolução de bem do ativo imobilizado de terceiro, recebido para uso no estabelecimento",
-        "descricaoParaBusca": "devolucaodebemdoativoimobilizadodeterceiro,recebidoparausonoestabelecimento"
+        "descricaoParaBusca": "devolucaodebemdoativoimobilizadodeterceirorecebidoparausonoestabelecimento"
     },
     {
         "cfop": "6556",
@@ -2660,54 +2235,44 @@
         "descricaoParaBusca": "transferenciadematerialdeusoouconsumo"
     },
     {
-        "cfop": "6600",
-        "descricao": "CRÉDITOS E RESSARCIMENTOS DE ICMS",
-        "descricaoParaBusca": "creditoseressarcimentosdeicms"
-    },
-    {
         "cfop": "6603",
         "descricao": "Ressarcimento de ICMS retido por substituição tributária",
         "descricaoParaBusca": "ressarcimentodeicmsretidoporsubstituicaotributaria"
     },
     {
-        "cfop": "6650",
-        "descricao": "SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTE",
-        "descricaoParaBusca": "saidasdecombustiveis,derivadosounaodepetroleo,elubrificante"
-    },
-    {
         "cfop": "6651",
         "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados à industrialização subseqüente",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,deproducaodoestabelecimento,destinadosaindustrializacaosubsequente"
+        "descricaoParaBusca": "vendadecombustiveloulubrificantedeproducaodoestabelecimentodestinadosaindustrializacaosubsequente"
     },
     {
         "cfop": "6652",
         "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados à comercialização",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,deproducaodoestabelecimento,destinadosacomercializacao"
+        "descricaoParaBusca": "vendadecombustiveloulubrificantedeproducaodoestabelecimentodestinadosacomercializacao"
     },
     {
         "cfop": "6653",
         "descricao": "Venda de combustível ou lubrificante, de produção do estabelecimento, destinados a consumidor ou usuário final",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,deproducaodoestabelecimento,destinadosaconsumidorouusuariofinal"
+        "descricaoParaBusca": "vendadecombustiveloulubrificantedeproducaodoestabelecimentodestinadosaconsumidorouusuariofinal"
     },
     {
         "cfop": "6654",
         "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à industrialização subseqüente",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,destinadosaindustrializacaosubsequente"
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteadquiridosourecebidosdeterceirosdestinadosaindustrializacaosubsequente"
     },
     {
         "cfop": "6655",
         "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados à comercialização",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,destinadosacomercializacao"
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteadquiridosourecebidosdeterceirosdestinadosacomercializacao"
     },
     {
         "cfop": "6656",
         "descricao": "Venda de combustível ou lubrificante, adquiridos ou recebidos de terceiros, destinados a consumidor ou usuário final",
-        "descricaoParaBusca": "vendadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,destinadosaconsumidorouusuariofinal"
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteadquiridosourecebidosdeterceirosdestinadosaconsumidorouusuariofinal"
     },
     {
         "cfop": "6657",
         "descricao": "Remessa de combustível ou lubrificante, adquiridos ou recebidos de terceiros, para venda fora do estabelecimento",
-        "descricaoParaBusca": "remessadecombustiveloulubrificante,adquiridosourecebidosdeterceiros,paravendaforadoestabelecimento"
+        "descricaoParaBusca": "remessadecombustiveloulubrificanteadquiridosourecebidosdeterceirosparavendaforadoestabelecimento"
     },
     {
         "cfop": "6658",
@@ -2752,12 +2317,12 @@
     {
         "cfop": "6666",
         "descricao": "Remessa, por conta e ordem de terceiros, de combustível ou lubrificante recebidos para armazenagem",
-        "descricaoParaBusca": "remessa,porcontaeordemdeterceiros,decombustiveloulubrificanterecebidosparaarmazenagem"
+        "descricaoParaBusca": "remessaporcontaeordemdeterceirosdecombustiveloulubrificanterecebidosparaarmazenagem"
     },
     {
-        "cfop": "6900",
-        "descricao": "OUTRAS SAÍDAS DE MERCADORIAS OU PRESTAÇÕES DE SERVIÇOS",
-        "descricaoParaBusca": "outrassaidasdemercadoriasouprestacoesdeservicos"
+        "cfop": "6667",
+        "descricao": "Venda de combustível ou lubrificante a consumidor ou usuário final estabelecido em outra unidade da Federação diferente da que ocorrer o consumo",
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteaconsumidorouusuariofinalestabelecidoemoutraunidadedafederacaodiferentedaqueocorreroconsumo"
     },
     {
         "cfop": "6901",
@@ -2807,7 +2372,7 @@
     {
         "cfop": "6910",
         "descricao": "Remessa em bonificação, doação ou brinde",
-        "descricaoParaBusca": "remessaembonificacao,doacaooubrinde"
+        "descricaoParaBusca": "remessaembonificacaodoacaooubrinde"
     },
     {
         "cfop": "6911",
@@ -2852,7 +2417,7 @@
     {
         "cfop": "6919",
         "descricao": "Devolução simbólica de mercadoria vendida ou utilizada em processo industrial, recebida anteriormente em consignação mercantil ou industrial",
-        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrial,recebidaanteriormenteemconsignacaomercantilouindustrial"
+        "descricaoParaBusca": "devolucaosimbolicademercadoriavendidaouutilizadaemprocessoindustrialrecebidaanteriormenteemconsignacaomercantilouindustrial"
     },
     {
         "cfop": "6920",
@@ -2872,17 +2437,17 @@
     {
         "cfop": "6923",
         "descricao": "Remessa de mercadoria por conta e ordem de terceiros, em venda à ordem",
-        "descricaoParaBusca": "remessademercadoriaporcontaeordemdeterceiros,emvendaaordem"
+        "descricaoParaBusca": "remessademercadoriaporcontaeordemdeterceirosemvendaaordem"
     },
     {
         "cfop": "6924",
         "descricao": "Remessa para industrialização por conta e ordem do adquirente da mercadoria, quando esta não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "remessaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoestanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "remessaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoestanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "6925",
         "descricao": "Retorno de mercadoria recebida para industrialização por conta e ordem do adquirente da mercadoria, quando aquela não transitar pelo estabelecimento do adquirente",
-        "descricaoParaBusca": "retornodemercadoriarecebidaparaindustrializacaoporcontaeordemdoadquirentedamercadoria,quandoaquelanaotransitarpeloestabelecimentodoadquirente"
+        "descricaoParaBusca": "retornodemercadoriarecebidaparaindustrializacaoporcontaeordemdoadquirentedamercadoriaquandoaquelanaotransitarpeloestabelecimentodoadquirente"
     },
     {
         "cfop": "6929",
@@ -2892,7 +2457,7 @@
     {
         "cfop": "6931",
         "descricao": "Lançamento efetuado em decorrência da responsabilidade de retenção do imposto por substituição tributária, atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não inscrito na unidade da Federação onde iniciado o serviço",
-        "descricaoParaBusca": "lancamentoefetuadoemdecorrenciadaresponsabilidadederetencaodoimpostoporsubstituicaotributaria,atribuidaaoremetenteoualienantedamercadoria,peloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondeiniciadooservico"
+        "descricaoParaBusca": "lancamentoefetuadoemdecorrenciadaresponsabilidadederetencaodoimpostoporsubstituicaotributariaatribuidaaoremetenteoualienantedamercadoriapeloservicodetransporterealizadoportransportadorautonomoouportransportadornaoinscritonaunidadedafederacaoondeiniciadooservico"
     },
     {
         "cfop": "6932",
@@ -2905,19 +2470,14 @@
         "descricaoParaBusca": "prestacaodeservicotributadopeloimpostosobreservicosdequalquernatureza"
     },
     {
+        "cfop": "6934",
+        "descricao": "Remessa simbólica de mercadoria depositada em armazém geral ou depósito fechado",
+        "descricaoParaBusca": "remessasimbolicademercadoriadepositadaemarmazemgeraloudepositofechado"
+    },
+    {
         "cfop": "6949",
         "descricao": "Outra saída de mercadoria ou prestação de serviço não especificado",
         "descricaoParaBusca": "outrasaidademercadoriaouprestacaodeserviconaoespecificado"
-    },
-    {
-        "cfop": "7000",
-        "descricao": "SAÍDAS OU PRESTAÇÕES DE SERVIÇOS PARA O EXTERIOR",
-        "descricaoParaBusca": "saidasouprestacoesdeservicosparaoexterior"
-    },
-    {
-        "cfop": "7100",
-        "descricao": "VENDAS DE PRODUÇÃO PRÓPRIA OU DE TERCEIROS",
-        "descricaoParaBusca": "vendasdeproducaopropriaoudeterceiros"
     },
     {
         "cfop": "7101",
@@ -2932,12 +2492,12 @@
     {
         "cfop": "7105",
         "descricao": "Venda de produção do estabelecimento, que não deva por ele transitar",
-        "descricaoParaBusca": "vendadeproducaodoestabelecimento,quenaodevaporeletransitar"
+        "descricaoParaBusca": "vendadeproducaodoestabelecimentoquenaodevaporeletransitar"
     },
     {
         "cfop": "7106",
         "descricao": "Venda de mercadoria adquirida ou recebida de terceiros, que não deva por ele transitar",
-        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceiros,quenaodevaporeletransitar"
+        "descricaoParaBusca": "vendademercadoriaadquiridaourecebidadeterceirosquenaodevaporeletransitar"
     },
     {
         "cfop": "7127",
@@ -2945,14 +2505,9 @@
         "descricaoParaBusca": "vendadeproducaodoestabelecimentosoboregimededrawback"
     },
     {
-        "cfop": "7200",
-        "descricao": "DEVOLUÇÕES DE COMPRAS PARA INDUSTRIALIZAÇÃO, COMERCIALIZAÇÃO OU ANULAÇÕES DE VALORES",
-        "descricaoParaBusca": "devolucoesdecomprasparaindustrializacao,comercializacaoouanulacoesdevalores"
-    },
-    {
         "cfop": "7201",
         "descricao": "Devolução de compra para industrialização ou produção rural (NR Ajuste SINIEF 05/2005) (Decreto 28.868/2006)",
-        "descricaoParaBusca": "devolucaodecompraparaindustrializacaoouproducaorural(nrajustesinief05/2005)(decreto28868/2006)"
+        "descricaoParaBusca": "devolucaodecompraparaindustrializacaoouproducaoruralnrajustesinief052005decreto288682006"
     },
     {
         "cfop": "7202",
@@ -2985,44 +2540,14 @@
         "descricaoParaBusca": "devolucaodecomprasparaindustrializacaosoboregimededrawback"
     },
     {
-        "cfop": "7250",
-        "descricao": "VENDAS DE ENERGIA ELÉTRICA",
-        "descricaoParaBusca": "vendasdeenergiaeletrica"
-    },
-    {
         "cfop": "7251",
         "descricao": "Venda de energia elétrica para o exterior",
         "descricaoParaBusca": "vendadeenergiaeletricaparaoexterior"
     },
     {
-        "cfop": "7301",
-        "descricao": "Prestação de serviço de comunicação para execução de serviço da mesma natureza",
-        "descricaoParaBusca": "prestacaodeservicodecomunicacaoparaexecucaodeservicodamesmanatureza"
-    },
-    {
-        "cfop": "7300",
-        "descricao": "PRESTAÇÕES DE SERVIÇOS DE COMUNICAÇÃO",
-        "descricaoParaBusca": "prestacoesdeservicosdecomunicacao"
-    },
-    {
-        "cfop": "7358",
-        "descricao": "Prestação de serviço de transporte",
-        "descricaoParaBusca": "prestacaodeservicodetransporte"
-    },
-    {
-        "cfop": "7500",
-        "descricao": "EXPORTAÇÃO DE MERCADORIAS RECEBIDAS COM FIM ESPECÍFICO DE EXPORTAÇÃO",
-        "descricaoParaBusca": "exportacaodemercadoriasrecebidascomfimespecificodeexportacao"
-    },
-    {
         "cfop": "7501",
         "descricao": "Exportação de mercadorias recebidas com fim específico de exportação",
         "descricaoParaBusca": "exportacaodemercadoriasrecebidascomfimespecificodeexportacao"
-    },
-    {
-        "cfop": "7550",
-        "descricao": "OPERAÇÕES COM BENS DE ATIVO IMOBILIZADO E MATERIAIS PARA USO OU CONSUMO",
-        "descricaoParaBusca": "operacoescombensdeativoimobilizadoemateriaisparausoouconsumo"
     },
     {
         "cfop": "7551",
@@ -3040,11 +2565,6 @@
         "descricaoParaBusca": "devolucaodecompradematerialdeusoouconsumo"
     },
     {
-        "cfop": "7650",
-        "descricao": "SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO, E LUBRIFICANTES",
-        "descricaoParaBusca": "saidasdecombustiveis,derivadosounaodepetroleo,elubrificantes"
-    },
-    {
         "cfop": "7651",
         "descricao": "Venda de combustível ou lubrificante de produção do estabelecimento",
         "descricaoParaBusca": "vendadecombustiveloulubrificantedeproducaodoestabelecimento"
@@ -3055,9 +2575,9 @@
         "descricaoParaBusca": "vendadecombustiveloulubrificanteadquiridosourecebidosdeterceiros"
     },
     {
-        "cfop": "7900",
-        "descricao": "OUTRAS SAIDAS DE MERCADORIA OU PRESTAÇÕES DE SERVIÇOS",
-        "descricaoParaBusca": "outrassaidasdemercadoriaouprestacoesdeservicos"
+        "cfop": "7667",
+        "descricao": "Venda de combustível ou lubrificante a consumidor ou usuário final.",
+        "descricaoParaBusca": "vendadecombustiveloulubrificanteaconsumidorouusuariofinal"
     },
     {
         "cfop": "7930",
