@@ -67,6 +67,8 @@ module.exports = {
     },
 
     ncmsDicionario: {
+        // Será removido em 01/01/2016
+
         // Atenção: Os seguintes NCMS são os únicos que não possuem 8 digitos
         //
         // 4810
@@ -83,6 +85,29 @@ module.exports = {
 
         'Verifica a quantidade de ncms': function(test) {
             var ncms = require(dados.ncmsDicionario);
+
+            test.equal(Object.keys(ncms).length, 12025); //3 código estão repetidos nesta listagem
+            test.done();
+        },
+    },
+
+    ncmsHash: {
+        // Atenção: Os seguintes NCMS são os únicos que não possuem 8 digitos
+        //
+        // 4810
+        // 48101
+        // 481013
+        // 4810138
+        // 030289
+        // v09096290
+
+        'Verifica que é fornecido o caminho ao invés do objeto': function(test) {
+            test.equal(typeof dados.ncmsHash, 'string')
+            test.done();
+        },
+
+        'Verifica a quantidade de ncms': function(test) {
+            var ncms = require(dados.ncmsHash);
 
             test.equal(Object.keys(ncms).length, 12025); //3 código estão repetidos nesta listagem
             test.done();
@@ -232,9 +257,19 @@ module.exports = {
     },
 
     municipiosDicionario: {
+        // Será removido em 01/01/0216
         'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
             test.equal(typeof dados.municipiosDicionario, 'string');
             test.ok(existsSync(dados.municipiosDicionario));
+
+            test.done();
+        }
+    },
+
+    municipiosHash: {
+        'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
+            test.equal(typeof dados.municipiosHash, 'string');
+            test.ok(existsSync(dados.municipiosHash));
 
             test.done();
         }
@@ -249,10 +284,50 @@ module.exports = {
         }
     },
 
+    paisesArray: {
+        'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
+            test.equal(typeof dados.paisesArray, 'string');
+            test.ok(existsSync(dados.paisesArray));
+
+            test.done();
+        },
+
+        'Verifica que contém os 249 países permitidos no último layout da NF-e': function(test) {
+            var paisesArray = require(dados.paisesArray);
+            test.equal(paisesArray.length, 249);
+            test.done();
+        }
+    },
+
+    paisesHash: {
+        'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
+            test.equal(typeof dados.paisesHash, 'string');
+            test.ok(existsSync(dados.paisesHash));
+
+            test.done();
+        },
+
+        'Verifica que contém os 249 países permitidos no último layout da NF-e': function(test) {
+            var paisesHash = require(dados.paisesHash);
+            test.equal(Object.keys(paisesHash).length, 249);
+            test.done();
+        }
+    },
+
     cfopsDicionario: {
+        // Será removido em 01/01/2016
         'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
             test.equal(typeof dados.cfopsDicionario, 'string');
             test.ok(existsSync(dados.cfopsDicionario));
+
+            test.done();
+        }
+    },
+
+    cfopsHash: {
+        'Verifica que uma string com o caminho é fornecido ao invés de um objeto': function(test){
+            test.equal(typeof dados.cfopsHash, 'string');
+            test.ok(existsSync(dados.cfopsHash));
 
             test.done();
         }
