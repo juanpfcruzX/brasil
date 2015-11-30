@@ -21,14 +21,13 @@ module.exports = {
         banco = new Caixa();
 
         // SINCO
-        var datas = Datas.novasDatas();
-        datas.comDocumento(22, 4, 2013);
-        datas.comProcessamento(22, 4, 2013);
-        datas.comVencimento(29, 4, 2013);
+        // var datas = Datas.novasDatas();
+        // datas.comDocumento(22, 4, 2013);
+        // datas.comProcessamento(22, 4, 2013);
+        // datas.comVencimento(29, 4, 2013);
 
-        pagador = Pagador.novoPagador();
-        pagador.comNome('Mario Amaral');
-        // pagador.comRegistroNacional('00132781000178');
+        // pagador = Pagador.novoPagador();
+        // pagador.comNome('Mario Amaral');
 
         beneficiario = Beneficiario.novoBeneficiario();
         beneficiario.comNome('Rodrigo Turini');
@@ -39,13 +38,13 @@ module.exports = {
         beneficiario.comNossoNumero('990000000003994458');
         beneficiario.comDigitoNossoNumero('0');
 
-        boletoSinco = Boleto.novoBoleto();
-        boletoSinco.comDatas(datas);
-        boletoSinco.comBeneficiario(beneficiario);
-        boletoSinco.comBanco(banco);
-        boletoSinco.comPagador(pagador);
-        boletoSinco.comValorBoleto(4016.10);
-        boletoSinco.comNumeroDoDocumento(3084373);
+        // boletoSinco = Boleto.novoBoleto();
+        // boletoSinco.comDatas(datas);
+        // boletoSinco.comBeneficiario(beneficiario);
+        // boletoSinco.comBanco(banco);
+        // boletoSinco.comPagador(pagador);
+        // boletoSinco.comValorBoleto(4016.10);
+        // boletoSinco.comNumeroDoDocumento(3084373);
 
         // SIGCB
         var datas2 = Datas.novasDatas();
@@ -56,10 +55,10 @@ module.exports = {
         var beneficiario2 = Beneficiario.novoBeneficiario();
         beneficiario2.comNome("Gammasoft Desenvolvimento de Software Ltda");
         beneficiario2.comAgencia("589");
-        beneficiario2.comCarteira("2");
+        beneficiario2.comCarteira("24");
         beneficiario2.comContaCorrente("290274");
         beneficiario2.comDigitoContaCorrente("5");
-        beneficiario2.comNossoNumero("24900000000000132");
+        beneficiario2.comNossoNumero("900000000000132");
         beneficiario2.comDigitoNossoNumero("3");
         beneficiario2.comRegistroNacional('19950366000150');
 
@@ -97,17 +96,17 @@ module.exports = {
         done();
     },
 
-    // 'Nosso número formatado deve ter 17 digitos': function(test) {
-    //     var nossoNumeroSinco = banco.getNossoNumeroFormatado(boletoSinco.getBeneficiario());
-    //     test.equals(17, nossoNumeroSinco.length);
-    //     test.equals('990000000003994458', nossoNumeroSinco); //Sinco deve ter 18?
+    'Nosso número formatado deve ter 17 digitos': function(test) {
+        // var nossoNumeroSinco = banco.getNossoNumeroFormatado(boletoSinco.getBeneficiario());
+        // test.equals(17, nossoNumeroSinco.length);
+        // test.equals('990000000003994458', nossoNumeroSinco); //Sinco deve ter 18?
 
-    //     var nossoNumeroSicgb = banco.getNossoNumeroFormatado(boletoSicgb.getBeneficiario());
-    //     test.equals(17, nossoNumeroSicgb.length);
-    //     test.equals('24900000000000132', nossoNumeroSicgb); // Sicgb deve ter 17?
+        var nossoNumeroSicgb = banco.getNossoNumeroFormatado(boletoSicgb.getBeneficiario());
+        test.equals(17, nossoNumeroSicgb.length);
+        test.equals('24900000000000132', nossoNumeroSicgb); // Sicgb deve ter 17?
 
-    //     test.done();
-    // },
+        test.done();
+    },
 
     'Carteira formatado deve ter dois dígitos': function(test) {
         var beneficiario = Beneficiario.novoBeneficiario().comCarteira('1'),
@@ -126,20 +125,20 @@ module.exports = {
         test.done();
     },
 
-    'Testa código de barras com carteira SINCO': function(test) {
-        var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSinco);
+    // 'Testa código de barras com carteira SINCO': function(test) {
+    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSinco);
 
-        test.equal('10492568300004016101002359990000000003994458', codigoDeBarras);
-        test.done();
-    },
+    //     test.equal('10492568300004016101002359990000000003994458', codigoDeBarras);
+    //     test.done();
+    // },
 
-    'Linha digitavel com carteira SINCO': function(test) {
-        var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSinco),
-            linhaEsperada = "10491.00231 59990.000008 00039.944582 2 56830000401610";
+    // 'Linha digitavel com carteira SINCO': function(test) {
+    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSinco),
+    //         linhaEsperada = "10491.00231 59990.000008 00039.944582 2 56830000401610";
 
-        test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
-        test.done();
-    },
+    //     test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
+    //     test.done();
+    // },
 
     'Testa código de barras com carteira SIGCB': function(test) {
         var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSicgb);
