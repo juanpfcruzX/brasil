@@ -140,20 +140,67 @@ module.exports = {
     //     test.done();
     // },
 
-    'Testa código de barras com carteira SIGCB': function(test) {
-        var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSicgb);
+    'Linha digitavel com carteira SIGCB 1': function(test) {
+        var datas2 = Datas.novasDatas();
+        datas2.comDocumento(30, 11, 2015);
+        datas2.comProcessamento(30, 11, 2015);
+        datas2.comVencimento(30, 12, 2015);
 
-        test.equal('10499544600000080002902745900200040000001322', codigoDeBarras);
+        var beneficiario2 = Beneficiario.novoBeneficiario();
+        beneficiario2.comNome("AGUINALDO LUIZ TELES - ME");
+        beneficiario2.comAgencia("4221");
+        beneficiario2.comCarteira("14");
+        beneficiario2.comContaCorrente("648995");
+        beneficiario2.comDigitoContaCorrente("8");
+        beneficiario2.comNossoNumero("000000000000007");
+        beneficiario2.comDigitoNossoNumero("3");
+        beneficiario2.comRegistroNacional('08432498000173');
+
+        var enderecoDoBeneficiario = Endereco.novoEndereco();
+        enderecoDoBeneficiario.comLogradouro('Rua da Programação');
+        enderecoDoBeneficiario.comBairro('Zona Rural');
+        enderecoDoBeneficiario.comCep('71550050');
+        enderecoDoBeneficiario.comCidade('Patos de Minas');
+        enderecoDoBeneficiario.comUf('MG');
+        beneficiario2.comEndereco(enderecoDoBeneficiario);
+
+        var pagador2 = Pagador.novoPagador();
+        pagador2.comNome("Paulo Fulano da Silva");
+        pagador2.comRegistroNacional("77134854817");
+
+        var enderecoDoPagador = Endereco.novoEndereco();
+        enderecoDoPagador.comLogradouro('Avenida dos Testes Unitários');
+        enderecoDoPagador.comBairro('Barra da Tijuca');
+        enderecoDoPagador.comCep('72000000');
+        enderecoDoPagador.comCidade('Rio de Janeiro');
+        enderecoDoPagador.comUf('RJ');
+        pagador2.comEndereco(enderecoDoPagador);
+
+        var boletoSicgb = Boleto.novoBoleto();
+        boletoSicgb.comDatas(datas2)
+        boletoSicgb.comBeneficiario(beneficiario2)
+        boletoSicgb.comBanco(banco)
+        boletoSicgb.comPagador(pagador2)
+        boletoSicgb.comValorBoleto(158.76)
+        boletoSicgb.comNumeroDoDocumento("NF100/00000215");
+        boletoSicgb.comLocaisDePagamento([
+            'PREFERENCIALMENTE NAS CASAS LOTÉRICAS ATÉ O VALOR LIMITE'
+        ]);
+
+        var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSicgb),
+            linhaEsperada = "10496.48999 58000.100048 00000.000711 6 66580000015876"; // Certo
+
+        test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
         test.done();
     },
 
-    // 'Linha digitavel com carteira SIGCB': function(test) {
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSicgb),
-    //         linhaEsperada = "10492.90271 45900.200044 00000.013227 9 54460000008000";
+    'Linha digitavel com carteira SIGCB 2': function(test) {
+        var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSicgb),
+            linhaEsperada = "10492.90271 45900.200044 00000.013227 9 54460000008000";
 
-    //     test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
-    //     test.done();
-    // },
+        test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
+        test.done();
+    },
 
     // 'Verifica geração da linha digitável - 1': function(test) {
     //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
