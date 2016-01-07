@@ -94,6 +94,48 @@ module.exports = {
         },
     },
 
+    dinheiroPorExtenso: {
+        'Escreve o valor R$ 0,00 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(0), 'zero reais');
+            test.done();
+        },
+
+        'Escreve o valor R$ 1,00 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(1), 'um real');
+            test.done();
+        },
+
+        'Escreve o valor R$ 2,00 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(2), 'dois reais');
+            test.done();
+        },
+
+        'Escreve o valor R$ 17,34 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(17.34), 'dezessete reais e trinta e quatro centavos');
+            test.done();
+        },
+
+        'Escreve o valor R$ 432,97 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(432.97), 'quatrocentos e trinta e dois reais e noventa e sete centavos');
+            test.done();
+        },
+
+        'Escreve o valor R$ 1234,56 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(1234.56), 'um mil e duzentos e trinta e quatro reais e cinquenta e seis centavos');
+            test.done();
+        },
+
+        'Escreve o valor R$ 21234,56 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(21234.56), 'vinte e um mil e duzentos e trinta e quatro reais e cinquenta e seis centavos');
+            test.done();
+        },
+
+        'Escreve o valor R$ 121234,56 adequadamente': function(test) {
+            test.equal(formatacoes.dinheiroPorExtenso(121234.56), 'cento e vinte e um mil e duzentos e trinta e quatro reais e cinquenta e seis centavos');
+            test.done();
+        },
+    },
+
     numero: {
         'Por padrão não trata casas decimais a menos que você especifique': function(test) {
             test.equal(formatacoes.numero(1), '1');
