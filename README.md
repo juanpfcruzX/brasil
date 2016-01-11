@@ -12,24 +12,6 @@ Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 **browser**  
 `bower install brasil --save` (as funcionalidades de boletos e consultas não estão disponíveis)
 
-<!---
-### Roadmap
-
-Se você precisa de alguma funcionalidade que o módulo não contempla por favor [abra um issue](https://github.com/gammasoft/brasil/issues/new) para solicitar que ela seja inclusa no roadmap.
-
- - Consultas a todas as SEFAZ estaduais
- - Integração com os web services da NFe
- - Assinatura digital do XML da NFe
- - Geração de DANFE em PDF
- - Validação de agência e conta bancária dos principais bancos
- - Validação de título de eleitor
- - Implementar os geradores (de cpf, cnpj, pis/pasep, titulo de eleitor, inscricao estadual, etc)
- - Tornar a versão para o browser mais leve (atualmente está praticamente inutilizavel)
- - Criar site com documentação detalhada do módulo, que será gerada automaticamente a cada commit
- - Cliente para web service de calculo de frete dos correios
- - Traduzir numeros em números por extenso
--->
-
 ### Changelog/Como utilizar
 
 O changelog encontra-se na página de [releases](https://github.com/gammasoft/brasil/releases). Cada release acompanha uma descrição do que foi alterado em relação a última versão.
@@ -39,9 +21,12 @@ O changelog encontra-se na página de [releases](https://github.com/gammasoft/br
 Se você se interessou por este projeto você também pode se interessar por estes aqui:
 
 - [ie](https://github.com/gammasoft/ie) - Validação de inscrições estaduais.
+- [icms](https://github.com/brasil-js/icms) - Tabela de ICMS interno e interestadual em javascript
+- [difal](https://github.com/brasil-js/difal) - Calculador de ICMS Diferença de Alíquota
 - [webdanfe](https://github.com/renatoargh/webdanfe) - Gerador de DANFE em pdf utilizando a API do Webdanfe
 - [atualizar-boleto](github.com/brasil-js/atualizar-boleto) - Módulo para atualização de valor do boleto bancário. Calcula multa, mora ou desconto.
-- http://opensource.gammasoft.com.br - Todos os projetos open source da Gammasoft.
+
+**Todos os projetos open source da Gammasoft**: http://opensource.gammasoft.com.br
 
 ### Contribuidores
 
