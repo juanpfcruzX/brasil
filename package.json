@@ -45,10 +45,9 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
+    "brasil-consultas": "^1.0.0",
     "gammautils": "0.0.67",
-    "iconv-lite": "^0.4.3",
-    "pdfkit": "^0.7.0",
-    "request": "^2.37.0"
+    "pdfkit": "^0.7.0"
   },
   "devDependencies": {
     "nodeunit": "~0.8.1"
