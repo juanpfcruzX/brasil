@@ -8,7 +8,6 @@ module.exports = {
     validacoes: require('./lib/validacoesUtils'),
     dados: require('./lib/dadosUtils'),
     formatacoes: require('./lib/formatacoesUtils'),
-    consultas: require('./lib/consultasUtils'),
     bancos: require('./lib/bancosUtils'),
     boleto: require('./lib/boletoUtils')
 };
