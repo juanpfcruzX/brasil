@@ -21,7 +21,10 @@ module.exports = {
             test.ok(new bancos.Caixa());
             test.ok(new bancos['104']());
 
-            test.equals(4, Object.keys(bancos).length);
+            test.ok(new bancos.Bradesco());
+            test.ok(new bancos['237']());
+
+            test.equals(6, Object.keys(bancos).length);
             test.done();
         },
     },

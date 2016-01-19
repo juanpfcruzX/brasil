@@ -402,6 +402,11 @@ module.exports = {
     //     test.done();
     // },
 
+    'Exibir campo CIP retorna falso': function(test) {
+        test.equal(banco.exibirCampoCip(), false);
+        test.done();
+    },
+
     'Verifica criação de pdf': function(test) {
         var geradorDeBoleto = new GeradorDeBoleto(boletoSicgb);
 

@@ -274,6 +274,11 @@ module.exports = {
         test.done();
     },
 
+    'Exibir campo CIP retorna falso': function(test) {
+        test.equal(banco.exibirCampoCip(), false);
+        test.done();
+    },
+
 	'Verifica criação de pdf': function(test) { //Mover para teste adequado
 
 		var datas2 = Datas.novasDatas();

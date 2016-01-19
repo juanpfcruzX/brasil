@@ -12,55 +12,28 @@ var path = require('path'),
     Boleto = boleto.Boleto,
 
     banco,
-    boletoSinco,
-    boleto,
-    beneficiario;
+    boleto;
 
 module.exports = {
     setUp: function(done) {
         banco = new Bradesco();
 
-        // SINCO
-        // var datas = Datas.novasDatas();
-        // datas.comDocumento(22, 4, 2013);
-        // datas.comProcessamento(22, 4, 2013);
-        // datas.comVencimento(29, 4, 2013);
+        var datas = Datas.novasDatas();
+        datas.comDocumento(31, 5, 2006);
+        datas.comProcessamento(31, 5, 2006);
+        datas.comVencimento(10, 6, 2006);
 
-        // pagador = Pagador.novoPagador();
-        // pagador.comNome('Mario Amaral');
-
-        beneficiario = Beneficiario.novoBeneficiario();
-        beneficiario.comNome('Rodrigo Turini');
-        beneficiario.comRegistroNacional('19950366000150');
-        beneficiario.comAgencia('2873');
-        beneficiario.comCarteira('1');
-        beneficiario.comCodigo('2359');
-        beneficiario.comNossoNumero('990000000003994458');
-        beneficiario.comDigitoNossoNumero('0');
-
-        // boletoSinco = Boleto.novoBoleto();
-        // boletoSinco.comDatas(datas);
-        // boletoSinco.comBeneficiario(beneficiario);
-        // boletoSinco.comBanco(banco);
-        // boletoSinco.comPagador(pagador);
-        // boletoSinco.comValorBoleto(4016.10);
-        // boletoSinco.comNumeroDoDocumento(3084373);
-
-        // SIGCB
-        var datas2 = Datas.novasDatas();
-        datas2.comDocumento(21, 8, 2012);
-        datas2.comProcessamento(21, 8, 2012);
-        datas2.comVencimento(4, 9, 2012);
-
-        var beneficiario2 = Beneficiario.novoBeneficiario();
-        beneficiario2.comNome("Gammasoft Desenvolvimento de Software Ltda");
-        beneficiario2.comAgencia("589");
-        beneficiario2.comCarteira("24");
-        beneficiario2.comContaCorrente("290274");
-        beneficiario2.comDigitoContaCorrente("5");
-        beneficiario2.comNossoNumero("900000000000132");
-        beneficiario2.comDigitoNossoNumero("3");
-        beneficiario2.comRegistroNacional('19950366000150');
+        var beneficiario = Beneficiario.novoBeneficiario();
+        beneficiario.comNome('Leonardo Bessa');
+        beneficiario.comRegistroNacional('73114004652');
+        beneficiario.comAgencia('2949');
+        beneficiario.comDigitoAgencia('1');
+        beneficiario.comCodigo('6580');
+        beneficiario.comDigitoCodigo('3');
+        beneficiario.comNumeroConvenio('1207113');
+        beneficiario.comCarteira('6');
+        beneficiario.comNossoNumero('3');
+        beneficiario.comDigitoNossoNumero('7');
 
         var enderecoDoBeneficiario = Endereco.novoEndereco();
         enderecoDoBeneficiario.comLogradouro('Rua da Programação');
@@ -68,11 +41,11 @@ module.exports = {
         enderecoDoBeneficiario.comCep('71550050');
         enderecoDoBeneficiario.comCidade('Patos de Minas');
         enderecoDoBeneficiario.comUf('MG');
-        beneficiario2.comEndereco(enderecoDoBeneficiario);
+        beneficiario.comEndereco(enderecoDoBeneficiario);
 
-        var pagador2 = Pagador.novoPagador();
-        pagador2.comNome("Paulo Fulano da Silva");
-        pagador2.comRegistroNacional("77134854817");
+        var pagador = Pagador.novoPagador();
+        pagador.comNome('Fulano');
+        pagador.comRegistroNacional('97264269604');
 
         var enderecoDoPagador = Endereco.novoEndereco();
         enderecoDoPagador.comLogradouro('Avenida dos Testes Unitários');
@@ -80,305 +53,65 @@ module.exports = {
         enderecoDoPagador.comCep('72000000');
         enderecoDoPagador.comCidade('Rio de Janeiro');
         enderecoDoPagador.comUf('RJ');
-        pagador2.comEndereco(enderecoDoPagador);
+        pagador.comEndereco(enderecoDoPagador);
 
         boleto = Boleto.novoBoleto();
-        boleto.comDatas(datas2)
-        boleto.comBeneficiario(beneficiario2)
-        boleto.comBanco(banco)
-        boleto.comPagador(pagador2)
-        boleto.comValorBoleto(80.00)
-        boleto.comNumeroDoDocumento("NF100/00000132");
+        boleto.comDatas(datas);
+        boleto.comBeneficiario(beneficiario);
+        boleto.comBanco(banco);
+        boleto.comPagador(pagador);
+        boleto.comValor(1);
+        boleto.comNumeroDoDocumento('4323');
         boleto.comLocaisDePagamento([
-            'PREFERENCIALMENTE NAS CASAS LOTÉRICAS ATÉ O VALOR LIMITE'
+            'Pagável preferencialmente na rede Bradesco ou no Bradesco expresso'
         ]);
 
         done();
     },
 
-    // 'Nosso número formatado deve ter 17 digitos': function(test) {
-    //     // var nossoNumeroSinco = banco.getNossoNumeroFormatado(boletoSinco.getBeneficiario());
-    //     // test.equals(17, nossoNumeroSinco.length);
-    //     // test.equals('990000000003994458', nossoNumeroSinco); //Sinco deve ter 18?
+    'Nosso número formatado deve ter 11 digitos': function(test) {
+        var nossoNumero = banco.getNossoNumeroFormatado(boleto.getBeneficiario());
+        test.equals(11, nossoNumero.length);
+        test.equals('00000000003', nossoNumero);
 
-    //     var nossoNumeroSicgb = banco.getNossoNumeroFormatado(boleto.getBeneficiario());
-    //     test.equals(17, nossoNumeroSicgb.length);
-    //     test.equals('24900000000000132', nossoNumeroSicgb); // Sicgb deve ter 17?
+        test.done();
+    },
 
-    //     test.done();
-    // },
+    'Carteira formatado deve ter dois dígitos': function(test) {
+        var carteiraFormatado = banco.getCarteiraFormatado(boleto.getBeneficiario());
 
-    // 'Carteira formatado deve ter dois dígitos': function(test) {
-    //     var beneficiario = Beneficiario.novoBeneficiario().comCarteira('1'),
-    //         numeroFormatado = banco.getCarteiraFormatado(beneficiario);
+        test.equals(2, carteiraFormatado.length);
+        test.equals('06', carteiraFormatado);
+        test.done();
+    },
 
-    //     test.equals(2, numeroFormatado.length);
-    //     test.equals('01', numeroFormatado);
-    //     test.done();
-    // },
+    'Conta corrente formatada deve ter sete dígitos': function(test) {
+        var codigoFormatado = banco.getCodigoFormatado(boleto.getBeneficiario());
 
-    // 'Conta corrente formatada deve ter cinco dígitos': function(test) {
-    //     var numeroFormatado = banco.getCodigoFormatado(beneficiario);
+        test.equals(7, codigoFormatado.length);
+        test.equals('0006580', codigoFormatado);
+        test.done();
+    },
 
-    //     test.equals(5, numeroFormatado.length);
-    //     test.equals('02359', numeroFormatado);
-    //     test.done();
-    // },
+    'Testa geração de linha digitavel': function(test) {
+        var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
+            linhaEsperada = '23792.94909 60000.000004 03000.658009 6 31680000000100';
 
-    // 'Testa código de barras com carteira SINCO': function(test) {
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSinco);
+        test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
+        test.done();
+    },
 
-    //     test.equal('10492568300004016101002359990000000003994458', codigoDeBarras);
-    //     test.done();
-    // },
+    'Testa código de barras': function(test) {
+        var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto);
 
-    // 'Linha digitavel com carteira SINCO': function(test) {
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boletoSinco),
-    //         linhaEsperada = "10491.00231 59990.000008 00039.944582 2 56830000401610";
+        test.equal('23796316800000001002949060000000000300065800', codigoDeBarras);
+        test.done();
+    },
 
-    //     test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
-    //     test.done();
-    // },
-
-    // 'Linha digitavel com carteira SIGCB 1': function(test) {
-    //     var datas2 = Datas.novasDatas();
-    //     datas2.comDocumento(30, 11, 2015);
-    //     datas2.comProcessamento(30, 11, 2015);
-    //     datas2.comVencimento(30, 12, 2015);
-
-    //     var beneficiario2 = Beneficiario.novoBeneficiario();
-    //     beneficiario2.comNome("AGUINALDO LUIZ TELES - ME");
-    //     beneficiario2.comAgencia("4221");
-    //     beneficiario2.comCarteira("14");
-    //     beneficiario2.comContaCorrente("648995");
-    //     beneficiario2.comDigitoContaCorrente("8");
-    //     beneficiario2.comNossoNumero("000000000000007");
-    //     beneficiario2.comDigitoNossoNumero("3");
-    //     beneficiario2.comRegistroNacional('08432498000173');
-
-    //     var enderecoDoBeneficiario = Endereco.novoEndereco();
-    //     enderecoDoBeneficiario.comLogradouro('Rua da Programação');
-    //     enderecoDoBeneficiario.comBairro('Zona Rural');
-    //     enderecoDoBeneficiario.comCep('71550050');
-    //     enderecoDoBeneficiario.comCidade('Patos de Minas');
-    //     enderecoDoBeneficiario.comUf('MG');
-    //     beneficiario2.comEndereco(enderecoDoBeneficiario);
-
-    //     var pagador2 = Pagador.novoPagador();
-    //     pagador2.comNome("Paulo Fulano da Silva");
-    //     pagador2.comRegistroNacional("77134854817");
-
-    //     var enderecoDoPagador = Endereco.novoEndereco();
-    //     enderecoDoPagador.comLogradouro('Avenida dos Testes Unitários');
-    //     enderecoDoPagador.comBairro('Barra da Tijuca');
-    //     enderecoDoPagador.comCep('72000000');
-    //     enderecoDoPagador.comCidade('Rio de Janeiro');
-    //     enderecoDoPagador.comUf('RJ');
-    //     pagador2.comEndereco(enderecoDoPagador);
-
-    //     var boleto = Boleto.novoBoleto();
-    //     boleto.comDatas(datas2)
-    //     boleto.comBeneficiario(beneficiario2)
-    //     boleto.comBanco(banco)
-    //     boleto.comPagador(pagador2)
-    //     boleto.comValorBoleto(158.76)
-    //     boleto.comNumeroDoDocumento("NF100/00000215");
-    //     boleto.comLocaisDePagamento([
-    //         'PREFERENCIALMENTE NAS CASAS LOTÉRICAS ATÉ O VALOR LIMITE'
-    //     ]);
-
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = "10496.48999 58000.100048 00000.000711 6 66580000015876"; // Certo
-
-    //     test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
-    //     test.done();
-    // },
-
-    // 'Linha digitavel com carteira SIGCB 2': function(test) {
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = "10492.90271 45900.200044 00000.013227 9 54460000008000";
-
-    //     test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
-    //     test.done();
-    // },
-
-    // 'Verifica geração da linha digitável - 1': function(test) {
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = "34191.57213 89766.660164 74514.590004 6 56550000268016";
-
-    //     test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
-    //     test.done();
-    // },
-
-    // 'Verifica geração da linha digitável - 2': function(test) {
-    //     datas = Datas.novasDatas();
-    //     datas.comDocumento(20, 03, 2014);
-    //     datas.comProcessamento(20, 03, 2014);
-    //     datas.comVencimento(10, 04, 2014);
-
-    //     beneficiario = Beneficiario.novoBeneficiario();
-    //     beneficiario.comNome('Mario Amaral');
-    //     beneficiario.comAgencia('8462');
-    //     beneficiario.comCarteira('174');
-    //     beneficiario.comCodigo('05825');
-    //     beneficiario.comNossoNumero('00015135')
-    //     beneficiario.comDigitoNossoNumero('6');
-
-    //     pagador = Pagador.novoPagador();
-    //     pagador.comNome('Rodrigo de Sousa');
-
-    //     boleto = Boleto.novoBoleto();
-    //     boleto.comDatas(datas);
-    //     boleto.comBeneficiario(beneficiario);
-    //     boleto.comBanco(banco);
-    //     boleto.comPagador(pagador);
-    //     boleto.comValorBoleto(2680.16);
-    //     boleto.comNumeroDoDocumento('575');
-    //     boleto.comBanco(banco);
-
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = '34191.74002 01513.568467 20582.590004 6 60290000268016';
-
-    //     test.equal(linhaEsperada, geradorDeLinhaDigitavel(codigoDeBarras, banco));
-    //     test.done();
-    // },
-
-    // 'Verifica geração da linha digitável - 3': function(test) {
-    //     datas = Datas.novasDatas();
-    //     datas.comDocumento(21, 5, 2014);
-    //     datas.comProcessamento(21, 5, 2014);
-    //     datas.comVencimento(21, 5, 2014);
-
-    //     beneficiario = Beneficiario.novoBeneficiario();
-    //     beneficiario.comCarteira('181');
-    //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
-    //     beneficiario.comNossoNumero('94588021')
-    //     beneficiario.comDigitoNossoNumero('4');
-
-    //     pagador = Pagador.novoPagador();
-
-    //     boleto = Boleto.novoBoleto();
-    //     boleto.comEspecieDocumento('DSI');
-    //     boleto.comDatas(datas);
-    //     boleto.comBeneficiario(beneficiario);
-    //     boleto.comBanco(banco);
-    //     boleto.comPagador(pagador);
-    //     boleto.comValorBoleto(575);
-    //     boleto.comNumeroDoDocumento('1');
-    //     boleto.comBanco(banco);
-
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = '34191.81940 58802.140655 40871.130007 4 60700000057500',
-    //         linhaGerada = geradorDeLinhaDigitavel(codigoDeBarras, banco);
-
-    //     test.equal(linhaEsperada, linhaGerada);
-    //     test.done();
-    // },
-
-    // 'Verifica geração da linha digitável - 4': function(test) {
-    //     datas = Datas.novasDatas();
-    //     datas.comDocumento(29, 5, 2014);
-    //     datas.comProcessamento(29, 5, 2014);
-    //     datas.comVencimento(23, 6, 2014);
-
-    //     beneficiario = Beneficiario.novoBeneficiario();
-    //     beneficiario.comCarteira('157');
-    //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
-    //     beneficiario.comNossoNumero('89605074')
-    //     beneficiario.comDigitoNossoNumero('2');
-
-    //     pagador = Pagador.novoPagador();
-
-    //     boleto = Boleto.novoBoleto();
-    //     boleto.comEspecieDocumento('DSI');
-    //     boleto.comDatas(datas);
-    //     boleto.comBeneficiario(beneficiario);
-    //     boleto.comBanco(banco);
-    //     boleto.comPagador(pagador);
-    //     boleto.comValorBoleto(115.38);
-    //     boleto.comNumeroDoDocumento('2');
-    //     boleto.comBanco(banco);
-
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = '34191.57890 60507.420655 40871.130007 1 61030000011538',
-    //         linhaGerada = geradorDeLinhaDigitavel(codigoDeBarras, banco);
-
-    //     test.equal(linhaEsperada, linhaGerada);
-    //     test.done();
-    // },
-
-    // 'Verifica geração da linha digitável - 5': function(test) {
-    //     datas = Datas.novasDatas();
-    //     datas.comDocumento(20, 8, 2014);
-    //     datas.comProcessamento(20, 8, 2014);
-    //     datas.comVencimento(27, 8, 2014);
-
-    //     beneficiario = Beneficiario.novoBeneficiario();
-    //     beneficiario.comCarteira('157');
-    //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
-    //     beneficiario.comNossoNumero('02891620')
-    //     beneficiario.comDigitoNossoNumero('8');
-
-    //     pagador = Pagador.novoPagador();
-
-    //     boleto = Boleto.novoBoleto();
-    //     boleto.comEspecieDocumento('DSI');
-    //     boleto.comDatas(datas);
-    //     boleto.comBeneficiario(beneficiario);
-    //     boleto.comBanco(banco);
-    //     boleto.comPagador(pagador);
-    //     boleto.comValorBoleto(115.38);
-    //     boleto.comNumeroDoDocumento('4');
-    //     boleto.comBanco(banco);
-
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = '34191.57023 89162.080652 40871.130007 4 61680000011538',
-    //         linhaGerada = geradorDeLinhaDigitavel(codigoDeBarras, banco);
-
-    //     test.equal(linhaEsperada, linhaGerada);
-    //     test.done();
-    // },
-
-    // 'Verifica geração da linha digitável - 6': function(test) {
-    //     datas = Datas.novasDatas();
-    //     datas.comDocumento(19, 9, 2014);
-    //     datas.comProcessamento(19, 9, 2014);
-    //     datas.comVencimento(26, 9, 2014);
-
-    //     beneficiario = Beneficiario.novoBeneficiario();
-    //     beneficiario.comCarteira('157');
-    //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
-    //     beneficiario.comNossoNumero('07967777')
-    //     beneficiario.comDigitoNossoNumero('4');
-
-    //     pagador = Pagador.novoPagador();
-
-    //     boleto = Boleto.novoBoleto();
-    //     boleto.comEspecieDocumento('FS');
-    //     boleto.comDatas(datas);
-    //     boleto.comBeneficiario(beneficiario);
-    //     boleto.comBanco(banco);
-    //     boleto.comPagador(pagador);
-    //     boleto.comValorBoleto(230.76);
-    //     boleto.comNumeroDoDocumento('5');
-    //     boleto.comBanco(banco);
-
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto),
-    //         linhaEsperada = '34191.57072 96777.740653 40871.130007 9 61980000023076',
-    //         linhaGerada = geradorDeLinhaDigitavel(codigoDeBarras, banco);
-
-    //     test.equal(linhaEsperada, linhaGerada);
-    //     test.done();
-    // },
-
-    // 'Verifica nome correto do banco': function(test) {
-    //     test.equals(banco.getNome(), 'Banco Itaú S/A');
-    //     test.done();
-    // },
+    'Verifica nome correto do banco': function(test) {
+        test.equals(banco.getNome(), 'Banco Bradesco S.A.');
+        test.done();
+    },
 
     'Verifica a numeração correta do banco': function(test) {
         test.equal(banco.getNumeroFormatadoComDigito(), '237-2');
@@ -390,17 +123,15 @@ module.exports = {
         test.done();
     },
 
-    // 'Verifica deve imprimir o nome do banco no boleto': function(test) {
-    //     test.ok(banco.getImprimirNome());
-    //     test.done();
-    // },
+    'Verifica deve imprimir o nome do banco no boleto': function(test) {
+        test.ok(!banco.getImprimirNome());
+        test.done();
+    },
 
-    // 'Verifica geração do código de barras': function(test) {
-    //     var codigoDeBarras = banco.geraCodigoDeBarrasPara(boleto);
-
-    //     test.equal('34196565500002680161572189766660167451459000', codigoDeBarras);
-    //     test.done();
-    // },
+    'Exibir campo CIP retorna verdadeiro': function(test) {
+        test.equal(banco.exibirCampoCip(), true);
+        test.done();
+    },
 
     'Verifica criação de pdf': function(test) {
         var geradorDeBoleto = new GeradorDeBoleto(boleto);
