@@ -10,7 +10,7 @@ module.exports = {
     siglas: {
         'Verifica que retorna um object e tem o numero correto de siglas': function(test) {
             var siglas = dados.siglas;
-            test.equals(Object.keys(siglas).length, 32);
+            test.equals(Object.keys(siglas).length, 33);
             test.done();
         },
     },

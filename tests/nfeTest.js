@@ -1,6 +1,144 @@
 var nfe = require("../brasil").nfe;
 
 module.exports = {
+    obterAutorizadorPorUf: {
+        'Retorna resultados corretos quando é emissão normal': function(test) {
+            test.equal(nfe.obterAutorizadorPorUf('AC'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('AL'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('AM'), 'am');
+            test.equal(nfe.obterAutorizadorPorUf('AP'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('BA'), 'ba');
+            test.equal(nfe.obterAutorizadorPorUf('CE'), 'ce');
+            test.equal(nfe.obterAutorizadorPorUf('DF'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('ES'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('GO'), 'go');
+            test.equal(nfe.obterAutorizadorPorUf('MA'), 'svan');
+            test.equal(nfe.obterAutorizadorPorUf('MG'), 'mg');
+            test.equal(nfe.obterAutorizadorPorUf('MS'), 'ms');
+            test.equal(nfe.obterAutorizadorPorUf('MT'), 'mt');
+            test.equal(nfe.obterAutorizadorPorUf('PA'), 'svan');
+            test.equal(nfe.obterAutorizadorPorUf('PB'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('PE'), 'pe');
+            test.equal(nfe.obterAutorizadorPorUf('PI'), 'svan');
+            test.equal(nfe.obterAutorizadorPorUf('PR'), 'pr');
+            test.equal(nfe.obterAutorizadorPorUf('RJ'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('RN'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('RO'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('RR'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('RS'), 'rs');
+            test.equal(nfe.obterAutorizadorPorUf('SC'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('SE'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('SP'), 'sp');
+            test.equal(nfe.obterAutorizadorPorUf('TO'), 'svrs');
+
+            test.done();
+        },
+
+        'Retorna resultados corretos quando é emissão normal e estado é passado com letra minuscula': function(test) {
+            test.equal(nfe.obterAutorizadorPorUf('ac'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('al'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('am'), 'am');
+            test.equal(nfe.obterAutorizadorPorUf('ap'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('ba'), 'ba');
+            test.equal(nfe.obterAutorizadorPorUf('ce'), 'ce');
+            test.equal(nfe.obterAutorizadorPorUf('df'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('es'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('go'), 'go');
+            test.equal(nfe.obterAutorizadorPorUf('ma'), 'svan');
+            test.equal(nfe.obterAutorizadorPorUf('mg'), 'mg');
+            test.equal(nfe.obterAutorizadorPorUf('ms'), 'ms');
+            test.equal(nfe.obterAutorizadorPorUf('mt'), 'mt');
+            test.equal(nfe.obterAutorizadorPorUf('pa'), 'svan');
+            test.equal(nfe.obterAutorizadorPorUf('pb'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('pe'), 'pe');
+            test.equal(nfe.obterAutorizadorPorUf('pi'), 'svan');
+            test.equal(nfe.obterAutorizadorPorUf('pr'), 'pr');
+            test.equal(nfe.obterAutorizadorPorUf('rj'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('rn'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('ro'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('rr'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('rs'), 'rs');
+            test.equal(nfe.obterAutorizadorPorUf('sc'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('se'), 'svrs');
+            test.equal(nfe.obterAutorizadorPorUf('sp'), 'sp');
+            test.equal(nfe.obterAutorizadorPorUf('to'), 'svrs');
+
+            test.done();
+        },
+
+        'Retorna resultados corretos quando é emissão em contingência': function(test) {
+            test.equal(nfe.obterAutorizadorPorUf('AC', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('AL', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('AM', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('AP', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('BA', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('CE', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('DF', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('ES', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('GO', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('MA', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('MG', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('MS', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('MT', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('PA', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('PB', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('PE', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('PI', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('PR', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('RJ', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('RN', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('RO', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('RR', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('RS', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('SC', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('SE', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('SP', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('TO', true), 'svc-an');
+
+            test.done();
+        },
+
+        'Retorna resultados corretos quando é emissão em contingência e estado é passado em letra minuscula': function(test) {
+            test.equal(nfe.obterAutorizadorPorUf('ac', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('al', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('am', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('ap', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('ba', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('ce', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('df', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('es', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('go', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('ma', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('mg', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('ms', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('mt', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('pa', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('pb', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('pe', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('pi', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('pr', true), 'svc-rs');
+            test.equal(nfe.obterAutorizadorPorUf('rj', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('rn', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('ro', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('rr', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('rs', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('sc', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('se', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('sp', true), 'svc-an');
+            test.equal(nfe.obterAutorizadorPorUf('to', true), 'svc-an');
+
+            test.done();
+        },
+
+        'Retorna null quando é passado um estado que não existe': function(test) {
+            test.equal(nfe.obterAutorizadorPorUf(123, true), null);
+            test.equal(nfe.obterAutorizadorPorUf('asdasdas'), null);
+            test.equal(nfe.obterAutorizadorPorUf({}.itsUndefined, true), null);
+            test.equal(nfe.obterAutorizadorPorUf(/whatAmIDoingHere/g), null);
+            test.done();
+        },
+    },
+
     extrairDadosDaChaveDeAcesso: {
         'Verifica que retorno nulo caso seja passado algo que não é uma chave de acesso': function(test) {
             test.equal(nfe.extrairDadosDaChaveDeAcesso('gammasoft'), null);
