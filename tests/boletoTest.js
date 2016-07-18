@@ -24,7 +24,10 @@ module.exports = {
             test.ok(new bancos.Bradesco());
             test.ok(new bancos['237']());
 
-            test.equals(6, Object.keys(bancos).length);
+            test.ok(new bancos.Sicoob());
+            test.ok(new bancos['756']());
+
+            test.equals(8, Object.keys(bancos).length);
             test.done();
         },
     },
