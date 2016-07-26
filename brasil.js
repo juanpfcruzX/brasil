@@ -3,9 +3,6 @@
 // Para melhorar a exportação para o browser
 // https://github.com/substack/browserify-handbook#browser-field
 
-console.log('brasil: esta versão não apresenta mais a funcionalidade de consultas');
-console.log('brasil: utilize o novo módulo brasil-consultas (npm install brasil-consultas)');
-
 module.exports = {
     nfe: require('./lib/nfeUtils'),
     validacoes: require('./lib/validacoesUtils'),
