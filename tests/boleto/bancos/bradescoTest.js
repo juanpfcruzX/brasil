@@ -28,8 +28,8 @@ module.exports = {
         beneficiario.comRegistroNacional('73114004652');
         beneficiario.comAgencia('2949');
         beneficiario.comDigitoAgencia('1');
-        beneficiario.comCodigo('6580');
-        beneficiario.comDigitoCodigo('3');
+        beneficiario.comCodigoBeneficiario('6580');
+        beneficiario.comDigitoCodigoBeneficiario('3');
         beneficiario.comNumeroConvenio('1207113');
         beneficiario.comCarteira('6');
         beneficiario.comNossoNumero('3');

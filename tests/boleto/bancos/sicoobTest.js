@@ -31,7 +31,7 @@ module.exports = {
         beneficiario.comRegistroNacional('21202793000100');
         beneficiario.comAgencia('4155');
         beneficiario.comCarteira('1');
-        beneficiario.comCodigo('101060');
+        beneficiario.comCodigoBeneficiario('101060');
         beneficiario.comNossoNumero('515');
         beneficiario.comDigitoNossoNumero('8');
 
@@ -92,7 +92,7 @@ module.exports = {
     //     beneficiario.comNome('Mario Amaral');
     //     beneficiario.comAgencia('8462');
     //     beneficiario.comCarteira('174');
-    //     beneficiario.comCodigo('05825');
+    //     beneficiario.comCodigoBeneficiario('05825');
     //     beneficiario.comNossoNumero('00015135')
     //     beneficiario.comDigitoNossoNumero('6');
 
@@ -269,10 +269,10 @@ module.exports = {
     //     test.done();
     // },
 
-    // 'Verifica que arquivo de imagem do logotipo existe': function(test) {
-    //     test.ok(fs.existsSync(banco.getImagem()));
-    //     test.done();
-    // },
+    'Verifica que arquivo de imagem do logotipo existe': function(test) {
+        test.ok(fs.existsSync(banco.getImagem()));
+        test.done();
+    },
 
     // 'Exibir campo CIP retorna falso': function(test) {
     //     test.equal(banco.exibirCampoCip(), false);
@@ -291,7 +291,7 @@ module.exports = {
         beneficiario2.comRegistroNacional('21202793000100');
         beneficiario2.comAgencia('4155');
         beneficiario2.comCarteira('1');
-        beneficiario2.comCodigo('101060');
+        beneficiario2.comCodigoBeneficiario('101060');
         beneficiario2.comNossoNumero('515');
         beneficiario2.comDigitoNossoNumero('8');
 

@@ -34,7 +34,7 @@ module.exports = {
         beneficiario.comRegistroNacional('19950366000150');
         beneficiario.comAgencia('2873');
         beneficiario.comCarteira('1');
-        beneficiario.comCodigo('2359');
+        beneficiario.comCodigoBeneficiario('2359');
         beneficiario.comNossoNumero('990000000003994458');
         beneficiario.comDigitoNossoNumero('0');
 
@@ -56,7 +56,7 @@ module.exports = {
         beneficiario2.comNome("Gammasoft Desenvolvimento de Software Ltda");
         beneficiario2.comAgencia("589");
         beneficiario2.comCarteira("24");
-        beneficiario2.comContaCorrente("290274");
+        beneficiario2.comCodigoBeneficiario("290274");
         beneficiario2.comDigitoContaCorrente("5");
         beneficiario2.comNossoNumero("900000000000132");
         beneficiario2.comDigitoNossoNumero("3");
@@ -150,7 +150,7 @@ module.exports = {
         beneficiario2.comNome("AGUINALDO LUIZ TELES - ME");
         beneficiario2.comAgencia("4221");
         beneficiario2.comCarteira("14");
-        beneficiario2.comContaCorrente("648995");
+        beneficiario2.comCodigoBeneficiario("648995");
         beneficiario2.comDigitoContaCorrente("8");
         beneficiario2.comNossoNumero("000000000000007");
         beneficiario2.comDigitoNossoNumero("3");
@@ -220,7 +220,7 @@ module.exports = {
     //     beneficiario.comNome('Mario Amaral');
     //     beneficiario.comAgencia('8462');
     //     beneficiario.comCarteira('174');
-    //     beneficiario.comCodigo('05825');
+    //     beneficiario.comCodigoBeneficiario('05825');
     //     beneficiario.comNossoNumero('00015135')
     //     beneficiario.comDigitoNossoNumero('6');
 
@@ -252,7 +252,7 @@ module.exports = {
     //     beneficiario = Beneficiario.novoBeneficiario();
     //     beneficiario.comCarteira('181');
     //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
+    //     beneficiario.comCodigoBeneficiario('8711'); //Não se deve indicar o dígito da agencia
     //     beneficiario.comNossoNumero('94588021')
     //     beneficiario.comDigitoNossoNumero('4');
 
@@ -285,7 +285,7 @@ module.exports = {
     //     beneficiario = Beneficiario.novoBeneficiario();
     //     beneficiario.comCarteira('157');
     //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
+    //     beneficiario.comCodigoBeneficiario('8711'); //Não se deve indicar o dígito da agencia
     //     beneficiario.comNossoNumero('89605074')
     //     beneficiario.comDigitoNossoNumero('2');
 
@@ -318,7 +318,7 @@ module.exports = {
     //     beneficiario = Beneficiario.novoBeneficiario();
     //     beneficiario.comCarteira('157');
     //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
+    //     beneficiario.comCodigoBeneficiario('8711'); //Não se deve indicar o dígito da agencia
     //     beneficiario.comNossoNumero('02891620')
     //     beneficiario.comDigitoNossoNumero('8');
 
@@ -351,7 +351,7 @@ module.exports = {
     //     beneficiario = Beneficiario.novoBeneficiario();
     //     beneficiario.comCarteira('157');
     //     beneficiario.comAgencia('654');
-    //     beneficiario.comContaCorrente('8711'); //Não se deve indicar o dígito da agencia
+    //     beneficiario.comCodigoBeneficiario('8711'); //Não se deve indicar o dígito da agencia
     //     beneficiario.comNossoNumero('07967777')
     //     beneficiario.comDigitoNossoNumero('4');
 
