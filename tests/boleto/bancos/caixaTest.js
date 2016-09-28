@@ -57,7 +57,7 @@ module.exports = {
         beneficiario2.comAgencia("589");
         beneficiario2.comCarteira("24");
         beneficiario2.comCodigoBeneficiario("290274");
-        beneficiario2.comDigitoContaCorrente("5");
+        beneficiario2.comDigitoCodigoBeneficiario("5");
         beneficiario2.comNossoNumero("900000000000132");
         beneficiario2.comDigitoNossoNumero("3");
         beneficiario2.comRegistroNacional('19950366000150');
@@ -151,7 +151,7 @@ module.exports = {
         beneficiario2.comAgencia("4221");
         beneficiario2.comCarteira("14");
         beneficiario2.comCodigoBeneficiario("648995");
-        beneficiario2.comDigitoContaCorrente("8");
+        beneficiario2.comDigitoCodigoBeneficiario("8");
         beneficiario2.comNossoNumero("000000000000007");
         beneficiario2.comDigitoNossoNumero("3");
         beneficiario2.comRegistroNacional('08432498000173');
