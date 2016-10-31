@@ -1,6 +1,6 @@
 Brasil
 ======
-[![Build Status](https://drone.io/github.com/gammasoft/brasil/status.png)](https://drone.io/github.com/gammasoft/brasil/latest) [![Última versão no npm](https://badge.fury.io/js/brasil.png)](http://npmjs.org/package/brasil) [![Licença](http://img.shields.io/badge/Licen%C3%A7a-MIT-brightgreen.svg)](http://gammasoft.mit-license.org/) [![Dependency Check](https://dependecy-check.herokuapp.com/gammasoft/brasil)](https://dependecy-check.herokuapp.com/gammasoft/brasil/html)
+[![Build Status](https://drone.io/github.com/gammasoft/brasil/status.png)](https://drone.io/github.com/gammasoft/brasil/latest) [![Última versão no npm](https://badge.fury.io/js/brasil.png)](http://npmjs.org/package/brasil) [![Licença](http://img.shields.io/badge/Licen%C3%A7a-MIT-brightgreen.svg)](http://gammasoft.mit-license.org/) [![Dependency Check](https://dependecy-check.herokuapp.com/gammasoft/brasil/svg)](https://dependecy-check.herokuapp.com/gammasoft/brasil/html)
 
 Biblioteca de ferramentas utilitárias voltadas para programadores brasileiros.
 
